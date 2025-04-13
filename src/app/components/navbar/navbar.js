@@ -4,31 +4,22 @@ import './navbar.css';
 
 
 export default function Navbar() {
-  const [planMenu, setPlanmenu] = useState(false);
-  const [destination, setDestination] = useState(false);
-  const menuRef = useRef(null);
-  const buttonRef = useRef(null);
 
+  const [activeTab, setActiveTab] = useState(null);
+  const containerRef = useRef(null);
 
-  const planningMenu = () => {
-      setPlanmenu((prev) => !prev);
+  const handleToggle = (tab) => {
+    if (activeTab === tab) {
+      setActiveTab(null); // toggle off
+    } else {
+      setActiveTab(tab); // switch
+    }
   };
 
-  const handleDestination = () => {
-      setDestination((prev) => !prev)
-  }
-
-   // Close menu if click is outside
-   useEffect(() => {
+  useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        menuRef.current &&
-        !menuRef.current.contains(event.target) &&
-        buttonRef.current &&
-        !buttonRef.current.contains(event.target)
-      ) {
-        setPlanmenu(false);
-        setDestination(false);
+      if (containerRef.current && !containerRef.current.contains(event.target)) {
+        setActiveTab(null); // close if clicked outside
       }
     };
 
@@ -56,18 +47,15 @@ export default function Navbar() {
         <div className='searchone-wrapper'>
             <input className='input-searchone' placeholder='Search'/>
         </div>
-        <div className='navbar-below'>
-          <button onClick={planningMenu} ref={buttonRef}>Planning &#x25BC;</button>
-          <button onClick={handleDestination}>Destination &#x25BC;</button>
+        <div className='navbar-below' ref={containerRef}>
+          <button onClick={() => handleToggle('planning')}>Planning &#x25BC;</button>
+          <button onClick={() => handleToggle('destination')}>Destination &#x25BC;</button>
           <button>About</button>
           <button>Shop</button>
         </div>
-        {/* PLANNING MENU */}
-
         {
-          planMenu ? 
-          (
-          <div className='planning-section' ref={menuRef}>
+          activeTab === "planning" && (
+            <div className='planning-section'>
             <h1>Plan Your Trip</h1>
               <div className='wrapper-planning'>
                 <div className='planning-icon'>
@@ -121,13 +109,13 @@ export default function Navbar() {
             </div>
             <p>ConciergePath @2025</p>
           </div>
-          ) : ''
+          )
         }
+          
 
         {
-          destination ? (
-// awal
-          <div className='wrapper-destination' ref={menuRef}>
+          activeTab === "destination" && (
+            <div className='wrapper-destination'>
             <h1>Plan Your Destinaton</h1>
             <div className='wrapper-continent'>
                 <h5>Africa</h5>
@@ -254,9 +242,9 @@ export default function Navbar() {
             </div>
             <p className='destination-footer'>ConciergePath @2025</p>
           </div>
-// akhir
-          ) : ''
+          )
         }
+          
         
         
       </div>
