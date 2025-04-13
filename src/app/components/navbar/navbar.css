@@ -1,5 +1,6 @@
 .navbar-wrapper {
     margin: 20px;
+    z-index: 10;
 }
 .navbar-section {
     display: flex;
