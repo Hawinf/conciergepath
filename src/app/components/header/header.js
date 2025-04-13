@@ -58,6 +58,17 @@ export default function Header() {
           </div>
         </div>
       </div>
+      <main className='container-discover'>
+        <div className='dc-left'>
+          <img src='/world-map.png' alt='discover the world' />
+        </div>
+        <div className='dc-right'>
+          <h1 className='right-tittle'>DISCOVER</h1>
+          <h1 className='right-tittle1'>THE WORLD &#8690;</h1>
+          <p>We have written over 600+ travel guides and backpacking itineraries to provide all the information you need to help plan your dream trip around the world.</p>
+          <a className='dc-explore' href=''>EXPLORE DESTINATION &#8608;</a>
+        </div>
+      </main>
     </div>
   );
 }
