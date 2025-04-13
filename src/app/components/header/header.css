@@ -53,6 +53,25 @@
     text-align: right;
     margin-top: 10px;
 }
+.main-header {
+    padding: 20px 0;
+    margin: 20px 0;
+}
+.continents-map {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+.box-map .each-map {
+    width: 70px;
+}
+.box-map p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
 @media (max-width:992px) {
     .wrapper-header {
         width: 50%;
@@ -61,6 +80,18 @@
 @media (max-width:768px) {
     .wrapper-header {
         width: 62%;
+    }
+    .main-header {
+        width: 97%;
+    }
+    .continents-map {
+        width: 97%;
+    }
+    .box-map {
+        margin: 20px;
+    }
+    .box-map .each-map {
+        width: 45px;
     }
 }
 @media (max-width:576px) {
@@ -78,5 +109,12 @@
     .header-cp h5 {
         text-align: center;
         letter-spacing: 15px;
+    }
+    
+    .box-map .each-map {
+        width: 30px;
+    }
+    .box-map p {
+        font-size: 9px;
     }
 }
