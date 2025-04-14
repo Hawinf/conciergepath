@@ -116,8 +116,11 @@
         width: 90%;
         margin: auto;
     }
+    .dc-left {
+        text-align: center;
+    }
     .dc-left img {
-        width: 100%;
+        width: 80%;
         margin-top: -110px;
     }
     .dc-right {
@@ -171,9 +174,14 @@
         font-size: 9px;
     }
     .dc-right .right-tittle {
-        font-size: 50px;
+        font-size: 35px;
     }
     .dc-right .right-tittle1 {
-        font-size: 25px;
+        font-size: 17px;
+        letter-spacing: 4px;
     }
+    .dc-right p {
+        font-size: 12px;
+    }
+    
 }
