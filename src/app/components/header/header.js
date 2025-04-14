@@ -69,6 +69,26 @@ export default function Header() {
           <a className='dc-explore' href=''>EXPLORE DESTINATION &#8608;</a>
         </div>
       </main>
+      <main className='about-section'>
+        <div className='container-about'>
+          <h1>MY</h1>
+          <h3>STORY</h3>
+          <div className='main-about'>
+            <div>
+              <a><img src='/downsection.jpeg' alt='KATE' /></a>
+            </div>
+            <div>
+              <a><img src='/downsection.jpeg' alt='KATE' /></a>
+            </div>
+            <div>
+              <a><img src='/downsection.jpeg' alt='KATE' /></a>
+            </div>
+            <div>
+              <a><img src='/downsection.jpeg' alt='KATE' /></a>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }
