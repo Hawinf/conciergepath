@@ -141,7 +141,7 @@
         width: 97%;
     }
     .continents-map {
-        width: 97%;
+        width: 100%;
     }
     .box-map {
         margin: 20px;
@@ -166,7 +166,9 @@
         text-align: center;
         letter-spacing: 15px;
     }
-    
+    .continents-map {
+        margin: 0 0 30px 0
+    }
     .box-map .each-map {
         width: 30px;
     }
