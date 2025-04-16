@@ -55,6 +55,9 @@
     cursor: pointer;
 }
 /* PLANNING SECTION BELOW */
+.planning-section {
+    background-color: rgba(0, 0, 0, 0.692);
+}
 .planning-section h1 {
     text-align: center;
     margin-top: 20px;
