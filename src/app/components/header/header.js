@@ -1,8 +1,29 @@
-// 'use client'
-// import { useEffect, useRef, useState } from 'react';
+'use client'
+import { useEffect, useState } from 'react';
 import './header.css';
 
+
 export default function Header() {
+  const [displayedText, setDisplayedText] = useState('');
+  const fullText = 'WELCOME TO MY PAGE';
+  const typingSpeed = 1500;
+
+  useEffect(() => {
+    let index = 0;
+
+    const interval = setInterval(() => {
+      setDisplayedText(fullText.slice(0, index + 1));
+      index++;
+
+      if (index === fullText.length) {
+        clearInterval(interval);
+      }
+    }, typingSpeed);
+
+    return () => clearInterval(interval);
+  }, []);
+
+
   return (
     <div className='container-header'>
       <div className='wrapper-header'>
@@ -71,8 +92,8 @@ export default function Header() {
       </main>
       <main className='about-section'>
         <div className='container-about'>
-          <h1>MY</h1>
-          <h3>STORY</h3>
+          {/* <h1>MY</h1> */}
+          <h3>{displayedText}<span className="blinking-cursor">|</span></h3>
           <div className='main-about'>
             <div>
               <a><img src='/downsection.jpeg' alt='KATE' /></a>
@@ -86,6 +107,9 @@ export default function Header() {
             <div>
               <a><img src='/downsection.jpeg' alt='KATE' /></a>
             </div>
+          </div>
+          <div className='wrapper-watch'> 
+            <a href='' className='watchon-btn'>WATCH MORE &#8608;</a>
           </div>
         </div>
       </main>

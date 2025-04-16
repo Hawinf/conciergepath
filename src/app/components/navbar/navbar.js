@@ -8,6 +8,26 @@ export default function Navbar() {
   const [activeTab, setActiveTab] = useState(null);
   const containerRef = useRef(null);
 
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setShowNavbar(false); // scrolling down
+      } else {
+        setShowNavbar(true); // scrolling up
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
+
   const handleToggle = (tab) => {
     if (activeTab === tab) {
       setActiveTab(null); // toggle off
@@ -31,7 +51,7 @@ export default function Navbar() {
   }, []);
 
     return (
-      <div className='navbar-wrapper'>
+      <div className={`navbar-wrapper ${showNavbar ? 'visible' : 'hidden'}`}>
         <div className='navbar-section'>
           <div>
               <img src="/logo.png" alt="ConciergePath Logo" width={30} height={30} />
