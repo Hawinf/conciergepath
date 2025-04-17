@@ -285,6 +285,8 @@ transform: rotate(-45deg) translateY(100%);
       transform: translateY(100%);
     }
   }
+
+  
 @media (max-width:992px) {
     .wrapper-header {
         width: 50%;
