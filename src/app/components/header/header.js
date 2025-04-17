@@ -96,16 +96,16 @@ export default function Header() {
           {/* <h1>MY</h1> */}
           <h3>{displayedText}<span className="blinking-cursor">|</span></h3>
           <div className='main-about'>
-            <div>
+            <div className="holographic-card">
               <a><img src='/downsection.jpeg' alt='KATE' /></a>
             </div>
-            <div>
+            <div className="holographic-card">
               <a><img src='/downsection.jpeg' alt='KATE' /></a>
             </div>
-            <div>
+            <div className="holographic-card">
               <a><img src='/downsection.jpeg' alt='KATE' /></a>
             </div>
-            <div>
+            <div className="holographic-card">
               <a><img src='/downsection.jpeg' alt='KATE' /></a>
             </div>
           </div>
