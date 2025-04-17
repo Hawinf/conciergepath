@@ -134,10 +134,8 @@
     margin-bottom: 20px;   
 }
 .main-about img {
-    /* margin: 10px; */
-    /* margin-right: 10px; */
     width: 200px;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px;
     border: 1px solid rgb(14, 14, 14);
 }
