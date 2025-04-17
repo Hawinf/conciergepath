@@ -195,8 +195,97 @@ opacity: 1;
 transform: rotate(-45deg) translateY(100%);
 }
 /* hologram */
+.btn {
+  position: relative;
+  padding: 1.5rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.matrix {
+  background: #000;
+  border: 2px solid #0f0;
+  color: #0f0;
+}
+
+.code-rain {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 255, 0, 0) 0%,
+    rgba(0, 255, 0, 0.2) 50%,
+    rgba(0, 255, 0, 0) 100%
+  );
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.matrix:hover .code-rain {
+  opacity: 1;
+  animation: rain 1s linear infinite;
+}
+
+@keyframes rain {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
 @keyframes blink {
     50% { opacity: 0; }
+  }
+
+  .btn {
+    padding: 7px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  
+  .matrix {
+    background: transparent;
+    border-radius: 6px;
+    border: 2px solid #0f0;
+    color: rgb(255, 255, 255);
+  }
+  
+  .code-rain {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 255, 0, 0) 0%,
+      rgba(0, 255, 0, 0.2) 50%,
+      rgba(0, 255, 0, 0) 100%
+    );
+    opacity: 0;
+    transition: 0.3s;
+  }
+  
+  .matrix:hover .code-rain {
+    opacity: 1;
+    animation: rain 1s linear infinite;
+  }
+  
+  @keyframes rain {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
   }
 @media (max-width:992px) {
     .wrapper-header {

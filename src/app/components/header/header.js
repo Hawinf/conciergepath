@@ -88,7 +88,10 @@ export default function Header() {
           <h1 className='right-tittle'>DISCOVER</h1>
           <h1 className='right-tittle1'>THE WORLD &#8690;</h1>
           <p>We have written over 600+ travel guides and backpacking itineraries to provide all the information you need to help plan your dream trip around the world.</p>
-          <a className='dc-explore' href=''>EXPLORE DESTINATION &#8608;</a>
+          <button className="btn matrix">
+            <span>EXPLORE DESTINATION &#8608;</span>
+            <div className="code-rain"></div>
+          </button>
         </div>
       </main>
       <main className='about-section'>
@@ -109,9 +112,10 @@ export default function Header() {
               <a><img src='/downsection.jpeg' alt='KATE' /></a>
             </div>
           </div>
-          <div className='wrapper-watch'> 
-            <a href='' className='watchon-btn'>WATCH MORE &#8608;</a>
-          </div>
+          <button className="btn matrix">
+            <span>WATCH MORE &#8608;</span>
+            <div className="code-rain"></div>
+          </button>
         </div>
       </main>
     </div>
