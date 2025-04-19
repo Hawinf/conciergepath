@@ -503,6 +503,15 @@ transform: rotate(-45deg) translateY(100%);
     .main-about img {
         width: 100%;
     }
+    .wrapper-feature {
+        padding: 10px 0px;
+    }
+    .wrapper-feature h4 {
+        margin-bottom: 19px;
+    }
+    .feature-image {
+        padding: 5px 0;
+    }
     .box-feature img {
         height: 20px;
     }
