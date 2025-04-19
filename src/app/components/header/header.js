@@ -30,7 +30,9 @@ export default function Header() {
       <div className='wrapper-header'>
           <header className='header-cp'>
               <h1>KATSIARYNA</h1>
-              <h5>PUTSILOUSKAYA</h5>
+              <div className='melting-text-container'>
+                <h5 className='melting-text'>PUTSILOUSKAYA</h5>
+              </div>
               <img src='/header-cp5.png' alt='kate' />
               <div className='head-desc'>
                   <a href='' className='link-blog'>READ MY BLOG</a>
