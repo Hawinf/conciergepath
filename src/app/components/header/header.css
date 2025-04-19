@@ -402,7 +402,7 @@ transform: rotate(-45deg) translateY(100%);
 }
 .box-feature .national {
     height: 170px;
-    width: 100%;
+    /* width: 100%; */
     margin-top: -50px;
 }
 @media (max-width:992px) {
@@ -452,7 +452,7 @@ transform: rotate(-45deg) translateY(100%);
     }
     .box-feature .national {
         height: 120px;
-        width: 100%;
+        /* width: 100%; */
         margin-top: -43px;
     }
 }
@@ -508,7 +508,7 @@ transform: rotate(-45deg) translateY(100%);
     }
     .box-feature .national {
         height: 80px;
-        width: 100%;
+        /* width: 100%; */
         margin-top: -30px;
     }
 }

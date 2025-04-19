@@ -121,7 +121,7 @@ export default function Header() {
         </div>
       </main>
       <main className='wrapper-feature'>
-        <h4>As Featured On</h4>
+        <h4>AS FEATURE ON</h4>
         <div className='feature-image'>
           <div className='box-feature'>
             <a href=''><img src='/bbc-ogo.png' alt='BBC' /></a>
