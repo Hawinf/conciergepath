@@ -54,7 +54,7 @@ export default function Navbar() {
       <div className={`navbar-wrapper ${showNavbar ? 'visible' : 'hidden'}`}>
         <div className='navbar-section'>
           <div>
-              <img src="/logo.png" alt="ConciergePath Logo" width={30} height={30} />
+              <img className='navbar-logo' src="/logo.png" alt="ConciergePath Logo" width={30} height={30} />
           </div>
           <div>
             <input className='input-search' placeholder='Search'/>

@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
 }
-.navbar-section img {
+.navbar-section .navbar-logo {
     margin: 10px;
 }
 .input-search {
@@ -42,6 +42,7 @@
 .social-yt {
     width: 20px;
     height: 16px;
+    margin-right: 10px;
 }
 .input-searchone {
     display: none;
@@ -144,25 +145,45 @@
     .navbar-section {
         line-height: 0px;
     }
-    .navbar-section img {
+    .navbar-section .navbar-logo {
         width: 17px;
         height: 17px;
+        margin: 12px;
+    }
+    .social-section {
+        margin-top: 12px;
+    }
+    .social-ig {
+        margin-right: 5px;
+        width: 13px;
+        height: 13px;
+    }
+    .social-yt {
+        margin-right: 10px;
+        width: 13px;
+        height: 13px;
     }
     .input-search {
-        display: none;
+        /* display: none; */
+        border-radius: 20px;
+        /* padding: 7px; */
+        height: 25px;
+        width: 100%;
+        /* margin: auto; */
+        background-color: rgba(0, 0, 0, 0.45);
     }
     .navbar-below button {
         margin: 13px 10px;
         font-size: 10px;
     }
-    .input-searchone {
-        display: block;
+    /* .input-searchone {
+        display: none;
         border-radius: 20px;
         padding: 7px;
         width: 50%;
         margin: auto;
         background-color: rgba(0, 0, 0, 0.45);
-    }
+    } */
     .wrapper-planning {
         width: 95%;
     }
