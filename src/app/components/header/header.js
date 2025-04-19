@@ -105,13 +105,13 @@ export default function Header() {
               <a><img src='/downsection.jpeg' alt='KATE' /></a>
             </div>
             <div className="holographic-card">
-              <a><img src='/downsection.jpeg' alt='KATE' /></a>
+              <a><img src='/he1.jpeg' alt='KATE' /></a>
             </div>
             <div className="holographic-card">
-              <a><img src='/downsection.jpeg' alt='KATE' /></a>
+              <a><img src='/he2.jpeg' alt='KATE' /></a>
             </div>
             <div className="holographic-card">
-              <a><img src='/downsection.jpeg' alt='KATE' /></a>
+              <a><img src='/he3.jpeg' alt='KATE' /></a>
             </div>
           </div>
           <button className="btn matrix">
