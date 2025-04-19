@@ -120,6 +120,20 @@ export default function Header() {
           </button>
         </div>
       </main>
+      <main className='wrapper-feature'>
+        <h4>As Featured On</h4>
+        <div className='feature-image'>
+          <div className='box-feature'>
+            <a href=''><img src='/bbc-ogo.png' alt='BBC' /></a>
+          </div>
+          <div className='box-feature'>
+            <a href=''><img src='/cnn-logo.png' alt='BBC' /></a>
+          </div>
+          <div className='box-feature'>
+            <a href=''><img className='national' src='/nationalg-logo.png' alt='BBC' /></a>
+          </div>
+        </div>
+      </main>
       
     </div>
   );
