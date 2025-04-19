@@ -134,7 +134,43 @@ export default function Header() {
           </div>
         </div>
       </main>
-      
+      <main className='wrapper-blog'>
+        <h5 className='blog-tittle'>LATEST BLOG POST</h5>
+        <div className='blog-section'>
+            <div className='each-box'>
+              <img src='/he.jpeg'/>
+              <div className='blog-desc'>
+                <h6>Dubai</h6>
+                <h1>25 PLACES MUST VISIT IN DUBAI</h1>
+                <p>By Kate P</p>
+              </div>
+            </div>
+            <div className='each-box'>
+              <img src='/he1.jpeg'/>
+              <div className='blog-desc'>
+                <h6>Georgia</h6>
+                <h1>3 Days In Georgia</h1>
+                <p>By Kate P</p>
+              </div>
+            </div>
+            <div className='each-box'>
+              <img src='/he2.jpeg'/>
+              <div className='blog-desc'>
+                <h6>Armenia</h6>
+                <h1>3 Days In Armenia</h1>
+                <p>By Kate P</p>
+              </div>
+            </div>
+            <div className='each-box'>
+              <img src='/he3.jpeg'/>
+              <div className='blog-desc'>
+                <h6>Turkey</h6>
+                <h1>Place Must Visit In Turkey</h1>
+                <p>By Kate P</p>
+              </div>
+            </div>
+        </div>
+      </main>
     </div>
   );
 }
