@@ -524,6 +524,9 @@ transform: rotate(-45deg) translateY(100%);
         font-size: 50px;
         text-align: center;
     }
+    .melting-text-container {
+        margin-top: -18px;
+    }
     .melting-text {
         text-align: center;
         letter-spacing: 15px;

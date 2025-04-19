@@ -80,49 +80,49 @@ export default function Navbar() {
               <div className='wrapper-planning'>
                 <div className='planning-icon'>
                   <a href='' >
-                    <img src='/flight.png' />
+                    <img className='planning-logo' src='/flight.png' />
                     <h6>Find Cheap Flight</h6>
                   </a>
                 </div>
                 <div className='planning-icon'>
                   <a href=''>
-                    <img src='/bus.png' />
+                    <img className='planning-logo' src='/bus.png' />
                     <h6>Find Buses</h6>
                   </a>
                 </div>
                 <div className='planning-icon'>
                   <a href=''>
-                    <img src='/car-rent.png' />
+                    <img className='planning-logo' src='/car-rent.png' />
                     <h6>Find Car Rent</h6>
                   </a>
                 </div>
                 <div className='planning-icon'>
                   <a href=''>
-                    <img src='/jogging.png' />
+                    <img className='planning-logo' src='/jogging.png' />
                     <h6>Things To Do</h6>
                   </a>
                 </div>
                 <div className='planning-icon'>
                   <a href=''>
-                    <img src='/ticket.png' />
+                    <img className='planning-logo' src='/ticket.png' />
                     <h6>Find Tickets</h6>
                   </a>
                 </div>
                 <div className='planning-icon'>
                   <a href=''>
-                    <img src='/guide.png' />
+                    <img className='planning-logo' src='/guide.png' />
                     <h6>Find Travel Guide</h6>
                   </a>
                 </div>
                 <div className='planning-icon'>
                   <a href=''>
-                    <img src='/simcard.png' />
+                    <img className='planning-logo' src='/simcard.png' />
                     <h6>Find Esim Card</h6>
                   </a>
                 </div>
                 <div className='planning-icon'>
                   <a href=''>
-                    <img src='/food.png' />
+                    <img className='planning-logo' src='/food.png' />
                     <h6>Find Restaurant</h6>
                   </a>
                 </div>
