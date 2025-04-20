@@ -18,7 +18,7 @@ export default function Footer() {
                             </div>
                         </a>
                         <a href=''>
-                            <div className='footer-socialbtn'>
+                            <div className='footer-socialbtn1'>
                                 <img src='/tiktok.png' alt='kate telegram channel' />
                                 <p>TIKTOK</p>
                             </div>
