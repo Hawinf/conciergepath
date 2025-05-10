@@ -112,9 +112,10 @@
 }
 .head-desc p {
     font-size: 11px;
-    color: rgba(202, 171, 171, 0.804);
+    /* color: rgba(202, 171, 171, 0.804); */
+    color: wheat;
     text-align: right;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .main-header {
     padding: 20px 0;
@@ -165,7 +166,8 @@
 }
 .dc-right p {
     font-size: 14px;
-    color: rgb(59, 55, 55);
+    /* color: rgb(59, 55, 55); */
+    color: wheat;
     margin-bottom: 20px;
 }
 .dc-right .dc-explore {
