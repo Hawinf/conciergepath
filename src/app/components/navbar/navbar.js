@@ -79,7 +79,7 @@ export default function Navbar() {
             <h1>Plan Your Trip</h1>
               <div className='wrapper-planning'>
                 <div className='planning-icon'>
-                  <a href='' >
+                  <a href='https://tp.media/r?marker=509395&trs=288881&p=4114&u=https%3A%2F%2Faviasales.com&campaign_id=100' >
                     <img className='planning-logo' src='/flight.png' />
                     <h6>Find Cheap Flight</h6>
                   </a>

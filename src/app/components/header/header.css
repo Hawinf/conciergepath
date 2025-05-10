@@ -442,6 +442,12 @@ transform: rotate(-45deg) translateY(100%);
     width: 200px;
     padding: 10px;
 }
+.blog-desc h6 {
+    color: white;
+}
+.blog-desc h1 {
+    color: white;
+}
 .blog-desc p {
     font-size: 13px;
     color: rgb(151, 143, 143);
