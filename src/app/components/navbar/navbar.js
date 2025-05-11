@@ -36,19 +36,19 @@ export default function Navbar() {
     }
   };
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (containerRef.current && !containerRef.current.contains(event.target)) {
-        setActiveTab(null); // close if clicked outside
-      }
-    };
+  // useEffect(() => {
+  //   const handleClickOutside = (event) => {
+  //     if (containerRef.current && !containerRef.current.contains(event.target)) {
+  //       setActiveTab(null); // close if clicked outside
+  //     }
+  //   };
 
-    document.addEventListener('mousedown', handleClickOutside);
+  //   document.addEventListener('mousedown', handleClickOutside);
 
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener('mousedown', handleClickOutside);
+  //   };
+  // }, []);
 
     return (
       <div className={`navbar-wrapper ${showNavbar ? 'visible' : 'hidden'}`}>

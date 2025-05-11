@@ -210,6 +210,8 @@
     }
     .country-box {
         margin-top: 5px;
+        width: 100px;
+        justify-content: flex-start;
     }
     .country-box img {
         width: 20px;
