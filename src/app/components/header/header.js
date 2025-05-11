@@ -36,7 +36,7 @@ export default function Header() {
               <img src='/header-cp5.png' alt='kate' />
               <div className='head-desc'>
                   <a href='' className='link-blog'>READ MY BLOG</a>
-                  <a href='' className='link-video'>VIDEO</a>
+                  <a href='https://www.tiktok.com/@katsia55?_t=ZS-8wGN9551DlA&_r=1' target='blank' className='link-video'>VIDEO</a>
                   <p >I create travel guides and backpacking itineraries from around the world, as well as sharing photography resources and more.</p>
               </div>
           </header>
@@ -114,10 +114,10 @@ export default function Header() {
               <a><img src='/he3.jpeg' alt='KATE' /></a>
             </div>
           </div>
-          <button className="btn matrix">
+          <a href='https://www.tiktok.com/@katsia55?_t=ZS-8wGN9551DlA&_r=1' target="_blank" className="btn matrix">
             <span>WATCH MORE &#8608;</span>
             <div className="code-rain"></div>
-          </button>
+          </a>
         </div>
       </main>
       <main className='wrapper-feature'>

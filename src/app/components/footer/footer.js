@@ -11,13 +11,13 @@ export default function Footer() {
                     <h1>JOIN MY CHANNEL</h1>
                     
                     <div className='footer-social'>
-                        <a href=''>
+                        <a href='https://t.me/qatsiaryna' target='blank'>
                             <div className='footer-socialbtn'>
                                 <img src='/telegram.png' alt='kate telegram channel' />
                                 <p>TELEGRAM</p>
                             </div>
                         </a>
-                        <a href=''>
+                        <a href='https://www.tiktok.com/@katsia55?_t=ZS-8wGN9551DlA&_r=1' target='blank'>
                             <div className='footer-socialbtn1'>
                                 <img src='/tiktok.png' alt='kate telegram channel' />
                                 <p>TIKTOK</p>
