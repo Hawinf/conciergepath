@@ -127,7 +127,7 @@ export default function Navbar() {
                   </a>
                 </div>
             </div>
-            <p>ConciergePath @2025</p>
+            <p>© 2025 Kate. All rights reserved.</p>
           </div>
           )
         }
@@ -260,7 +260,7 @@ export default function Navbar() {
                     </a> */}
                 </div>
             </div>
-            <p className='destination-footer'>ConciergePath @2025</p>
+            <p className='destination-footer'>© 2025 Kate. All rights reserved.</p>
           </div>
           )
         }
