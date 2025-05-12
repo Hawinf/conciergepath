@@ -3,6 +3,7 @@ import './footer.css';
 export default function Footer() {
 
     return (
+        
         <footer className="wrapper-footer">
             
             <div className='above-footer'>
@@ -27,7 +28,50 @@ export default function Footer() {
                     <h6>Keep up with my newest content </h6>
                 </div>
             </div>
+            <div className='below-footer'>
+                <div className='section-one'>
+                    <h6>Popular Itineraries</h6>
+                    <div>
+                        <a>3 Days In Turkey</a>
+                    </div>
+                    <div>
+                        <a>3 Days In Georgia</a>
+                    </div>
+                </div>
+                <div className='section-one'>
+                    <h6>Top Destinations</h6>
+                    <div>
+                        <a>Turkey</a>
+                    </div>
+                    <div>
+                        <a>Georgia</a>
+                    </div>
+                </div>
+                <div className='section-one'>
+                    <h6>About</h6>
+                    <div>
+                        <a>About Me</a>
+                    </div>
+                    <div>
+                        <a>Shop</a>
+                    </div>
+                </div>
+                <div className='section-one'>
+                    <h6>Stay Update</h6>
+                    <div>
+                        <a href='https://t.me/qatsiaryna' target='blank'><img src='/telegram.png' alt='kate telegram channel' /></a>
+                        <a href='https://www.tiktok.com/@katsia55?_t=ZS-8wGN9551DlA&_r=1' target='blank'><img src='/tiktok.png' alt='kate telegram channel' /></a>
+                    </div>
+                    <p>© 2025 Kate. All rights reserved.</p>
+                </div>
+                
+            </div>
+                
             
         </footer>
+
+        
+    
+
     );
 };

@@ -60,8 +60,8 @@ export default function Navbar() {
             <input className='input-search' placeholder='Search'/>
           </div>
           <div className='social-section'>
-            <img className='social-ig' src="./instagram.png" alt='Hawinf' />
-            <img className='social-yt' src="./youtube.png" alt='Hawinf Youtube' />
+            <a href='https://t.me/qatsiaryna' target='blank'><img className='social-ig' src='/telegram.png' alt='kate telegram channel' /></a>
+            <a href='https://www.tiktok.com/@katsia55?_t=ZS-8wGN9551DlA&_r=1' target='blank'><img className='social-yt' src='/tiktok.png' alt='kate telegram channel' /></a>
           </div>
         </div>
         <div className='searchone-wrapper'>
