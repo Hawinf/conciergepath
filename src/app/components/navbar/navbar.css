@@ -33,6 +33,7 @@
     padding: 5px 10px;
     margin-top: 10px;
     background-color: rgba(0, 0, 0, 0.429);
+    color: whitesmoke;
 }
 .social-section {
     margin-top: 20px;
@@ -60,6 +61,19 @@
     border: 0;
     cursor: pointer;
     color: wheat;
+}
+.search-results {
+    color: whitesmoke;
+    
+}
+.result-section {
+    text-align: center;
+   
+}
+.result-section .resulst-desc {
+    font-size: 13px;
+    color: rgb(202, 190, 190);
+    margin-bottom: 10px;
 }
 /* PLANNING SECTION BELOW */
 .planning-section {

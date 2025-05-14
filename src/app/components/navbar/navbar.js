@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef, useState } from 'react';
+import blogData from '@/app/data/blogsData';
 import Link from 'next/link';
 import './navbar.css';
 
@@ -37,6 +38,61 @@ export default function Navbar() {
     }
   };
 
+  // SEARCHING BUTTON
+  const [query, setQuery] = useState('');
+  const [results, setResults] = useState([]);
+
+  const handleSearch = (e) => {
+    const value = e.target.value.toLowerCase();
+    setQuery(value);
+
+    if (!value) return setResults([]);
+
+    const matches = [];
+
+    for (const continent in blogData) {
+      const continentData = blogData[continent];
+
+      if (continent.includes(value)) {
+        matches.push({
+          label: continent,
+          type: 'Continent',
+          content: continentData.content,
+          href: `/discover-world/${continent}`,
+        });
+      }
+
+      for (const country in continentData.countries) {
+        const countryData = continentData.countries[country];
+
+        if (country.includes(value)) {
+          matches.push({
+            label: country,
+            type: 'Country',
+            content: countryData.content,
+            href: `/discover-world/${continent}/${country}`,
+          });
+        }
+
+        for (const city in countryData.cities) {
+          const cityData = countryData.cities[city];
+
+          if (city.includes(value)) {
+            matches.push({
+              label: city,
+              type: 'City',
+              content: cityData.content,
+              href: `/discover-world/${continent}/${country}/${city}`,
+            });
+          }
+        }
+      }
+    }
+
+    setResults(matches);
+  };
+  
+
   // useEffect(() => {
   //   const handleClickOutside = (event) => {
   //     if (containerRef.current && !containerRef.current.contains(event.target)) {
@@ -58,7 +114,10 @@ export default function Navbar() {
               <img className='navbar-logo' src="/logo.png" alt="ConciergePath Logo" width={30} height={30} />
           </div>
           <div>
-            <input className='input-search' placeholder='Search'/>
+            <input className='input-search' placeholder='Search'
+              value={query}
+              onChange={handleSearch}
+            />
           </div>
           <div className='social-section'>
             <a href='https://t.me/qatsiaryna' target='blank'><img className='social-ig' src='/telegram.png' alt='kate telegram channel' /></a>
@@ -68,12 +127,29 @@ export default function Navbar() {
         <div className='searchone-wrapper'>
             <input className='input-searchone' placeholder='Search'/>
         </div>
+
         <div className='navbar-below' ref={containerRef}>
           <button onClick={() => handleToggle('planning')}>Planning &#x25BC;</button>
           <button onClick={() => handleToggle('destination')}>Destination &#x25BC;</button>
           <button>About</button>
           <button>Shop</button>
         </div>
+        <div className='result-section'>
+            <ul className="search-results">
+            {results.map((item, index) => (
+              <li key={index} className="search-item">
+                <Link href={item.href}>
+                  <div>
+                    <strong>{item.label}</strong> <small>({item.type})</small>
+                    <p className='resulst-desc'>
+                      {item.content ? item.content.slice(0, 80) + '...' : 'No description available.'}
+                    </p>
+                  </div>
+                </Link>
+              </li>
+              ))}
+            </ul>
+          </div>
         {
           activeTab === "planning" && (
             <div className='planning-section'>
@@ -162,7 +238,7 @@ export default function Navbar() {
                         <div className='country-box'>
                           <img src='/kyrgyzstan.png' alt='kyrgyzstan'/>
                           <p>Kyrgyzstan</p>
-                        </div>
+          ``              </div>
                     </a>
                     <a href=''>
                         <div className='country-box'>
