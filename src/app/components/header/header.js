@@ -1,10 +1,12 @@
 'use client'
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 // import { motion } from "motion/react"
 import './header.css';
 
 
 export default function Header() {
+
   const [displayedText, setDisplayedText] = useState('');
   const fullText = 'WELCOME TO MY PAGE';
   const typingSpeed = 1500;
@@ -24,6 +26,8 @@ export default function Header() {
     return () => clearInterval(interval);
   }, []);
 
+  
+
 
   return (
     <div className='container-header'>
@@ -35,7 +39,7 @@ export default function Header() {
               </div>
               <img src='/header-cp5.png' alt='kate' />
               <div className='head-desc'>
-                  <a href='' className='link-blog'>READ MY BLOG</a>
+                  <Link href='/discover-world' className='link-blog'>READ MY BLOG</Link>
                   <a href='https://www.tiktok.com/@katsia55?_t=ZS-8wGN9551DlA&_r=1' target='blank' className='link-video'>VIDEO</a>
                   <p >I create travel guides and backpacking itineraries from around the world, as well as sharing photography resources and more.</p>
               </div>
@@ -90,10 +94,12 @@ export default function Header() {
           <h1 className='right-tittle'>DISCOVER</h1>
           <h1 className='right-tittle1'>THE WORLD &#8690;</h1>
           <p>We have written over 600+ travel guides and backpacking itineraries to provide all the information you need to help plan your dream trip around the world.</p>
-          <button className="btn matrix">
-            <span>EXPLORE DESTINATION &#8608;</span>
-            <div className="code-rain"></div>
-          </button>
+          <Link href='/discover-world' className='link-blog'>
+            <button className="btn matrix">
+              <span>EXPLORE DESTINATION &#8608;</span>
+              <div className="code-rain"></div>
+            </button>
+          </Link>
         </div>
       </main>
       <main className='about-section'>
