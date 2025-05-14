@@ -142,7 +142,7 @@ export default function Navbar() {
                 <div className='country-section'>
                     <a href=''>
                         <div className='country-box'>
-                          <img src='egypt.png' alt='egypt'/>
+                          <img src='/egypt.png' alt='egypt'/>
                           <p>Egypt</p>
                         </div>
                     </a>
@@ -153,43 +153,43 @@ export default function Navbar() {
                 <div className='country-section'>
                     <a href=''>
                         <div className='country-box'>
-                          <img src='indonesia.png' alt='indonesia'/>
+                          <img src='/indonesia.png' alt='indonesia'/>
                           <p>Indonesia</p>
                         </div>
                     </a>
                     <a href=''>
                         <div className='country-box'>
-                          <img src='kyrgyzstan.png' alt='kyrgyzstan'/>
+                          <img src='/kyrgyzstan.png' alt='kyrgyzstan'/>
                           <p>Kyrgyzstan</p>
                         </div>
                     </a>
                     <a href=''>
                         <div className='country-box'>
-                          <img src='qatar.png' alt='qatar'/>
+                          <img src='/qatar.png' alt='qatar'/>
                           <p>Qatar</p>
                         </div>
                     </a>
                     <a href=''>
                         <div className='country-box'>
-                          <img src='turkey.png' alt='turkey'/>
+                          <img src='/turkey.png' alt='turkey'/>
                           <p>Turkey</p>
                         </div>
                     </a>
                     <a href=''>
                         <div className='country-box'>
-                          <img src='united-arab-emirates.png' alt='united-arab-emirates'/>
+                          <img src='/united-arab-emirates.png' alt='united-arab-emirates'/>
                           <p>UAE</p>
                         </div>
                     </a>
                     <a href=''>
                         <div className='country-box'>
-                          <img src='uzbekistan.png' alt='uzbekistan'/>
+                          <img src='/uzbekistan.png' alt='uzbekistan'/>
                           <p>Uzbekistan</p>
                         </div>
                     </a>
                     <a href=''>
                         <div className='country-box'>
-                          <img src='kazakhstan.png' alt='kazakhstan'/>
+                          <img src='/kazakhstan.png' alt='kazakhstan'/>
                           <p>Kazakhstan</p>
                         </div>
                     </a>
@@ -200,25 +200,25 @@ export default function Navbar() {
                 <div className='country-section'>
                     <a href=''>
                         <div className='country-box'>
-                          <img src='belarus.png' alt='belarus'/>
+                          <img src='/belarus.png' alt='belarus'/>
                           <p>Belarus</p>
                         </div>
                     </a>
                     <a href=''>
                         <div className='country-box'>
-                          <img src='rusia.png' alt='rusia'/>
+                          <img src='/rusia.png' alt='rusia'/>
                           <p>Russia</p>
                         </div>
                     </a>
                     <a href=''>
                         <div className='country-box'>
-                          <img src='georgia.png' alt='georgia'/>
+                          <img src='/georgia.png' alt='georgia'/>
                           <p>Georgia</p>
                         </div>
                     </a>
                     <a href=''>
                         <div className='country-box'>
-                          <img src='armenia.png' alt='armenia'/>
+                          <img src='/armenia.png' alt='armenia'/>
                           <p>Armenia</p>
                         </div>
                     </a>

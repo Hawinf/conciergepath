@@ -13,7 +13,7 @@ export default function ContinentPage({ params }) {
   }
 
   return (
-    <main className="wrapper-continent" >
+    <div className="wrapper-cntns" >
       <Navbar />
       <div className='section-continent'>
         <h1>{continent.toUpperCase()} Blog</h1>
@@ -30,6 +30,6 @@ export default function ContinentPage({ params }) {
           ))}
         </ul>
       </div>
-    </main>
+    </div>
   );
 }
