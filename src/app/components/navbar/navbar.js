@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import './navbar.css';
 
 
@@ -151,12 +152,12 @@ export default function Navbar() {
             <div className='wrapper-continent'>
                 <h5>Asia</h5>
                 <div className='country-section'>
-                    <a href=''>
+                    <Link href='/discover-world/asia/indonesia'>
                         <div className='country-box'>
                           <img src='/indonesia.png' alt='indonesia'/>
                           <p>Indonesia</p>
                         </div>
-                    </a>
+                    </Link>
                     <a href=''>
                         <div className='country-box'>
                           <img src='/kyrgyzstan.png' alt='kyrgyzstan'/>
