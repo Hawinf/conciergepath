@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import Navbar from '../components/navbar/navbar';
-import blogData from '../data/blogsData';
+import {blogData} from '../data/blogsData';
 import './discover.css';
+
+export const metadata = {
+  title: "Discover Destinations – ConciergePath",
+  description: "Explore continents, countries, and cities around the world.",
+};
 
 
 export default function DiscoverWorld() {

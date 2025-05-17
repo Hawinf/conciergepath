@@ -2,11 +2,12 @@
 import { useEffect, useRef, useState } from 'react';
 import blogData from '@/app/data/blogsData';
 import Link from 'next/link';
+import Image from 'next/image';
 import './navbar.css';
 
 
 export default function Navbar() {
-
+  
   const [activeTab, setActiveTab] = useState(null);
   const containerRef = useRef(null);
 
@@ -108,104 +109,104 @@ export default function Navbar() {
   // }, []);
 
     return (
-      <div className={`navbar-wrapper ${showNavbar ? 'visible' : 'hidden'}`}>
-        <div className='navbar-section'>
-          <div>
-              <img className='navbar-logo' src="/logo.png" alt="ConciergePath Logo" width={30} height={30} />
-          </div>
-          <div>
+      <nav className={`navbar-wrapper ${showNavbar ? 'visible' : 'hidden'}`}>
+        <nav className='navbar-section'>
+          <nav>
+              <Image className='navbar-logo' src="/logo.png" alt="ConciergePath Logo" width={30} height={30} />
+          </nav>
+          <nav>
             <input className='input-search' placeholder='Search'
               value={query}
               onChange={handleSearch}
             />
-          </div>
-          <div className='social-section'>
-            <a href='https://t.me/qatsiaryna' target='blank'><img className='social-ig' src='/telegram.png' alt='kate telegram channel' /></a>
-            <a href='https://www.tiktok.com/@katsia55?_t=ZS-8wGN9551DlA&_r=1' target='blank'><img className='social-yt' src='/tiktok.png' alt='kate telegram channel' /></a>
-          </div>
-        </div>
-        <div className='searchone-wrapper'>
+          </nav>
+          <nav className='social-section'>
+            <Link href='https://t.me/qatsiaryna' target='blank'><Image className='social-ig' src='/telegram.png' width={'30'} height={'30'} alt='kate telegram channel' /></Link>
+            <Link href='https://www.tiktok.com/@katsia55?_t=ZS-8wGN9551DlA&_r=1' target='blank'><Image className='social-yt' width={'30'} height={'30'} src='/tiktok.png' alt='kate telegram channel' /></Link>
+          </nav>
+        </nav>
+        <nav className='searchone-wrapper'>
             <input className='input-searchone' placeholder='Search'/>
-        </div>
+        </nav>
 
-        <div className='navbar-below' ref={containerRef}>
+        <nav className='navbar-below' ref={containerRef}>
           <button onClick={() => handleToggle('planning')}>Planning &#x25BC;</button>
           <button onClick={() => handleToggle('destination')}>Destination &#x25BC;</button>
           <button>About</button>
           <button>Shop</button>
-        </div>
-        <div className='result-section'>
+        </nav>
+        <nav className='result-section'>
             <ul className="search-results">
             {results.map((item, index) => (
               <li key={index} className="search-item">
                 <Link href={item.href}>
-                  <div>
+                  <nav>
                     <strong>{item.label}</strong> <small>({item.type})</small>
                     <p className='resulst-desc'>
                       {item.content ? item.content.slice(0, 80) + '...' : 'No description available.'}
                     </p>
-                  </div>
+                  </nav>
                 </Link>
               </li>
               ))}
             </ul>
-          </div>
+        </nav>
         {
           activeTab === "planning" && (
-            <div className='planning-section'>
+          <nav className='planning-section'>
             <h1>Plan Your Trip</h1>
-              <div className='wrapper-planning'>
-                <div className='planning-icon'>
-                  <a href='https://tp.media/r?marker=509395&trs=288881&p=4114&u=https%3A%2F%2Faviasales.com&campaign_id=100' >
-                    <img className='planning-logo' src='/flight.png' />
+              <nav className='wrapper-planning'>
+                <nav className='planning-icon'>
+                  <Link href='https://tp.media/r?marker=509395&trs=288881&p=4114&u=https%3A%2F%2Faviasales.com&campaign_id=100' >
+                    <Image className='planning-logo' src='/flight.png' />
                     <h6>Find Cheap Flight</h6>
-                  </a>
-                </div>
-                <div className='planning-icon'>
-                  <a href=''>
-                    <img className='planning-logo' src='/bus.png' />
+                  </Link>
+                </nav>
+                <nav className='planning-icon'>
+                  <Link href=''>
+                    <Image className='planning-logo' src='/bus.png' />
                     <h6>Find Buses</h6>
-                  </a>
-                </div>
-                <div className='planning-icon'>
-                  <a href=''>
-                    <img className='planning-logo' src='/car-rent.png' />
+                  </Link>
+                </nav>
+                <nav className='planning-icon'>
+                  <Link href=''>
+                    <Image className='planning-logo' src='/car-rent.png' />
                     <h6>Find Car Rent</h6>
-                  </a>
-                </div>
-                <div className='planning-icon'>
-                  <a href=''>
-                    <img className='planning-logo' src='/jogging.png' />
+                  </Link>
+                </nav>
+                <nav className='planning-icon'>
+                  <Link href=''>
+                    <Image className='planning-logo' src='/jogging.png' />
                     <h6>Things To Do</h6>
-                  </a>
-                </div>
-                <div className='planning-icon'>
-                  <a href=''>
-                    <img className='planning-logo' src='/ticket.png' />
+                  </Link>
+                </nav>
+                <nav className='planning-icon'>
+                  <Link href=''>
+                    <Image className='planning-logo' src='/ticket.png' />
                     <h6>Find Tickets</h6>
-                  </a>
-                </div>
-                <div className='planning-icon'>
-                  <a href=''>
-                    <img className='planning-logo' src='/guide.png' />
+                  </Link>
+                </nav>
+                <nav className='planning-icon'>
+                  <Link href=''>
+                    <Image className='planning-logo' src='/guide.png' />
                     <h6>Find Travel Guide</h6>
-                  </a>
-                </div>
-                <div className='planning-icon'>
-                  <a href=''>
-                    <img className='planning-logo' src='/simcard.png' />
+                  </Link>
+                </nav>
+                <nav className='planning-icon'>
+                  <Link href=''>
+                    <Image className='planning-logo' src='/simcard.png' />
                     <h6>Find Esim Card</h6>
-                  </a>
-                </div>
-                <div className='planning-icon'>
-                  <a href=''>
-                    <img className='planning-logo' src='/food.png' />
+                  </Link>
+                </nav>
+                <nav className='planning-icon'>
+                  <Link href=''>
+                    <Image className='planning-logo' src='/food.png' />
                     <h6>Find Restaurant</h6>
-                  </a>
-                </div>
-            </div>
+                  </Link>
+                </nav>
+            </nav>
             <p>© 2025 Kate. All rights reserved.</p>
-          </div>
+          </nav>
           )
         }
           
@@ -344,6 +345,6 @@ export default function Navbar() {
           
         
         
-      </div>
+      </nav>
     );
   }
