@@ -1,6 +1,8 @@
 'use client'
 import { useEffect, useRef, useState } from 'react';
-import blogData from '@/app/data/blogsData';
+// import { blogData } from '../../../app/data/blogsData';
+import { blogData } from '../../data/blogsData';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import './navbar.css';
@@ -46,68 +48,53 @@ export default function Navbar() {
   const handleSearch = (e) => {
     const value = e.target.value.toLowerCase();
     setQuery(value);
-
+  
     if (!value) return setResults([]);
-
+  
     const matches = [];
-
+  
     for (const continent in blogData) {
       const continentData = blogData[continent];
-
+  
       if (continent.includes(value)) {
         matches.push({
           label: continent,
           type: 'Continent',
-          content: continentData.content,
+          content: continentData.description, // ✅ FIXED
           href: `/discover-world/${continent}`,
         });
       }
-
+  
       for (const country in continentData.countries) {
         const countryData = continentData.countries[country];
-
+  
         if (country.includes(value)) {
           matches.push({
             label: country,
             type: 'Country',
-            content: countryData.content,
+            content: countryData.description, // ✅ FIXED
             href: `/discover-world/${continent}/${country}`,
           });
         }
-
+  
         for (const city in countryData.cities) {
           const cityData = countryData.cities[city];
-
+  
           if (city.includes(value)) {
             matches.push({
               label: city,
               type: 'City',
-              content: cityData.content,
+              content: cityData.description, // ✅ FIXED
               href: `/discover-world/${continent}/${country}/${city}`,
             });
           }
         }
       }
     }
-
+  
     setResults(matches);
   };
   
-
-  // useEffect(() => {
-  //   const handleClickOutside = (event) => {
-  //     if (containerRef.current && !containerRef.current.contains(event.target)) {
-  //       setActiveTab(null); // close if clicked outside
-  //     }
-  //   };
-
-  //   document.addEventListener('mousedown', handleClickOutside);
-
-  //   return () => {
-  //     document.removeEventListener('mousedown', handleClickOutside);
-  //   };
-  // }, []);
-
     return (
       <nav className={`navbar-wrapper ${showNavbar ? 'visible' : 'hidden'}`}>
         <nav className='navbar-section'>

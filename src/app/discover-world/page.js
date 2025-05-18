@@ -13,6 +13,21 @@ export default function DiscoverWorld() {
   const continents = Object.keys(blogData);
 
   return (
+    <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "Discover the World – ConciergePath",
+          description:
+            "Explore continents, countries, and cities around the world with in-depth travel blogs and insider tips.",
+          url: "https://yourdomain.com/discover-world",
+        }),
+      }}
+    />
+
     <div className='section-dc'>
       <Navbar />
       <div className='wrapper-dc'>
@@ -32,5 +47,6 @@ export default function DiscoverWorld() {
         </ul>
       </div>
     </div>
+  </>
   );
 }

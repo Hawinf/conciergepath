@@ -11,7 +11,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// ✅ EXPORT the metadata here at the top level
+// ✅ ONLY metadata that belongs in metadata
 export const metadata = {
   title: 'ConciergePath – Plan Your Trips with Ease',
   description:
@@ -24,18 +24,16 @@ export const metadata = {
     'travel tips',
   ],
   authors: [{ name: 'ConciergePath Team' }],
-  viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
   icons: {
     icon: '/favicon.ico',
   },
-  themeColor: '#ffffff',
   openGraph: {
     type: 'website',
     title: 'ConciergePath – Your Travel Partner',
     description:
       'Discover and plan amazing trips across the globe with our expert travel concierge.',
-    url: 'https://yourdomain.com', // update once live
+    url: 'https://yourdomain.com',
     siteName: 'ConciergePath',
     images: [
       {
@@ -51,12 +49,19 @@ export const metadata = {
     title: 'ConciergePath – Your Travel Partner',
     description:
       'Plan your next travel adventure with ease and discover new destinations.',
-    creator: '@yourTwitterHandle', // update your handle
+    creator: '@yourTwitterHandle',
     images: ['/og-image.jpg'],
   },
   alternates: {
     canonical: 'https://yourdomain.com',
   },
+};
+
+// ✅ MOVE viewport config here
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({ children }) {
@@ -68,3 +73,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+

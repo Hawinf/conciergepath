@@ -32,3 +32,4 @@ export const blogData = {
   },
   // Add more continents...
 };
+
