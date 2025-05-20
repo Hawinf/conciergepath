@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useRef, useState } from 'react';
-// import { blogData } from '../../../app/data/blogsData';
-import { blogData } from '../../data/blogsData';
+import { useRouter } from 'next/navigation'; 
+import { searchIndex } from '@/app/data/searchIndex';
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -15,6 +15,10 @@ export default function Navbar() {
 
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+
+  const [query, setQuery] = useState('');
+  const [results, setResults] = useState([]);
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,60 +44,30 @@ export default function Navbar() {
       setActiveTab(tab); // switch
     }
   };
-
-  // SEARCHING BUTTON
-  const [query, setQuery] = useState('');
-  const [results, setResults] = useState([]);
+  
 
   const handleSearch = (e) => {
-    const value = e.target.value.toLowerCase();
+    const value = e.target.value;
     setQuery(value);
-  
-    if (!value) return setResults([]);
-  
-    const matches = [];
-  
-    for (const continent in blogData) {
-      const continentData = blogData[continent];
-  
-      if (continent.includes(value)) {
-        matches.push({
-          label: continent,
-          type: 'Continent',
-          content: continentData.description, // ✅ FIXED
-          href: `/discover-world/${continent}`,
-        });
-      }
-  
-      for (const country in continentData.countries) {
-        const countryData = continentData.countries[country];
-  
-        if (country.includes(value)) {
-          matches.push({
-            label: country,
-            type: 'Country',
-            content: countryData.description, // ✅ FIXED
-            href: `/discover-world/${continent}/${country}`,
-          });
-        }
-  
-        for (const city in countryData.cities) {
-          const cityData = countryData.cities[city];
-  
-          if (city.includes(value)) {
-            matches.push({
-              label: city,
-              type: 'City',
-              content: cityData.description, // ✅ FIXED
-              href: `/discover-world/${continent}/${country}/${city}`,
-            });
-          }
-        }
-      }
+
+    if (value.trim() === '') {
+      setResults([]); // ✅ Clear when input is empty
+      return;
     }
-  
-    setResults(matches);
+
+    const filtered = searchIndex.filter((item) =>
+      item.name.toLowerCase().includes(value.toLowerCase())
+    );
+
+    setResults(filtered);
   };
+
+  const handleSelect = (item) => {
+    setQuery('');
+    setResults([]);
+    router.push(item.url);
+  };
+  
   
     return (
       <nav className={`navbar-wrapper ${showNavbar ? 'visible' : 'hidden'}`}>
@@ -124,19 +98,19 @@ export default function Navbar() {
         </nav>
         <nav className='result-section'>
             <ul className="search-results">
-            {results.map((item, index) => (
-              <li key={index} className="search-item">
-                <Link href={item.href}>
-                  <nav>
-                    <strong>{item.label}</strong> <small>({item.type})</small>
-                    <p className='resulst-desc'>
-                      {item.content ? item.content.slice(0, 80) + '...' : 'No description available.'}
-                    </p>
-                  </nav>
-                </Link>
+            {results.map((item) => (
+              <li
+                key={item.url}
+                onClick={() => handleSelect(item)}
+                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              >
+                {item.name}{' '}
+                <span className="text-sm text-gray-500">({item.type})</span>
+                <span>{item.description}</span>
               </li>
-              ))}
-            </ul>
+            ))}
+        </ul>
+      
         </nav>
         {
           activeTab === "planning" && (
