@@ -18,5 +18,33 @@ export const countryData = {
         description: "Land of smiles and amazing food.",
       },
     ],
+    europe: [
+      {
+        id: 'germany',
+        name: 'Germany',
+        description: 'Explore Germany',
+      },
+    ],
+    northamerica: [
+      {
+        id: 'chile',
+        name: 'Chile',
+        description: 'Explore Chile',
+      },
+    ],
+    southamerica: [
+      {
+        id: 'argentina',
+        name: 'Argentina',
+        description: 'Explore Argentine',
+      },
+    ],
+    oceania: [
+      {
+        id: 'australia',
+        name: 'Australia',
+        description: 'Explore Australia',
+      },
+    ],
   };
   

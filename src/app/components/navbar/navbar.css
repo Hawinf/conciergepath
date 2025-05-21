@@ -64,7 +64,10 @@
 }
 .search-results {
     color: whitesmoke;
-    
+}
+.search-results li {
+    margin: 7px;
+    cursor: pointer;
 }
 .result-section {
     text-align: center;

@@ -49,40 +49,40 @@ export default function Header() {
       <div className='main-header'>
         <div className='continents-map'>
           <div className='box-map'>
-            <a href=''>
+            <Link href='/continent/africa'>
               <img className='each-map' src='/africa.png' alt='africa' />
               <p>Africa</p>
-            </a>
+            </Link>
           </div>
           <div className='box-map'>
-            <a href=''>
+            <Link href='/continent/asia'>
               <img className='each-map' src='/asia.png' alt='asia' />
               <p>Asia</p>
-            </a>
+            </Link>
           </div>
           <div className='box-map'>
-            <a href=''>
+            <Link href='/continent/europe'>
               <img className='each-map' src='/europe.png' alt='europe' />
               <p>Europe</p>
-            </a>
+            </Link>
           </div>
           <div className='box-map'>
-            <a href=''>
+            <Link href='/continent/northamerica'>
               <img className='each-map' src='/north-america.png' alt='north-america' />
               <p>North America</p>
-            </a>
+            </Link>
           </div>
           <div className='box-map'>
-            <a href=''>
+            <Link href='/continent/southamerica'>
               <img className='each-map' src='/south-america.png' alt='south-america' />
               <p>South America</p>
-            </a>
+            </Link>
           </div>
           <div className='box-map'>
-            <a href=''>
+            <Link href='/continent/oceania'>
               <img className='each-map' src='/oceania.png' alt='oceania' />
               <p>Oceania</p>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

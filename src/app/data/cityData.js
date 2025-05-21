@@ -10,5 +10,18 @@ export const cityData = {
       { id: 'bangkok', name: 'Bangkok', description: "Vibrant capital city." },
       { id: 'chiangmai', name: 'Chiang Mai', description: "Cultural city in the north." },
     ],
+    germany: [
+      { id: 'berlin', name: 'Berlin', description: "Vibrant capital city." },
+      { id: 'hamburg', name: 'Hamburg', description: "Cultural city in the north." },
+    ],
+    chile: [
+      { id: 'santiago', name: 'Santiago', description: "Vibrant capital city." },
+    ],
+    argentina: [
+      { id: 'buenosaires', name: 'Buenos Aires', description: "Vibrant capital city." },
+    ],
+    australia: [
+      { id: 'sydney', name: 'Sydney', description: "Vibrant capital city." },
+    ],
   };
   
