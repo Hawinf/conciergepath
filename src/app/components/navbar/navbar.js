@@ -1,8 +1,7 @@
-'use client'
+'use client';
 import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation'; 
 import { searchIndex } from '@/app/data/searchIndex';
-
 import Link from 'next/link';
 import Image from 'next/image';
 import './navbar.css';
@@ -73,7 +72,9 @@ export default function Navbar() {
       <nav className={`navbar-wrapper ${showNavbar ? 'visible' : 'hidden'}`}>
         <nav className='navbar-section'>
           <nav>
+            <Link href='/'>
               <Image className='navbar-logo' src="/logo.png" alt="ConciergePath Logo" width={30} height={30} />
+            </Link>
           </nav>
           <nav>
             <input className='input-search' placeholder='Search'
@@ -94,7 +95,7 @@ export default function Navbar() {
           <button onClick={() => handleToggle('planning')}>Planning &#x25BC;</button>
           <button onClick={() => handleToggle('destination')}>Destination &#x25BC;</button>
           <button>About</button>
-          <button>Shop</button>
+          <button><Link href='/shop'>Shop</Link></button>  
         </nav>
         <nav className='result-section'>
             <ul className="search-results">
@@ -119,49 +120,49 @@ export default function Navbar() {
               <nav className='wrapper-planning'>
                 <nav className='planning-icon'>
                   <Link href='https://tp.media/r?marker=509395&trs=288881&p=4114&u=https%3A%2F%2Faviasales.com&campaign_id=100' >
-                    <Image className='planning-logo' src='/flight.png' />
+                    <Image alt='Flight Tickets – Affordable Air Travel Deals' className='planning-logo' src='/flight.png' width={30} height={30} />
                     <h6>Find Cheap Flight</h6>
                   </Link>
                 </nav>
                 <nav className='planning-icon'>
                   <Link href=''>
-                    <Image className='planning-logo' src='/bus.png' />
+                    <Image alt='Reliable Intercity Bus Service' className='planning-logo' src='/bus.png'  width={30} height={30} />
                     <h6>Find Buses</h6>
                   </Link>
                 </nav>
                 <nav className='planning-icon'>
                   <Link href=''>
-                    <Image className='planning-logo' src='/car-rent.png' />
+                    <Image alt='Affordable Car Rentals Worldwide' className='planning-logo' src='/car-rent.png'  width={30} height={30} />
                     <h6>Find Car Rent</h6>
                   </Link>
                 </nav>
                 <nav className='planning-icon'>
                   <Link href=''>
-                    <Image className='planning-logo' src='/jogging.png' />
+                    <Image alt='Top Things to Do – Book Tours and Experiences' className='planning-logo' src='/jogging.png'  width={30} height={30} />
                     <h6>Things To Do</h6>
                   </Link>
                 </nav>
                 <nav className='planning-icon'>
                   <Link href=''>
-                    <Image className='planning-logo' src='/ticket.png' />
+                    <Image alt='Entry Ticket for Top Attractions and Tours' className='planning-logo' src='/ticket.png'  width={30} height={30} />
                     <h6>Find Tickets</h6>
                   </Link>
                 </nav>
                 <nav className='planning-icon'>
                   <Link href=''>
-                    <Image className='planning-logo' src='/guide.png' />
+                    <Image alt='Comprehensive Travel Guid' className='planning-logo' src='/guide.png'  width={30} height={30} />
                     <h6>Find Travel Guide</h6>
                   </Link>
                 </nav>
                 <nav className='planning-icon'>
                   <Link href=''>
-                    <Image className='planning-logo' src='/simcard.png' />
+                    <Image alt='Best Travel SIM Card for Tourists' className='planning-logo' src='/simcard.png'  width={30} height={30} />
                     <h6>Find Esim Card</h6>
                   </Link>
                 </nav>
                 <nav className='planning-icon'>
                   <Link href=''>
-                    <Image className='planning-logo' src='/food.png' />
+                    <Image alt='Find the Best Local Restaurants Near You' className='planning-logo' src='/food.png'  width={30} height={30} />
                     <h6>Find Restaurant</h6>
                   </Link>
                 </nav>
