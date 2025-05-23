@@ -24,3 +24,110 @@
     padding: 5px 15px;
     border-radius: 10px;
 }
+.shop-section {
+    color: rgb(246, 163, 7);
+    margin-top: 15px;
+    display: flex;
+}
+.shop-branch {
+    background-image: url('/website-service.jpg');
+    height: 500px;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    filter: brightness(75%);
+}
+.shop-branch h1 {
+    margin-top: 400px;
+    width: 80%;
+}
+.shop-branch2 {
+    margin-left: 10px;
+}
+.section-branch-top {
+    background-image: url('/website-service1.jpg');
+    height: 250px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-size: cover;
+}
+.section-branch-top h1 {
+    margin-top: 180px;
+    width: 80%;
+}
+.section-branch-down {
+    background-image: url('/website-service-2.jpg');
+    height: 240px;
+    border-radius: 10px;
+    padding: 10px;
+    background-size: cover;
+}
+.section-branch-down h1 {
+    margin-top: 140px;
+    width: 80%;
+}
+@media (max-width:992px) {
+    .shop-branch h1 {
+        font-size: 17px;
+    }
+    .section-branch-top h1 {
+        font-size: 17px;
+    }
+    .section-branch-down h1 {
+        font-size: 17px;
+    }
+}
+@media (max-width:768px) {
+    .shop-wrapper {
+        padding-top: 130px;
+        width: 90%;
+    }
+    .shop-nav h1 {
+        font-size: 16px;
+        padding: 4px;
+    }
+    .shop-nav .nav-orderbtn {
+        font-size: 16px;
+
+    }
+}
+@media (max-width:576px) {
+    .shop-wrapper {
+        width: 92%;
+    }
+    .shop-nav {
+        display: block;
+        text-align: center;
+    }
+    .shop-nav h1 {
+        font-size: 14px;
+        padding: 4px;
+        margin-bottom: 7px;
+    }
+    .shop-nav .nav-orderbtn {
+        font-size: 14px;
+
+    }
+    .shop-section {
+        display: block;
+    }
+    .shop-branch2 {
+        display: flex;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .section-branch-down {
+        height: 250px;
+        margin-left: 10px;
+    }
+    .shop-branch h1 {
+        font-size: 13px;
+    }
+    .section-branch-top h1 {
+        font-size: 13px;
+    }
+    .section-branch-down h1 {
+        font-size: 13px;
+    }
+}
