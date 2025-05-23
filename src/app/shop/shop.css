@@ -25,7 +25,7 @@
     border-radius: 10px;
 }
 .shop-section {
-    color: rgb(246, 163, 7);
+    color: whitesmoke;
     margin-top: 15px;
     display: flex;
 }
@@ -35,11 +35,19 @@
     background-size: cover;
     border-radius: 10px;
     padding: 10px;
-    filter: brightness(75%);
+    filter: brightness(85%);
+}
+.shop-branch .shop-btn {
+    background-color: wheat;
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: black;
+    font-weight: 700;
 }
 .shop-branch h1 {
-    margin-top: 400px;
+    margin-top: 380px;
     width: 80%;
+    margin-bottom: 10px;
 }
 .shop-branch2 {
     margin-left: 10px;
@@ -51,6 +59,7 @@
     border-radius: 10px;
     padding: 10px;
     background-size: cover;
+    filter: brightness(85%);
 }
 .section-branch-top h1 {
     margin-top: 180px;
@@ -62,10 +71,25 @@
     border-radius: 10px;
     padding: 10px;
     background-size: cover;
+    filter: brightness(85%);
+
 }
 .section-branch-down h1 {
     margin-top: 140px;
     width: 80%;
+}
+.shop-desc {
+    margin-top: 40px;
+}
+.shop-desc h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+.shop-desc h6{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 1px;
 }
 @media (max-width:992px) {
     .shop-branch h1 {
@@ -90,6 +114,9 @@
     .shop-nav .nav-orderbtn {
         font-size: 16px;
 
+    }
+    .section-branch-down h1 {
+        margin-top: 150px;
     }
 }
 @media (max-width:576px) {
@@ -123,11 +150,16 @@
     }
     .shop-branch h1 {
         font-size: 13px;
+        margin-top: 400px;
     }
     .section-branch-top h1 {
         font-size: 13px;
     }
     .section-branch-down h1 {
         font-size: 13px;
+        margin-top: 180px;
+    }
+    .shop-desc h1 {
+        font-size: 20px;
     }
 }
