@@ -82,7 +82,7 @@
     margin-top: 40px;
 }
 .shop-desc h1 {
-    color: whitesmoke;
+    color: wheat;
     text-align: center;
 }
 .shop-desc h6{
@@ -103,6 +103,10 @@
 .content-left h5 {
     margin-bottom: 20px;
     text-decoration: underline;
+    color: wheat;
+}
+.content-left ul li {
+    font-size: 13px;
 }
 .shop-content .content-right {
     color: white;
@@ -111,6 +115,10 @@
 .content-right h5 {
     margin-bottom: 20px;
     text-decoration: underline;
+    color: wheat;
+}
+.content-right ul li {
+    font-size: 13px;
 }
 @media (max-width:992px) {
     .shop-branch h1 {
@@ -143,11 +151,13 @@
         display: block;
     }
     .shop-content .content-left {
-        width: 100%;
+        width: 90%;
+        margin: auto;
     }
     .shop-content .content-right {
-        margin-top: 20px;
-        width: 100%;
+        padding-top: 20px;
+        width: 90%;
+        margin: auto;
     }
 }
 @media (max-width:576px) {
