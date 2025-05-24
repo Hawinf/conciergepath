@@ -1,9 +1,54 @@
+'use client';
 import './shop.css';
 import Navbar from '../components/navbar/navbar';
 import Link from 'next/link';
 import Footer from '../components/footer/footer';
+import { useState } from 'react';
+
 
 export default function Shop() {
+    const faqs = [
+        {
+          question: 'What services do you offer?',
+          answer: 'We build landing pages, company profiles, and ecommerce websites tailored to your needs.',
+        },
+        {
+          question: 'Do you offer monthly maintenance?',
+          answer: 'Yes, with our monthly subscription, we manage content updates, new articles, and website edits.',
+        },
+        {
+          question: 'How long does it take to build a website?',
+          answer: 'Most websites are completed in 4–7 days depending on complexity.',
+        },
+      ];
+
+      function FaqItem({ question, answer }) {
+        const [open, setOpen] = useState(false);
+      
+        return (
+          <>
+            <button
+              onClick={() => setOpen(!open)}
+              style={{
+                background: '#f1f1f1',
+                padding: '10px',
+                width: '100%',
+                border: 'none',
+                textAlign: 'left',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+              }}
+            >
+              {question}
+            </button>
+            {open && (
+              <div style={{ padding: '10px', border: '1px solid #ddd', background: '#fafafa' }}>
+                {answer}
+              </div>
+            )}
+          </>
+        );
+      }
 
     return (
         <>
@@ -35,9 +80,9 @@ export default function Shop() {
                     <nav className='content-left'>
                         <h5>We build responsive, SEO-friendly websites tailored to your business:</h5>
                         <ul>
-                            <li>Landing Pages – Optimized for lead generation and conversion.</li>
-                            <li>Company Profile Websites – Highlight your team, services, and achievements.</li>
-                            <li>Ecommerce Websites – Sell products with secure payment integration, product pages, and inventory management.</li>
+                            <li><b>Landing Pages</b> – Optimized for lead generation and conversion.</li>
+                            <li><b>Company Profile Websites</b> – Highlight your team, services, and achievements.</li>
+                            <li><b>Ecommerce Websites</b> – Sell products with secure payment integration, product pages, and inventory management.</li>
                         </ul>
                     </nav>
                     <nav className='content-right'>
@@ -50,6 +95,14 @@ export default function Shop() {
                         </ul>
                     </nav>
                 </main>
+                <nav className='faq-question'>
+                    <h1>Frequently Asked Questions</h1>
+                        {faqs.map((faq, index) => (
+                    <nav key={index} style={{ marginBottom: '1rem' }}>
+                        <FaqItem question={faq.question} answer={faq.answer} />
+                    </nav>
+                    ))};
+                </nav>
             </main>
             <Footer />
         </>

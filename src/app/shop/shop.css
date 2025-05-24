@@ -120,6 +120,14 @@
 .content-right ul li {
     font-size: 13px;
 }
+.faq-question {
+    margin-top: 40px;
+}
+.faq-question h1{
+    font-size: 17px;
+    color: wheat;
+    margin-bottom: 20px;
+}
 @media (max-width:992px) {
     .shop-branch h1 {
         font-size: 17px;
