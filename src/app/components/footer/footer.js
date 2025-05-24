@@ -54,7 +54,7 @@ export default function Footer() {
                         <a>About Me</a>
                     </div>
                     <div>
-                        <a>Shop</a>
+                        <Link href='/shop'>Shop</Link>
                     </div>
                 </div>
                 <div className='section-one'>
