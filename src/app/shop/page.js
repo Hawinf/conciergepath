@@ -31,8 +31,27 @@ export default function Shop() {
                     <h1>Build a Stunning Website — We Do the Work, You Focus on Your Business</h1>
                     <h6>We specialize in creating professional websites for businesses, startups, and entrepreneurs across the globe. Whether you need a landing page, a corporate company profile, or a fully functional ecommerce store, we design and deliver websites that reflect your brand and convert visitors into customers.</h6>
                 </main>
+                <main className='shop-content'>
+                    <nav className='content-left'>
+                        <h5>We build responsive, SEO-friendly websites tailored to your business</h5>
+                        <ul>
+                            <li>Landing Pages – Optimized for lead generation and conversion.</li>
+                            <li>Company Profile Websites – Highlight your team, services, and achievements.</li>
+                            <li>Ecommerce Websites – Sell products with secure payment integration, product pages, and inventory management.</li>
+                        </ul>
+                    </nav>
+                    <nav className='content-right'>
+                        <h5>Want to keep your website fresh without lifting a finger? Choose our monthly management plan, and we’ll</h5>
+                        <ul>
+                            <li>Update content, images, and text as needed.</li>
+                            <li>Publish blog posts or articles provided by you.</li>
+                            <li>Add new pages or promotions.</li>
+                            <li>Ensure site security, backups, and performance.</li>
+                        </ul>
+                    </nav>
+                </main>
             </main>
-            <Footer />
+            <Footer />``
         </>
     );
 };``
