@@ -18,7 +18,7 @@ export default function Shop() {
         },
         {
           question: 'How long does it take to build a website?',
-          answer: 'Most websites are completed in 4–7 days depending on complexity.',
+          answer: 'Most websites are completed in 4`–7 days depending on complexity.',
         },
       ];
 
