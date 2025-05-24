@@ -185,10 +185,11 @@
     }
     .section-branch-top h1 {
         font-size: 13px;
+        margin-top: 170px;
     }
     .section-branch-down h1 {
         font-size: 13px;
-        margin-top: 180px;
+        margin-top: 170px;
     }
     .shop-desc h1 {
         font-size: 20px;
