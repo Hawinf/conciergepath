@@ -177,7 +177,7 @@ export default function Navbar() {
           activeTab === "shop" && (
           <nav className='shop-menu'>
             <h1>Let Us Plan Your Perfect Trip – From Itinerary to Reservation</h1>
-            <Link href='' className='shop-btn'>Get your trip plan!</Link>
+            <Link href='/plan' className='shop-btn'>Get your trip plan!</Link>
             <h1>Professional Website Creation – You Relax, We Build</h1>
             <Link href='/shop' className='shop-btn'>Get Your Website Today!</Link>
             <p>© 2025 Kate. All rights reserved.</p>

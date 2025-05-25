@@ -1,26 +1,31 @@
+
 'use client';
 import Head from 'next/head';
-import './shop.css';
+import '../shop/shop.css';
 import Navbar from '../components/navbar/navbar';
 import Link from 'next/link';
 import Footer from '../components/footer/footer';
 import { useState } from 'react';
 
 
-export default function Shop() {
+export default function Plan() {
     const faqs = [
         {
-          question: 'What services do you offer?',
-          answer: 'We build landing pages, company profiles, and ecommerce websites tailored to your needs.',
+          question: 'What does your trip planning service include?',
+          answer: 'We provide personalized travel itineraries based on your destination, budget, and preferences. This includes suggestions for flights, accommodations, attractions, and activities.',
         },
         {
-          question: 'Do you offer monthly maintenance?',
-          answer: 'Yes, with our monthly subscription, we manage content updates, new articles, and website edits.',
+          question: 'Do you charge extra for making reservations?',
+          answer: 'Our service includes trip planning and reservation coordination as part of the package. Any third-party booking costs (like hotel or tour fees) are separate and paid directly to the provider.',
         },
         {
-          question: 'How long does it take to build a website?',
-          answer: 'Most websites are completed in 4`–7 days depending on complexity.',
+          question: 'How do I receive my travel itinerary?',
+          answer: 'You will receive a detailed PDF itinerary by email, and optionally through WhatsApp, including booking links, maps, and personalized tips.',
         },
+        {
+            question: 'Is your trip planning service available worldwide?',
+            answer: 'Our planning trip is currently available only in Dubai. However, our travel planning services extend to multiple countries we have personally explored, ensuring expert insights and tailored itineraries.',
+          },
       ];
 
       function FaqItem({ question, answer }) {
@@ -50,11 +55,12 @@ export default function Shop() {
           </>
         );
       }
+    
 
     return (
         <>
           <Head>
-              <title>Website Development Services | Landing Pages, Company Profiles & Ecommerce</title>
+              <title>Let Us Plan Your Perfect Trip – From Itinerary to Reservation</title>
               <meta name="description" content="Professional website development services. Get a custom website or subscribe for monthly updates and content management." />
               <meta name="keywords" content="website design, landing page, ecommerce, company profile, monthly web maintenance" />
               <meta property="og:title" content="Website Design Services – Build Your Online Presence" />
@@ -100,43 +106,42 @@ export default function Shop() {
             <Navbar />
             <main className='shop-wrapper'>
                 <nav className='shop-nav'>
-                    <h1>"Get a Stunning Website – Custom Design Services"</h1>
-                    <Link href='/web-guide.pdf' download="My-Guide.pdf" target='blank' className='nav-orderbtn'>Details</Link>
+                    <h1>"Let Us Plan Your Perfect Trip – From Itinerary to Reservation                    "</h1>
+                    <Link href='/web-guide.pdf' download="" target='blank' className='nav-orderbtn'>Details</Link>
                 </nav>
                 <main className='shop-section'>
                     <nav className='shop-branch'>
-                        <h1>Empowering Your Business Online – One Pixel at a Time.</h1>
+                        <h1>From daily itineraries to bookings, so you can just enjoy the journey.</h1>
                         <Link href='https://wa.me/971506841998?text=Hi%20I%20am%20interested%20in%20your%20services' target='blank' className='shop-btn'>Shop</Link>
                     </nav>
                     <nav className='shop-branch2'>
                         <main className='section-branch-top'>
-                            <h1>More Than a Website – It's Your Bridge to the World.</h1>
+                            <h1>Tailored to your style and budget.</h1>
                         </main>
                         <main className='section-branch-down'>
-                            <h1>Engage. Inspire. Convert. Websites `That Speak to Your Audience.</h1>
+                            <h1>we organize it all for a hassle-free adventure.</h1>
                         </main>
                     </nav>
                 </main>
                 <main className='shop-desc'>
-                    <h1>Build a Stunning Website — We Do the Work, You Focus on Your Business</h1>
-                    <h6>We specialize in creating professional websites for businesses, startups, and entrepreneurs across the globe. Whether you need a landing page, a corporate company profile, or a fully functional ecommerce store, we design and deliver websites that reflect your brand and convert visitors into customers.</h6>
+                    <h1>Complete Travel Planning Service – Itinerary & Reservation Experts</h1>
+                    <h6>Discover a seamless way to travel. Our expert travel planning service covers everything from crafting personalized itineraries to securing your reservations. Whether you're visiting Dubai or exploring other global destinations we've experienced, we handle the details so you can focus on enjoying the journey. Ideal for travelers who value time, convenience, and unique experiences.</h6>
                 </main>
                 <main className='shop-content'>
                     <nav className='content-left'>
-                        <h5>We build responsive, SEO-friendly websites tailored to your business:</h5>
+                        <h5>We craft personalized, hassle-free travel experiences designed around your needs :</h5>
                         <ul>
-                            <li><b>Landing Pages</b> – Optimized for lead generation and conversion.</li>
-                            <li><b>Company Profile Websites</b> – Highlight your team, services, and achievements.</li>
-                            <li><b>Ecommerce Websites</b> – Sell products with secure payment integration, product pages, and inventory management.</li>
+                            <li><b>Itinerary Planning</b> – Custom travel plans based on your interests, schedule, and budget.</li>
+                            <li><b>Reservation Management</b> – Hotel bookings, tours, and experiences secured for you in advance.</li>
+                            <li><b>Local Expertise</b> – Dubai-based services with curated travel options for countries we’ve personally explored.</li>
                         </ul>
                     </nav>
                     <nav className='content-right'>
-                        <h5>Want to keep your website fresh without lifting a finger? Choose our monthly management plan, and we’ll:</h5>
+                        <h5>Plan Smarter, Travel Better :</h5>
                         <ul>
-                            <li>Update content, images, and text as needed.</li>
-                            <li>Publish blog posts or articles provided by you.</li>
-                            <li>Add new pages or promotions.</li>
-                            <li>Ensure site security, backups, and performance.</li>
+                            <li><b>Travel Blueprint</b> - Perfect for independent travelers who just need a plan.
+                            We create a personalized vacation itinerary based on your interests, preferences, and budget. Includes suggested destinations, activities, and timeline – you handle the bookings.</li>
+                            <li><b>Plan & Assist</b> - Ideal for travelers who want a stress-free planning and reservation process. We craft your travel plan and assist you with booking flights, hotels, activities, and restaurant reservations. You make the final payment decisions — we handle the research and coordination.</li>
                         </ul>
                     </nav>
                 </main>
