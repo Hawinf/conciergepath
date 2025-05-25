@@ -95,7 +95,7 @@ export default function Navbar() {
           <button onClick={() => handleToggle('planning')}>Planning &#x25BC;</button>
           <button onClick={() => handleToggle('destination')}>Destination &#x25BC;</button>
           <button>About</button>
-          <button><Link href='/shop'>Shop</Link></button>  
+          <button onClick={() => handleToggle('shop')}>Shop &#x25BC;</button>  
         </nav>
         <nav className='result-section'>
             <ul className="search-results">
@@ -171,6 +171,20 @@ export default function Navbar() {
           </nav>
           )
         }
+
+        {/* try */}
+        {
+          activeTab === "shop" && (
+          <nav className='shop-menu'>
+            <h1>Let Us Plan Your Perfect Trip – From Itinerary to Reservation</h1>
+            <Link href='' className='shop-btn'>Get your trip plan!</Link>
+            <h1>Professional Website Creation – You Relax, We Build</h1>
+            <Link href='/shop' className='shop-btn'>Get Your Website Today!</Link>
+            <p>© 2025 Kate. All rights reserved.</p>
+          </nav>
+          )
+        }
+        {/* try */}
           
 
         {
@@ -201,7 +215,7 @@ export default function Navbar() {
                         <div className='country-box'>
                           <img src='/kyrgyzstan.png' alt='kyrgyzstan'/>
                           <p>Kyrgyzstan</p>
-          ``              </div>
+                        </div>
                     </a>
                     <a href=''>
                         <div className='country-box'>
