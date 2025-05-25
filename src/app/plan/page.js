@@ -24,7 +24,7 @@ export default function Plan() {
         },
         {
             question: 'Is your trip planning service available worldwide?',
-            answer: 'Our planning trip is currently available only in Dubai. However, our travel planning services extend to multiple countries we have personally explored, ensuring expert insights and tailored itineraries.',
+            answer: 'Our plan`ning trip is currently available only in Dubai. However, our travel planning services extend to multiple countries we have personally explored, ensuring expert insights and tailored itineraries.',
           },
       ];
 
