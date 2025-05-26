@@ -60,6 +60,12 @@ export default function Footer() {
                         <Link href='/shop'>Let us make website for you</Link>
                     </div>
                     <div>
+                        <Link href='cookie-policy'>Cookie and Policy</Link>
+                    </div>
+                    <div>
+                        <Link href='terms-of-service'>Terms Of Service</Link>
+                    </div>
+                    <div>
                         <Link href='privacy-policy'>Privacy and Policy</Link>
                     </div>
                 </div>
@@ -73,7 +79,7 @@ export default function Footer() {
                 </div>
                 
             </div>
-                ``
+                
             
         </footer>
 
