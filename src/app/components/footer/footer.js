@@ -54,7 +54,13 @@ export default function Footer() {
                         <a>About Me</a>
                     </div>
                     <div>
-                        <Link href='/shop'>Shop</Link>
+                        <Link href='/plan'>Plan Your Trip</Link>
+                    </div>
+                    <div>
+                        <Link href='/shop'>Let us make website for you</Link>
+                    </div>
+                    <div>
+                        <a>Privacy and Policy</a>
                     </div>
                 </div>
                 <div className='section-one'>
