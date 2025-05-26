@@ -60,7 +60,7 @@ export default function Footer() {
                         <Link href='/shop'>Let us make website for you</Link>
                     </div>
                     <div>
-                        <a>Privacy and Policy</a>
+                        <Link href='privacy-policy'>Privacy and Policy</Link>
                     </div>
                 </div>
                 <div className='section-one'>
@@ -73,7 +73,7 @@ export default function Footer() {
                 </div>
                 
             </div>
-                
+                ``
             
         </footer>
 

@@ -1,0 +1,26 @@
+.pp-wrapper {
+    padding-top: 170px;
+    width: 80%;
+    margin: auto;
+    color: white;
+    padding-bottom: 40px;
+}
+.pp-wrapper h1 {
+    font-size: 19px;
+}
+.pp-wrapper h2 {
+    font-size: 15px;
+}
+.pp-wrapper p {
+    font-size: 13px;
+}
+.pp-wrapper ul li {
+    font-size: 13px;
+}
+
+@media (max-width:576px) {
+    .pp-wrapper {
+        padding-top: 120px;
+        width: 87%;
+    }
+}
