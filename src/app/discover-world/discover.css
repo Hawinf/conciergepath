@@ -40,6 +40,11 @@ ul {
     color: wheat;
     margin-bottom: 30px;
   }
+.continent-list {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid wheat;
+}
 .dg-eachcountry {
     border-radius: 10px;
 }
@@ -70,4 +75,5 @@ ul {
     ul li {
         font-size: 13px;
     }
+    
 }
