@@ -94,7 +94,7 @@ export default function Navbar() {
         <nav className='navbar-below' ref={containerRef}>
           <button onClick={() => handleToggle('planning')}>Planning &#x25BC;</button>
           <button onClick={() => handleToggle('destination')}>Destination &#x25BC;</button>
-          <button>About</button>
+          <button onClick={() => handleToggle('about')}>About &#x25BC;</button>
           <button onClick={() => handleToggle('shop')}>Shop &#x25BC;</button>  
         </nav>
         <nav className='result-section'>
@@ -172,7 +172,7 @@ export default function Navbar() {
           )
         }
 
-        {/* try */}
+        
         {
           activeTab === "shop" && (
           <nav className='shop-menu'>
@@ -184,7 +184,22 @@ export default function Navbar() {
           </nav>
           )
         }
-        {/* try */}
+
+        {
+          activeTab === "about" && (
+          <nav className='about-menu-section'>
+            <ul>
+                <li><Link href='/plan'>Plan Your Trip</Link></li>
+                <li><Link href='/shop'>Let us make website for you</Link></li>
+                <li><Link href='cookie-policy'>Cookie and Policy</Link></li>
+                <li><Link href='terms-of-service'>Terms Of Service</Link></li>
+                <li><Link href='privacy-policy'>Privacy and Policy</Link></li>
+            </ul> 
+            <p>© 2025 Kate. All rights reserved.</p>
+          </nav>
+          )
+        }
+        
           
 
         {

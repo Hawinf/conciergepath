@@ -1,3 +1,73 @@
-.main-discovery-world {
+/* .main-discovery-world {
+    background-image: url('/discoverworld.jpg');
+} */
+.discover-world-wrapper {
+    padding-top: 170px;
+    width: 80%;
+    margin: auto;
+}
+.discover-world-wrapper .dg-tittle {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.discover-world-wrapper .dg-desc {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: white;
+}
+.dg-internal {
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: underline;
     color: wheat;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 15px;
+    color: wheat;
+    margin-bottom: 30px;
+  }
+.dg-eachcountry {
+    border-radius: 10px;
+}
+.dg-countries-name {
+    margin-top: -70px;
+    font-size: 30px;
+    color: white;
+}
+.dg-countries-desc {
+    font-size: 13px;
+    color: whitesmoke;
+}
+@media (max-width:768px) {
+    .discover-world-wrapper {
+        width: 90%;
+    }
+}
+@media (max-width:576px) {
+    .discover-world-wrapper {
+        padding-top: 120px;
+    }
+    .discover-world-wrapper .dg-tittle {
+        font-size: 30px;
+    }
+    .discover-world-wrapper .dg-desc {
+        font-size: 11px;
+    }
+    ul li {
+        font-size: 13px;
+    }
 }

@@ -87,7 +87,7 @@ export default function TermsOfService() {
         <p>
           We reserve the right to update these terms at any time. Changes will be reflected on this page.
         </p>
-        <br></br>``
+        <br></br>
         <h2>8. Contact Us</h2><br></br>
         <p>
           For questions about these Terms, contact us at: <a href="mailto:support@yourwebsitename.com">support@yourwebsitename.com</a>

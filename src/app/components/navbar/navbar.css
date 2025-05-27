@@ -159,6 +159,23 @@
     color: white;
     margin: 30px 0;
 }
+.about-menu-section  {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.692);
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+.about-menu-section ul{
+    list-style-type: none;
+}
+.about-menu-section ul li {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.about-menu-section p {
+    font-size: 13px;
+}
 .shop-menu {
     color: white;
     background-color: rgba(0, 0, 0, 0.692);
