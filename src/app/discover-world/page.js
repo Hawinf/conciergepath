@@ -43,9 +43,9 @@ import './discover.css';
     <nav className='discover-world-wrapper'>
       <h1 className='dg-tittle'>DISCOVER WORLD</h1>
       <h5 className='dg-desc'>
-      Looking for a detailed travel <Link href='/plan'><span className='dg-internal'>guide</span></Link> to plan your next adventure? You're in the right place! On this page, you'll find comprehensive travel guides, backpacking itineraries, and destination tips—all organized by continent, country, and city. Whether you're dreaming of a trip to Europe, Asia, the Middle East, or beyond, we've grouped all our guides to help you easily discover where to go, what to do, and how to plan the perfect journey. From local food spots to must-see attractions and budget-friendly itineraries, your next trip starts here.``
+      Looking for a detailed travel <Link href='/plan'><span className='dg-internal'>guide</span></Link> to plan your next adventure? You're in the right place! On this page, you'll find comprehensive travel guides, backpacking itineraries, and destination tips—all organized by continent, country, and city. Whether you're dreaming of a trip to Europe, Asia, the Middle East, or beyond, we've grouped all our guides to help you easily discover where to go, what to do, and how to plan the perfect journey. From local food spots to must-see attractions and budget-friendly itineraries, your next trip starts here.
       </h5>
-      <ul>
+      <ul className='dg-results'>
         {continents.map(continent => (
           <li key={continent.id}>
             <Link href={`/continent/${continent.id}`} className='continent-list'>
@@ -54,7 +54,7 @@ import './discover.css';
           </li>
         ))}
       </ul>
-    </nav>
+    </nav>``
 
     <section className='dg-country-section'>
       <ul className='country-list'>

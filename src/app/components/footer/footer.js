@@ -8,7 +8,7 @@ export default function Footer() {
         <footer className="wrapper-footer">
             
             <div className='above-footer'>
-                <img className='footer-img' src='followingbg4.png' alt='follow me'/>
+                <img className='footer-img' src='/followingbg4.png' alt='travel package'/>
                 <div className='footer-follow'>
                     <h1>JOIN MY CHANNEL</h1>
                     

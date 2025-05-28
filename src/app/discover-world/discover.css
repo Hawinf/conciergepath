@@ -26,12 +26,11 @@
     text-decoration: underline;
     color: wheat;
 }
-ul {
+.dg-results {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
-
   }
   
   li {
@@ -40,6 +39,9 @@ ul {
     color: wheat;
     margin-bottom: 30px;
   }
+.dg-country-section {
+    text-align: center;
+}
 .continent-list {
     padding: 5px 10px;
     border-radius: 5px;
