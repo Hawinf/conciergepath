@@ -68,10 +68,13 @@
 .search-results li {
     margin: 7px;
     cursor: pointer;
+    padding: 5px;
+    display: inline-block;
 }
+
 .result-section {
     text-align: center;
-   
+    background-color: rgba(0, 0, 0, 0.449);
 }
 .result-section .resulst-desc {
     font-size: 13px;
