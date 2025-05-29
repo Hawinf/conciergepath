@@ -88,7 +88,7 @@ export default function ContinentPage({ params }) {
                     <Image src='/bus.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
                     <h6>Find cheap flight to {capitalizedContinent}</h6>
                   </Link>
-                </nav>
+                </nav>``
                 <nav className='cp-affbox'>
                   <Link href=''>
                     <Image src='/car-rent.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
