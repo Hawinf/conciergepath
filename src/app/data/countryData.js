@@ -3,7 +3,7 @@ export const countryData = {
       {
         id: 'egypt',
         name: 'Egypt',
-        description: "Discover Kenya's wildlife and safaris.",
+        description: "Discover the wonders of Egypt — from the majestic Pyramids of Giza and the ancient temples of Luxor to the bustling streets of Cairo and the beauty of the Nile. Plan your perfect Egypt travel itinerary with tips, guides, and must-see destinations.",
         image: '/egypt.jpg', 
       },
     ],
@@ -11,13 +11,13 @@ export const countryData = {
       {
         id: 'kyrgyzstan',
         name: 'Kyrgyzstan',
-        description: 'later the description',
+        description: 'Explore the hidden beauty of Kyrgyzstan — from the alpine lakes of Issyk-Kul to the rugged Tien Shan mountains. Discover top travel tips, cultural insights, and adventure guides for your journey through Central Asia.',
         image: '/kyrgyzstan.jpg',
       },
       {
         id: 'qatar',
         name: 'Qatar',
-        description: 'about qatar',
+        description: 'Discover Qatars blend of tradition and innovation — explore Dohas skyline, desert adventures, cultural landmarks, and travel tips for this Middle Eastern gem.',
         image: '/qatar.jpg',
       },
       {
