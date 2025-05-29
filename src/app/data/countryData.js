@@ -1,17 +1,10 @@
 export const countryData = {
     africa: [
       {
-        id: 'kenya',
-        name: 'Kenya',
-        description: "Discover Kenya's wildlife and safaris.",
-        image: '/website-service-2.jpg', 
-      },
-      {
         id: 'egypt',
         name: 'Egypt',
-        description: "Ancient wonders of Egypt await.",
-        image: '/website-service-2.jpg', 
-
+        description: "Discover Kenya's wildlife and safaris.",
+        image: '/egypt.jpg', 
       },
     ],
     asia: [

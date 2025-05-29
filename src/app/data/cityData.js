@@ -1,8 +1,4 @@
 export const cityData = {
-    kenya: [
-      { id: 'nairobi', name: 'Nairobi', description: "Capital city of Kenya." ,image: '/Traveleurope.jpg', },
-      { id: 'mombasa', name: 'Mombasa', description: "Coastal city with beaches." ,image: '/Traveleurope.jpg', },
-    ],
     egypt: [
       { id: 'cairo', name: 'Cairo', description: "The bustling capital city." ,image: '/Traveleurope.jpg', },
     ],
