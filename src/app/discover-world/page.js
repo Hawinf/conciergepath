@@ -54,7 +54,7 @@ import './discover.css';
           </li>
         ))}
       </ul>
-    </nav>``
+    </nav>
 
     <section className='dg-country-section'>
       <ul className='country-list'>

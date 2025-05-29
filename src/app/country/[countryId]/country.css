@@ -1,4 +1,66 @@
-.country-page {
+.countpage-img {
+    width: 100%;
+    height: 700px;
+    filter: blur(3px) brightness(70%);
+}
+.countpage-descsection {
+    position: absolute;
+    top: 20%;
+    margin-bottom: 30px;
+}
+.countpage-tittlesection {
+    margin: auto;
+    width: 70%;
+}
+.countpage-tittlesection h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: honeydew;
+    text-align: center;
+}
+.countpage-headdesc {
+    text-align: center;
+    margin: auto;
+    line-height: 26px;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+.countpage-citymenu {
+    text-decoration: underline;
+    font-size: 14px;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+.countpage-eachcities {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 14px;
+    border: 1px solid wheat;
+    border-radius: 4px;
     color: wheat;
-    padding-top: 170px;
+}
+
+@media (max-width:768px) {
+    .countpage-tittlesection h1{
+        font-size: 40px;
+    }
+    .countpage-tittlesection {
+        width: 80%;
+    }
+    .countpage-headdesc {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+@media (max-width:576px) {
+    .countpage-img {
+        height: 500px;
+    }
+    .countpage-tittlesection {
+        width: 90%;
+    }
+    .countpage-citymenu {
+        font-size: 12px;
+    }
 }

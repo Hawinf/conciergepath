@@ -36,7 +36,7 @@ export const cityData = {
     armenia: [
       { id: 'yerevan', name: 'Yerevan', description: 'city of Yerevan', image: '/armenia.jpg'}
     ],
-    chile: [
+    mexico: [
       { id: 'santiago', name: 'Santiago', description: "Vibrant capital city." ,image: '/Traveleurope.jpg', },
     ],
     argentina: [

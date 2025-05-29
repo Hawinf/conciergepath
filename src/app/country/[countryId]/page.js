@@ -5,6 +5,7 @@ import { cityData } from '@/app/data/cityData';
 import { countryData } from '@/app/data/countryData'; // ✅ import countryData
 import Navbar from '@/app/components/navbar/navbar';
 import Footer from '@/app/components/footer/footer';
+import './country.css';
 
 export default function CountryPage({ params }) {
   const { countryId } = params;
@@ -47,11 +48,10 @@ export default function CountryPage({ params }) {
         />
       </Head>
       <Navbar/>
-      <main style={{ padding: '20px' }}>
-        <h1>Explore {currentCountry?.name || countryId}</h1>
-
+      <main className='countpage-wrapper'>
         {currentCountry?.image && (
-          <Image
+          <Image 
+            className='countpage-img'
             src={currentCountry.image}
             alt={currentCountry.name}
             width={600}
@@ -59,34 +59,39 @@ export default function CountryPage({ params }) {
             style={{ borderRadius: '12px', marginBottom: '20px' }}
           />
         )}
+        <nav className='countpage-descsection'>
+          <main className='countpage-tittlesection'>
+            <h1>{currentCountry?.name || countryId}</h1>
+            {currentCountry?.description && (
+              <p className='countpage-headdesc'>
+                {currentCountry.description}
+              </p>
+            )}
+            <h2 className='countpage-citymenu'>Popular Cities:</h2>
+            {cities.length === 0 ? (
+              <p>No cities found for this country.</p>
+            ) : (
+              <ul style={{listStyle: 'none' }}>
+                {cities.map((city) => (
+                  <li key={city.id} className='countpage-eachcities'>
+                    <Link
+                      href={`/city/${city.id}`}
+                      style={{
+                        color: '#0070f3',
+                        textDecoration: 'underline',
+                        fontWeight: 'bold',
+                      }}
+                    >
+                      {city.name}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+            )}
+          </main>
+        </nav>
 
-        {currentCountry?.description && (
-          <p style={{ fontSize: '1.1rem', marginBottom: '20px' }}>
-            {currentCountry.description}
-          </p>
-        )}
-
-        <h2>Popular Cities</h2>
-        {cities.length === 0 ? (
-          <p>No cities found for this country.</p>
-        ) : (
-          <ul style={{ padding: 0, listStyle: 'none' }}>
-            {cities.map((city) => (
-              <li key={city.id} style={{ marginBottom: '10px' }}>
-                <Link
-                  href={`/city/${city.id}`}
-                  style={{
-                    color: '#0070f3',
-                    textDecoration: 'underline',
-                    fontWeight: 'bold',
-                  }}
-                >
-                  {city.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}
+        
       </main>
       <Footer/>
     </>

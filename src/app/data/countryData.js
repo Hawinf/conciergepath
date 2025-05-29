@@ -23,7 +23,7 @@ export const countryData = {
       {
         id: 'uae',
         name: 'United Arab Emirates',
-        description: 'about uae',
+        description: 'The United Arab Emirates (UAE) is a top Middle East travel destination known for its iconic Dubai skyscrapers, Abu Dhabi beaches, rich culture, and thrilling desert adventures. From the towering Burj Khalifa to vibrant souks and luxury resorts, the UAE offers a perfect mix of modern wonders and traditional charm. Whether youre into shopping, food, history, or outdoor adventures, the UAE has something for every traveler.',
         image: '/uae.jpg',
       },
       {
