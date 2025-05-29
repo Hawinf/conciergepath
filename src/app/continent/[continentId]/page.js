@@ -11,6 +11,8 @@ export default function ContinentPage({ params }) {
   const { continentId } = params;
   const baseUrl = 'https://yourdomain.com';
 
+  const capitalizedContinent = continentId.charAt(0).toUpperCase() + continentId.slice(1);
+
   const countries = countryData?.[continentId.toLowerCase()] || [];
   const currentContinent = continents.find(
     (c) => c.id.toLowerCase() === continentId.toLowerCase()
@@ -72,11 +74,62 @@ export default function ContinentPage({ params }) {
               </ul>
             )}
           </main>
+          <nav className='continentpage-aff'>
+            <h1 className='cp-afftittle'>ITINERARIES</h1>
+            <main className='affiliate-section'>
+                <nav className='cp-affbox'>
+                  <Link href=''>
+                    <Image src='/flight.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
+                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                  </Link>
+                </nav>
+                <nav className='cp-affbox'>
+                  <Link href=''>
+                    <Image src='/bus.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
+                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                  </Link>
+                </nav>
+                <nav className='cp-affbox'>
+                  <Link href=''>
+                    <Image src='/car-rent.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
+                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                  </Link>
+                </nav>
+                <nav className='cp-affbox'>
+                  <Link href=''>
+                    <Image src='/jogging.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
+                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                  </Link>
+                </nav>
+                <nav className='cp-affbox'>
+                  <Link href=''>
+                    <Image src='/ticket.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
+                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                  </Link>
+                </nav>
+                <nav className='cp-affbox'>
+                  <Link href=''>
+                    <Image src='/guide.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
+                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                  </Link>
+                </nav>
+                <nav className='cp-affbox'>
+                  <Link href=''>
+                    <Image src='/food.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
+                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                  </Link>
+                </nav>
+                <nav className='cp-affbox'>
+                  <Link href=''>
+                    <Image src='/simcard.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
+                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                  </Link>
+                </nav>
+            </main>
+          </nav>
         </section>
         )}
 
-
-        {/* <h1>Explore {continentId}</h1> */}
         
       </main>
       <Footer />
