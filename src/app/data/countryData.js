@@ -17,7 +17,7 @@ export const countryData = {
       {
         id: 'qatar',
         name: 'Qatar',
-        description: 'Discover Qatars blend of tradition and innovation — explore Dohas skyline, desert adventures, cultural landmarks, and travel tips for this Middle Eastern gem.',
+        description: 'Discover Qatar`s blend of tradition and innovation — explore Dohas skyline, desert adventures, cultural landmarks, and travel tips for this Middle Eastern gem.',
         image: '/qatar.jpg',
       },
       {
