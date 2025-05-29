@@ -23,5 +23,5 @@ export const cityData = {
     australia: [
       { id: 'sydney', name: 'Sydney', description: "Vibrant capital city." ,image: '/Traveleurope.jpg', },
     ],
-  };
+  };``
   
