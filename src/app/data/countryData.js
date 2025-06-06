@@ -92,7 +92,7 @@ export const countryData = {
     oceania: [
       {
         id: 'australia',
-        name: 'AUSTRALIA',
+        name: 'AUSTRALIA`',
         description: 'COMING SOON',
         image: '/comingsoon.jpg', 
 
