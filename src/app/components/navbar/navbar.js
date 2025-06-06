@@ -207,90 +207,90 @@ export default function Navbar() {
             <div className='wrapper-destination'>
             <h1>Plan Your Destinaton</h1>
             <div className='wrapper-continent'>
-                <h5>Africa</h5>
+                <Link href='/continent/africa'><h5>Africa</h5></Link>
                 <div className='country-section'>
-                    <a href=''>
+                    <Link href='/country/egypt'>
                         <div className='country-box'>
                           <img src='/egypt.png' alt='egypt'/>
                           <p>Egypt</p>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className='wrapper-continent'>
-                <h5>Asia</h5>
+                <Link href='/continent/asia'><h5>Asia</h5></Link>
                 <div className='country-section'>
-                    <Link href='/discover-world/asia/indonesia'>
+                    <Link href='/country/indonesia'>
                         <div className='country-box'>
                           <img src='/indonesia.png' alt='indonesia'/>
                           <p>Indonesia</p>
                         </div>
                     </Link>
-                    <a href=''>
+                    <Link href='/country/kyrgyzstan'>
                         <div className='country-box'>
                           <img src='/kyrgyzstan.png' alt='kyrgyzstan'/>
                           <p>Kyrgyzstan</p>
                         </div>
-                    </a>
-                    <a href=''>
+                    </Link>
+                    <Link href='/country/qatar'>
                         <div className='country-box'>
                           <img src='/qatar.png' alt='qatar'/>
                           <p>Qatar</p>
                         </div>
-                    </a>
-                    <a href=''>
+                    </Link>
+                    <Link href='/country/turkey'>
                         <div className='country-box'>
                           <img src='/turkey.png' alt='turkey'/>
                           <p>Turkey</p>
                         </div>
-                    </a>
-                    <a href=''>
+                    </Link>
+                    <Link href='/country/uae'>
                         <div className='country-box'>
                           <img src='/united-arab-emirates.png' alt='united-arab-emirates'/>
                           <p>UAE</p>
                         </div>
-                    </a>
-                    <a href=''>
+                    </Link>
+                    <Link href='/country/uzbekistan'>
                         <div className='country-box'>
                           <img src='/uzbekistan.png' alt='uzbekistan'/>
                           <p>Uzbekistan</p>
                         </div>
-                    </a>
-                    <a href=''>
+                    </Link>
+                    <Link href='/country/kazakhstan'>
                         <div className='country-box'>
                           <img src='/kazakhstan.png' alt='kazakhstan'/>
                           <p>Kazakhstan</p>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className='wrapper-continent'>
-                <h5>Europe</h5>
+                <Link href='/continent/europe'><h5>Europe</h5></Link>
                 <div className='country-section'>
-                    <a href=''>
+                    <Link href='/country/belarus'>
                         <div className='country-box'>
                           <img src='/belarus.png' alt='belarus'/>
                           <p>Belarus</p>
                         </div>
-                    </a>
-                    <a href=''>
+                    </Link>
+                    <Link href='/country/russia'>
                         <div className='country-box'>
                           <img src='/rusia.png' alt='rusia'/>
                           <p>Russia</p>
                         </div>
-                    </a>
-                    <a href=''>
+                    </Link>
+                    <Link href='/country/georgia'>
                         <div className='country-box'>
                           <img src='/georgia.png' alt='georgia'/>
                           <p>Georgia</p>
                         </div>
-                    </a>
-                    <a href=''>
+                    </Link>
+                    <Link href='/country/armenia'>
                         <div className='country-box'>
                           <img src='/armenia.png' alt='armenia'/>
                           <p>Armenia</p>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className='wrapper-continent'>
