@@ -87,6 +87,7 @@
     .cp-affbox {
         margin: 5px;
         padding: 9px 10px;
+        width: 150px;
     }
     .cp-affbox h6 {
         font-size: 10px;
