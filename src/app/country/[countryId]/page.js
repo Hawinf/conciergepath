@@ -71,7 +71,7 @@ export default function CountryPage({ params }) {
             {cities.length === 0 ? (
               <p>No cities found for this country.</p>
             ) : (
-              <ul style={{listStyle: 'none' }}>
+              <ul style={{listStyle: 'none'}}>
                 {cities.map((city) => (
                   <li key={city.id} className='countpage-eachcities'>
                     <Link
