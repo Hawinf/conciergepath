@@ -72,7 +72,7 @@ import './discover.css';
                   />
                 )}
                 <h6 className='dg-countries-name'>{country.name}</h6>
-                <p className='dg-countries-desc'>{country.description}</p>
+                <p className='dg-countries-desc'>{country.description.slice(0, 40)}</p>
               </Link>
             </li>
           ))
