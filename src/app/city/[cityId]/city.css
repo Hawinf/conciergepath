@@ -25,3 +25,17 @@
     line-height: 26px;
     text-align: center;
 }
+@media (max-width:768px) {
+    .citypage-tittle {
+        font-size: 20px;
+    }
+    .citypage-desc {
+        font-size: 11px;
+        line-height: 20px;
+    }
+}
+@media (max-width:576px) {
+    .citypage-desc {
+        width: 95%;
+    }
+}
