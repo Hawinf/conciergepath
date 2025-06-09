@@ -76,11 +76,6 @@ export default function CountryPage({ params }) {
                   <li key={city.id} className='countpage-eachcities'>
                     <Link
                       href={`/city/${city.id}`}
-                      style={{
-                        color: '#0070f3',
-                        textDecoration: 'underline',
-                        fontWeight: 'bold',
-                      }}
                     >
                       {city.name}
                     </Link>
