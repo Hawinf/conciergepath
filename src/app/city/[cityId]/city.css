@@ -35,6 +35,15 @@
     }
 }
 @media (max-width:576px) {
+    .cityhead-image {
+        height: 500px;
+    }
+    .cityhead-navbar {
+        top: 15%;
+    }
+    .citypage-tittle {
+        padding-bottom: 10px;
+    }
     .citypage-desc {
         width: 95%;
     }
