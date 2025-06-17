@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { cityData } from '@/app/data/cityData';
 import './city.css';
 import Navbar from '@/app/components/navbar/navbar';
+import Footer from '@/app/components/footer/footer';
 
 export default function CityPage({ params }) {
   const { cityId } = params;
@@ -65,6 +66,7 @@ export default function CityPage({ params }) {
         </nav>
         
       </main>
+      <Footer/>
     </>
   );
 }

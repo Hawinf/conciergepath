@@ -8,7 +8,7 @@ import './header.css';
 export default function Header() {
 
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = 'WELCOME TO MY PAGE';
+  const fullText = 'EXPLORE DUBAI';
   const typingSpeed = 1500;
 
   useEffect(() => {
@@ -108,25 +108,41 @@ export default function Header() {
           <h3>{displayedText}<span className="blinking-cursor">|</span></h3>
           <div className='main-about'>
             <div className="holographic-card">
-              <a><img src='/downsection.jpeg' alt='KATE' /></a>
+              <Link href=''>
+                <img src='/restaurants.jpg' alt='KATE' />
+                <h6>Restaurants And Bars In Palm Jumeirah</h6>
+                <p>By Katy</p>
+              </Link>
             </div>
             <div className="holographic-card">
-              <a><img src='/he1.jpeg' alt='KATE' /></a>
+              <Link href=''>
+                <img src='/beaches.jpg' alt='KATE' />
+                <h6>Beach Club In Dubai</h6>
+                <p>By Katy</p>
+              </Link>
             </div>
             <div className="holographic-card">
-              <a><img src='/he2.jpeg' alt='KATE' /></a>
+              <Link href=''>
+                <img src='/jlt.jpg' alt='KATE' />
+                <h6>Places To Eat In JLT</h6>
+                <p>By Katy</p>
+              </Link>
             </div>
             <div className="holographic-card">
-              <a><img src='/he3.jpeg' alt='KATE' /></a>
+              <Link href=''>
+                <img src='/public-beach.jpg' alt='KATE' />
+                <h6>Public Beaches In Dubai</h6>
+                <p>By Katy</p>
+              </Link>
             </div>
           </div>
           <a href='https://www.tiktok.com/@katsia55?_t=ZS-8wGN9551DlA&_r=1' target="_blank" className="btn matrix">
-            <span>WATCH MORE &#8608;</span>
+            <span>EXPLORE DUBAI &#8608;</span>
             <div className="code-rain"></div>
           </a>
         </div>
       </main>
-      <main className='wrapper-feature'>
+      {/* <main className='wrapper-feature'>
         <h4>AS FEATURE ON</h4>
         <div className='feature-image'>
           <div className='box-feature'>
@@ -139,7 +155,7 @@ export default function Header() {
             <a href=''><img className='national' src='/nationalg-logo.png' alt='BBC' /></a>
           </div>
         </div>
-      </main>
+      </main> */}
       <main className='wrapper-blog'>
         <h5 className='blog-tittle'>LATEST BLOG POST</h5>
         <div className='blog-section'>
@@ -148,7 +164,7 @@ export default function Header() {
               <div className='blog-desc'>
                 <h6>Dubai</h6>
                 <h1>25 PLACES MUST VISIT IN DUBAI</h1>
-                <p>By Kate P</p>
+                <p>By Katy</p>
               </div>
             </div>
             <div className='each-box'>
@@ -156,7 +172,7 @@ export default function Header() {
               <div className='blog-desc'>
                 <h6>Georgia</h6>
                 <h1>3 Days In Georgia</h1>
-                <p>By Kate P</p>
+                <p>By Katy</p>
               </div>
             </div>
             <div className='each-box'>
@@ -164,7 +180,7 @@ export default function Header() {
               <div className='blog-desc'>
                 <h6>Armenia</h6>
                 <h1>3 Days In Armenia</h1>
-                <p>By Kate P</p>
+                <p>By Katy</p>
               </div>
             </div>
             <div className='each-box'>
@@ -172,7 +188,7 @@ export default function Header() {
               <div className='blog-desc'>
                 <h6>Turkey</h6>
                 <h1>Place Must Visit In Turkey</h1>
-                <p>By Kate P</p>
+                <p>By Katy</p>
               </div>
             </div>
         </div>
