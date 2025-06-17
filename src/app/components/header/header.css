@@ -549,7 +549,9 @@ transform: rotate(-45deg) translateY(100%);
         font-size: 50px;
         text-align: center;
     }
-    
+    .container-about {
+        width: 100%;
+    }
     .melting-text-container {
         margin-top: -18px;
     }
@@ -579,10 +581,14 @@ transform: rotate(-45deg) translateY(100%);
         font-size: 12px;
     }
     .container-about {
-        width: 95%;
+        width: 100%;
     }
     .main-about img {
         width: 100%;
+    }
+    .holographic-card h6 {
+        margin-top: -70px;
+        font-size: 16px;
     }
     .wrapper-feature {
         padding: 10px 0px;
