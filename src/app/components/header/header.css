@@ -549,10 +549,7 @@ transform: rotate(-45deg) translateY(100%);
         font-size: 50px;
         text-align: center;
     }
-    .holographic-card h6 {
-        margin-top: -60px;
-        width: 100%;
-    }
+    
     .melting-text-container {
         margin-top: -18px;
     }
