@@ -39,8 +39,8 @@ export default function Header() {
               </div>
               <img src='/header-cp5.png' alt='kate' />
               <div className='head-desc'>
-                  <Link href='/discover-world' className='link-blog'>READ MY BLOG</Link>
-                  <a href='https://www.tiktok.com/@katsia55?_t=ZS-8wGN9551DlA&_r=1' target='blank' className='link-video'>VIDEO</a>
+                  <Link href='/discover-world' className='link-blog'>DISCOVER WORLD</Link>
+                  <a href='/discover-dubai' className='link-video'>DUBAI</a>
                   <p >I create travel guides and backpacking itineraries from around the world, as well as sharing photography resources and more.</p>
               </div>
           </header>
