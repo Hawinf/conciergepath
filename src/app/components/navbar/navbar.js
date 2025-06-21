@@ -273,7 +273,7 @@ export default function Navbar() {
                           <p>Belarus</p>
                         </div>
                     </Link>
-                    <Link href='/country/russia'>
+                    <Link href='/country/russ`ia'>
                         <div className='country-box'>
                           <img src='/rusia.png' alt='rusia'/>
                           <p>Russia</p>

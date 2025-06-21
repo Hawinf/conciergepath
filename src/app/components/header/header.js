@@ -136,7 +136,7 @@ export default function Header() {
               </Link>
             </div>
           </div>
-          <a href='https://www.tiktok.com/@katsia55?_t=ZS-8wGN9551DlA&_r=1' target="_blank" className="btn matrix">
+          <a href='/discover-dubai' className="btn matrix">
             <span>EXPLORE DUBAI &#8608;</span>
             <div className="code-rain"></div>
           </a>
