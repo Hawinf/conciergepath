@@ -1,0 +1,30 @@
+.blogs-header {
+    width: 100%;
+    height: 700px;
+    filter: brightness(50%) blur(2px);
+}
+.blog-headerdesc {
+    position: absolute;
+    top: 20%;
+    
+}
+.blog-headertittle {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+.blog-headerdesc .blog-headerdescriptions {
+    width: 80%;
+    margin: auto;
+    line-height: 26px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .blog-headertittle {
+        font-size: 50px;
+    }
+}

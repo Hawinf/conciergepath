@@ -1,5 +1,9 @@
+import Navbar from '@/app/components/navbar/navbar';
 import dubaiBlogs from '../../../data/dubaiBlogs';
 import Head from 'next/head';
+import Image from 'next/image';
+import Footer from '@/app/components/footer/footer';
+import './blogs.css';
 
 export async function generateStaticParams() {
   return dubaiBlogs.map(post => ({
@@ -21,23 +25,27 @@ export default function BlogPost({ params }) {
 
   return (
     <>
+      <Navbar/>
       <Head>
         <title>{post.title}</title>
         <meta name="description" content={post.description} />
         <meta name="keywords" content={post.keywords.join(', ')} />
       </Head>
 
-      <div className="max-w-3xl mx-auto px-4 py-10">
-        <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
-        <img
+      <nav>
+        <Image
+          width={100} height={100}
           src={post.image}
           alt={post.title}
-          className="w-full h-64 object-cover rounded-xl mb-6"
+          className='blogs-header'
         />
-        <p className="text-gray-700 mb-6">{post.description}</p>
-
+        <main className='blog-headerdesc'>
+            <h1 className='blog-headertittle'>{post.title}</h1>
+            <p className='blog-headerdescriptions'>{post.description}</p>
+        </main>
         {/* Render blog content here */}
-      </div>
+      </nav>
+      <Footer/>
     </>
   );
 }
