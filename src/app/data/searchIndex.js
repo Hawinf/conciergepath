@@ -1,5 +1,5 @@
 // /app/data/searchIndex.js
-
+import dubaiBlogs from './dubaiBlogs'; // ✅ correct for default export
 import { continents } from './continents';
 import { countryData } from './countryData';
 import { cityData } from './cityData';
@@ -32,6 +32,16 @@ export const searchIndex = [
       url: `/city/${city.id}`,
     }))
   ),
+
+  // Add Dubai Blogs
+  // Add Dubai Blogs
+  ...dubaiBlogs.map((post) => ({
+  id: `${post.category}-${post.location}`,
+  name: capitalize(post.title),
+  type: 'dubai-blog',
+  url: `/blog/${post.category}/${post.location}`,
+})),
+
 ];
 
 function capitalize(str) {
