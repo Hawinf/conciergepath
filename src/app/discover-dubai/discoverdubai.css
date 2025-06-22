@@ -1,0 +1,49 @@
+.wrapper-discoverdubai {
+    padding-top: 170px;
+    width: 80%;
+    margin: auto;
+}
+.discoverdubai-navbar .discoverdubai-tittle {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.discoverdubai-navbar .discoverdubai-desc {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: white;
+}
+.discoverdubai-cardsection {
+    display: flex;
+    flex-wrap: wrap;
+    color: wheat;
+    justify-content: center;
+}
+.discoverdubai-cardsection .discoverdubai-cards {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.discoverdubai-eachcard {
+    padding: 2px 0 0 15px;
+    margin-bottom: 20px;
+}
+.discoverdubai-eachcard-tittle {
+    font-size: 16px;
+    color: white;
+}
+.discoverdubai-eachcard-desc {
+    font-size: 13px;
+    color: whitesmoke;
+}
+
+@media (max-width:768px) {
+    .wrapper-discoverdubai {
+        width: 90%;
+    }
+}

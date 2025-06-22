@@ -4,7 +4,7 @@ const palmJumeirah = {
     title: "Top 5 Places to Eat in Palm Jumeirah",
     slug: "places-to-eat/palm-jumeirah",
     description: "Discover the best restaurants in Palm Jumeirah.",
-    image: "/images/palm-jumeirah.jpg",
+    image: "/restaurants.jpg",
     keywords: ["Palm Jumeirah restaurants", "Dubai dining", "places to eat in Palm"],
     restaurants: [
       {
@@ -12,7 +12,7 @@ const palmJumeirah = {
         description: "World-famous Japanese-Peruvian fusion at Atlantis.",
         cuisine: "Japanese",
         location: "Atlantis, The Palm",
-        image: "/images/nobu.jpg",
+        image: "/restaurants.jpg",
       },
     ],
   };

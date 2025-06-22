@@ -4,7 +4,7 @@ const dubaiBeaches = {
     title: "Top Public Beaches in Dubai",
     slug: "beaches/dubai",
     description: "Explore Dubai's best public beaches for sun, sand, and sea.",
-    image: "/images/dubai-beach.jpg",
+    image: "/beaches.jpg",
     keywords: ["Dubai public beaches", "JBR beach", "Kite beach"],
     beaches: [
       {
