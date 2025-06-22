@@ -38,7 +38,7 @@ export const searchIndex = [
   ...dubaiBlogs.map((post) => ({
   id: `${post.category}-${post.location}`,
   name: capitalize(post.title),
-  type: 'dubai-blog',
+  type: 'Explore Dubai',
   url: `/blog/${post.category}/${post.location}`,
 })),
 
