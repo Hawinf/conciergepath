@@ -42,7 +42,41 @@
     border-radius: 4px;
     color: wheat;
 }
-
+.continentpage-aff {
+    padding: 40px;   
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+.cp-afftittle {
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+}
+.affiliate-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cp-affbox {
+    background-color: rgba(64, 54, 54, 0.586);
+    margin: 10px;
+    border-radius: 7px;
+    padding: 15px 20px;
+    text-align: center;
+}
+.cp-affbox h6 {
+    margin-top: 5px;
+}
+.itinerary-section {
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+.itinerary-section-tittle {
+    font-size: 40px;
+    color: wheat;
+}
 @media (max-width:768px) {
     .countpage-tittlesection h1{
         font-size: 40px;
@@ -54,6 +88,9 @@
         font-size: 12px;
         line-height: 16px;
     }
+    .continentpage-aff {
+        width: 95%;
+    }
 }
 @media (max-width:576px) {
     .countpage-img {
@@ -64,5 +101,15 @@
     }
     .countpage-citymenu {
         font-size: 12px;
+    }
+    .continentpage-aff {
+        width: 100%;
+    }
+    .cp-afftittle {
+        font-size: 40px;
+    }.cp-affbox {
+        margin: 5px;
+        padding: 9px 10px;
+        width: 120px;
     }
 }

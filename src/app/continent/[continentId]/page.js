@@ -127,6 +127,31 @@ export default function ContinentPage({ params }) {
                 </nav>
             </main>
           </nav>
+          
+              <main className='countrycard-section'>
+                {countries.map((country) => (
+                  <main key={country.id} className='countrycard-lists'>
+                    <Link
+                      href={`/country/${country.id}`}
+                    >
+                      <nav className='country-card'>
+                        <Image 
+                          className='countrycard-image'
+                          src={country.image}
+                          alt={country.description}
+                          width={100} height={100}
+                        />
+                          <nav className='countrycard-details'>
+                            <h1>{country.name}</h1>
+                            <p>{country.writter}</p>
+                          </nav>
+                      </nav>
+                      
+                    </Link>
+                  </main>
+                ))}
+              </main>
+
         </section>
         )}
 

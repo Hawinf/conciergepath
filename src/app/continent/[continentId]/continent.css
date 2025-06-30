@@ -55,6 +55,35 @@
 .cp-affbox h6 {
     margin-top: 5px;
 }
+.countrycard-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 80%; */
+    justify-content: center;
+    /* margin: auto; */
+}
+.country-card {
+    width: 300px;
+    margin: 10px;
+}
+.country-card .countrycard-image{
+    width: 300px;
+    height: 300px;
+    
+}
+.countrycard-details {
+    margin-top: -50px;
+    text-align: left;
+    padding-left: 10px;
+}
+.countrycard-details h1 {
+    font-weight: 700;
+    font-size: 20px;
+}
+.countrycard-details p {
+    font-size: 12px;
+    color: rgb(224, 217, 208);
+}
 @media (max-width:768px) {
     .continentpage-aff {
         width: 90%;
