@@ -76,6 +76,40 @@
 .itinerary-section-tittle {
     font-size: 40px;
     color: wheat;
+    text-align: center;
+}
+.itinerary-section .itinerary-sectiondesc {
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.itinerary-day .day-tittle {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.itinerary-day .section-intro {
+    margin-bottom: 10px;
+}
+.itinerary-day .section-descriptionday {
+    margin-bottom: 10px;
+}
+.get-there-section {
+    margin-bottom: 10px;
+}
+.get-there-section .getting-there {
+    font-size: 17px;
+    font-weight: 700;
+}
+.section-tip {
+    margin: 10px 0;
+}
+.section-tips .section-tip {
+    font-weight: 700;
+    font-size: 14px;
+    color: greenyellow;
 }
 @media (max-width:768px) {
     .countpage-tittlesection h1{

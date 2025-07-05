@@ -25,7 +25,6 @@ export default function HomePage() {
       
       <main className="flex-grow">
         <Header />
-        {/* Your main content goes here */}
       </main>
       
       <Footer />

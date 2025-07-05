@@ -142,112 +142,10 @@ export default function CountryPage({ params }) {
             </main>
           </nav>
 
-{/*         
-        {currentCountry?.itinerary && (
-          <section className="itinerary-section">
-            <h2>{currentCountry.itinerary.title}</h2>
-            <p>{currentCountry.itinerary.subtitle}</p>  
-`
-            
-            {currentCountry.itinerary.days &&
-              Object.entries(currentCountry.itinerary.days).map(([key, section]) => (
-                <main key={key} className="itinerary-day">
-                  <h3>{section.title}</h3>
-
-                  {section.intro && <p>{section.intro}</p>}
-                  {section.gettingThere && <p><strong>Getting there:</strong> {section.gettingThere}</p>}
-                  {section.transport && <p><strong>Transport:</strong> {section.transport}</p>}
-                  {section.tip && <p><strong>Tip:</strong> {section.tip}</p>}
-
-                  {section.highlights && Array.isArray(section.highlights) && (
-                    <ul>
-                      {section.highlights.map((item, idx) => (
-                        <li key={idx}>{item}</li>
-                      ))}
-                    </ul>
-                  )}
-                </main>
-              ))}
-
-            
-            {!currentCountry.itinerary.days &&
-              Object.entries(currentCountry.itinerary)
-                .filter(([key]) => key !== 'title' && key !== 'subtitle' && key !== 'accommodation')
-                .map(([key, section]) => (
-                  <div key={key} className="itinerary-day">
-                    <h3>{section.title}</h3>
-
-                    {section.intro && <p>{section.intro}</p>}
-                    {section.description && <p>{section.description}</p>}
-                    {section.gettingThere && <p><strong>Getting there:</strong> {section.gettingThere}</p>}
-                    {section.howToGetThere && <p><strong>How to get there:</strong> {section.howToGetThere}</p>}
-                    {section.culturalTip && <p><strong>Tip:</strong> {section.culturalTip}</p>}
-                    {section.tip && <p><strong>Tip:</strong> {section.tip}</p>}
-                    {section.transport && <p><strong>Transport:</strong> {section.transport}</p>}
-
-                    
-                    {section.highlights && (
-                      <ul>
-                        {section.highlights.map((item, idx) => (
-                          <li key={idx}>{item}</li>
-                        ))}
-                      </ul>
-                    )}
-
-                    
-                    {section.thingsToDo?.title && (
-                      <>
-                        <p><strong>{section.thingsToDo.title}</strong></p>
-                        <p>{section.thingsToDo.description}</p>
-                        <ul>
-                          {section.thingsToDo.list.map((item, idx) => (
-                            <li key={idx}>{item}</li>
-                          ))}
-                        </ul>
-                      </>
-                    )}
-
-                    
-                    {section.whatToSee && Array.isArray(section.whatToSee) && (
-                      <ul>
-                        {section.whatToSee.map((item, idx) => (
-                          <li key={idx}>{item}</li>
-                        ))}
-                      </ul>
-                    )}
-
-                    
-                    {section.dayTrip?.title && (
-                      <>
-                        <h4>{section.dayTrip.title}</h4>
-                        <p>{section.dayTrip.description}</p>
-                      </>
-                    )}
-                  </div>
-                ))}
-
-            
-            {currentCountry.itinerary.accommodation && (
-              <div className="itinerary-accommodation">
-                <h3>Accommodation</h3>
-                <p>{currentCountry.itinerary.accommodation.general}</p>
-                <ul>
-                  {currentCountry.itinerary.accommodation.recommendations?.map((rec, idx) => (
-                    <li key={idx}>
-                      <strong>{rec.city}</strong>: {rec.hotel}
-                      {rec.food && <p><strong>Food:</strong> {rec.food}</p>}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </section>
-        )} */}
-        
-        {currentCountry?.itinerary && (
+          {currentCountry?.itinerary && (
           <section className="itinerary-section">
             <h2 className='itinerary-section-tittle'>{currentCountry.itinerary.title}</h2>
-            <p>{currentCountry.itinerary.subtitle}</p>  
+            <p className='itinerary-sectiondesc'>{currentCountry.itinerary.subtitle}</p>  
 
     
           {(() => {
@@ -262,15 +160,19 @@ export default function CountryPage({ params }) {
 
         return days.map(([key, section]) => (
           <div key={key} className="itinerary-day">
-            <h3>{section.title}</h3>
+            <h3 className='day-tittle'>{section.title}</h3>
 
-            {section.intro && <p>{section.intro}</p>}
-            {section.description && <p>{section.description}</p>}
-            {section.gettingThere && <p><strong>Getting there:</strong> {section.gettingThere}</p>}
-            {section.howToGetThere && <p><strong>How to get there:</strong> {section.howToGetThere}</p>}
-            {section.culturalTip && <p><strong>Tip:</strong> {section.culturalTip}</p>}
-            {section.tip && <p><strong>Tip:</strong> {section.tip}</p>}
-            {section.transport && <p><strong>Transport:</strong> {section.transport}</p>}
+            {section.intro && <p className='section-intro'>{section.intro}</p>}
+            {section.description && <p className='section-descriptionday'>{section.description}</p>}
+            <nav className='get-there-section'>
+            {section.gettingThere && <p className='getting-there'>Getting there:{section.gettingThere}</p>}
+            {section.howToGetThere && <p className='getting-there'>How to get there:{section.howToGetThere}</p>}
+            </nav>
+            <nav className='section-tips'>
+              {section.culturalTip && <p className='section-tip'>Tip:{section.culturalTip}</p>}
+              {section.tip && <p className='section-tip'>Tip:{section.tip}</p>}
+              {section.transport && <p className='section-tip'>Transport:{section.transport}</p>}
+            </nav>
 
             {section.highlights && (
               <ul>
