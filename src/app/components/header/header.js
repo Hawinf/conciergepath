@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 // import { motion } from "motion/react"
 import './header.css';
+import Footer from '../footer/footer';
 
 
 export default function Header() {
@@ -30,6 +31,7 @@ export default function Header() {
 
 
   return (
+    <>
     <div className='container-header'>
       <div className='wrapper-header'>
           <header className='header-cp'>
@@ -142,21 +144,9 @@ export default function Header() {
           </a>
         </div>
       </main>
-      {/* <main className='wrapper-feature'>
-        <h4>AS FEATURE ON</h4>
-        <div className='feature-image'>
-          <div className='box-feature'>
-            <a href=''><img src='/bbc-ogo.png' alt='BBC' /></a>
-          </div>
-          <div className='box-feature'>
-            <a href=''><img src='/cnn-logo.png' alt='BBC' /></a>
-          </div>
-          <div className='box-feature'>
-            <a href=''><img className='national' src='/nationalg-logo.png' alt='BBC' /></a>
-          </div>
-        </div>
-      </main> */}
-      <main className='wrapper-blog'>
+      
+      
+      {/* <main className='wrapper-blog'>
         <h5 className='blog-tittle'>LATEST BLOG POST</h5>
         <div className='blog-section'>
             <div className='each-box'>
@@ -192,7 +182,10 @@ export default function Header() {
               </div>
             </div>
         </div>
-      </main>
+      </main> */}
+      
     </div>
+    {/* <Footer/> */}
+    </>
   );
 }

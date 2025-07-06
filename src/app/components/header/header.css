@@ -199,14 +199,11 @@
     
 }
 .holographic-card img {
-    /* width: 360px;
-    height: 350px; */
     width: 100%;
     height: 350px;
     background-size: cover;
     border-radius: 10px;
     padding: 5px;
-    /* border: 1px solid rgb(14, 14, 14); */
 }
 .holographic-card h6 {
     margin-top: -100px;
@@ -220,7 +217,6 @@
     margin-left: 20px;
     font-size: 12px;
     color: rgb(148, 134, 134);
-    /* margin-top: 4px; */
 }
 .wrapper-watch {
     text-align: center;
@@ -369,109 +365,6 @@ transform: rotate(-45deg) translateY(100%);
     }
   }
 
-.wrapper-feature {
-    padding: 30px 0;
-    animation: rotate-bg-color 10s infinite;
-}
-@keyframes rotate-bg-color {
-    0% {
-      background-color: steelblue;
-    }
-    10% {
-      background-color: red;
-    }
-    20% {
-      background-color: orange;
-    }
-    30% {
-      background-color: yellow;
-    }
-    40% {
-      background-color: green;
-    }
-    50% {
-      background-color: blue;
-    }
-    60% {
-      background-color: indigo;
-    }
-    70% {
-      background-color: violet;
-    }
-    80% {
-      background-color: pink;
-    }
-    90% {
-      background-color: brown;
-    }
-    100% {
-      background-color: black;
-    }
-}
-.wrapper-feature h4 {
-    text-align: center;
-    color: black;
-    margin-bottom: 30px;
-}
-.feature-image {
-    display: flex;
-    justify-content: space-around;
-    padding: 30px 0px;
-}
-.box-feature img {
-    height: 70px;
-}
-.box-feature .national {
-    height: 170px;
-    /* width: 100%; */
-    margin-top: -50px;
-}
-.wrapper-blog {
-    background-image: url('/blogbg.jpeg');
-    height: 300px;
-    background-size: cover;
-    
-}
-.blog-section {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin: auto;
-    flex-wrap: wrap;
-}
-.blog-tittle {
-    text-align: center;
-    font-size: 50px;
-    padding-top: 20px;
-    font-weight: 700;
-}
-.each-box {
-    position: relative;
-    margin-top: 30px;
-}
-.each-box img {
-    width: 240px;
-    height: 300px;
-    border-radius: 10px;
-    margin: 2px;
-}
-.blog-desc {
-    position: absolute;
-    bottom: 0;
-    width: 200px;
-    padding: 10px;
-}
-.blog-desc h6 {
-    color: white;
-}
-.blog-desc h1 {
-    color: white;
-}
-.blog-desc p {
-    font-size: 13px;
-    color: rgb(151, 143, 143);
-}
-
 
 @media (max-width:992px) {
     .wrapper-header {
@@ -498,6 +391,10 @@ transform: rotate(-45deg) translateY(100%);
         margin: auto;
         padding: 30px 0;
     }
+    .holographic-card img {
+        width: 100%;
+        height: 100%;
+    }
 }
 @media (max-width:768px) {
     .wrapper-header {
@@ -509,12 +406,7 @@ transform: rotate(-45deg) translateY(100%);
     .about-section {
         padding: 20px;
     }
-    .main-about img {
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        
-    }
+    
     .continents-map {
         width: 100%;
     }
@@ -524,14 +416,7 @@ transform: rotate(-45deg) translateY(100%);
     .box-map .each-map {
         width: 45px;
     }
-    .box-feature img {
-        height: 40px;
-    }
-    .box-feature .national {
-        height: 120px;
-        /* width: 100%; */
-        margin-top: -43px;
-    }
+    
 }
 @media (max-width:576px) {
     .wrapper-header {
@@ -583,37 +468,14 @@ transform: rotate(-45deg) translateY(100%);
     .container-about {
         width: 100%;
     }
-    .main-about img {
+    /* .main-about img {
         width: 100%;
-        height: 260px;
-    }
+        height: 100%;
+    } */
     .holographic-card h6 {
         margin-top: -70px;
         font-size: 16px;
     }
-    .wrapper-feature {
-        padding: 10px 0px;
-    }
-    .wrapper-feature h4 {
-        margin-bottom: 19px;
-    }
-    .feature-image {
-        padding: 5px 0;
-    }
-    .box-feature img {
-        height: 20px;
-    }
-    .box-feature .national {
-        height: 80px;
-        /* width: 100%; */
-        margin-top: -30px;
-    }
-    .each-box img {
-        width: 100%;
-        height: 100%;
-    }
-    .blog-desc {
-        width: 100%;
-        padding: 20px;
-    }
+    
+    
 }
