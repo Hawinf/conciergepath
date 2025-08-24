@@ -42,15 +42,15 @@ export default function Header() {
     <div className='container-header'>
       <div className='wrapper-header'>
           <header className='header-cp'>
-              <h1>KATSIARYNA</h1>
+              <h1 data-aos="slide-right">KATSIARYNA</h1>
               <div className='melting-text-container'>
-                <h5 className='melting-text'>PUTSILOUSKAYA</h5>
+                <h5 className='melting-text' data-aos="slide-right">PUTSILOUSKAYA</h5>
               </div>
-              <img src='/header-cp5.png' alt='kate' />
+              <img src='/header-cp5.png' alt='kate' data-aos="fade-up"/>
               <div className='head-desc'>
-                  <Link href='/discover-world' className='link-blog'>DISCOVER WORLD</Link>
-                  <a href='/discover-dubai' className='link-video'>DUBAI</a>
-                  <p >I create travel guides and backpacking itineraries from around the world, as well as sharing photography resources and more.</p>
+                  <Link href='/discover-world' className='link-blog' data-aos="slide-right">DISCOVER WORLD</Link>
+                  <a href='/discover-dubai' className='link-video' data-aos="slide-left">DUBAI</a>
+                  <p data-aos="slide-right">I create travel guides and backpacking itineraries from around the world, as well as sharing photography resources and more.</p>
               </div>
           </header>
           
@@ -87,7 +87,7 @@ export default function Header() {
               <p>South America</p>
             </Link>
           </div>
-          <div className='box-map' data-aos="slide-left">
+          <div className='box-map' data-aos="slide-left`">
             <Link href='/continent/oceania'>
               <img className='each-map' src='/oceania.png' alt='oceania' />
               <p>Oceania</p>
@@ -96,15 +96,15 @@ export default function Header() {
         </div>
       </div>
       <main className='container-discover'>
-        <div className='dc-left'>
+        <div className='dc-left' data-aos="slide-right">
           <img src='/world-map.png' alt='discover the world' />
         </div>
         <div className='dc-right'>
-          <h1 className='right-tittle'>DISCOVER</h1>
+          <h1 className='right-tittle' data-aos="fade-up">DISCOVER</h1>
           <h1 className='right-tittle1'>THE WORLD &#8690;</h1>
-          <p>We have written over 600+ travel guides and backpacking itineraries to provide all the information you need to help plan your dream trip around the world.</p>
+          <p data-aos="fade-up">We have written over 600+ travel guides and backpacking itineraries to provide all the information you need to help plan your dream trip around the world.</p>
           <Link href='/discover-world' className='link-blog'>
-            <button className="btn matrix">
+            <button className="btn matrix" data-aos="fade-up">
               <span>EXPLORE DESTINATION &#8608;</span>
               <div className="code-rain"></div>
             </button>
@@ -145,54 +145,13 @@ export default function Header() {
               </Link>
             </div>
           </div>
-          <a href='/discover-dubai' className="btn matrix">
-            <span>EXPLORE DUBAI &#8608;</span>
+          <a href='/discover-dubai' className="btn matrix" >
+            <span data-aos="fade-up">EXPLORE DUBAI &#8608;</span>
             <div className="code-rain"></div>
           </a>
         </div>
       </main>
-      
-      
-      {/* <main className='wrapper-blog'>
-        <h5 className='blog-tittle'>LATEST BLOG POST</h5>
-        <div className='blog-section'>
-            <div className='each-box'>
-              <img src='/he.jpeg'/>
-              <div className='blog-desc'>
-                <h6>Dubai</h6>
-                <h1>25 PLACES MUST VISIT IN DUBAI</h1>
-                <p>By Katy</p>
-              </div>
-            </div>
-            <div className='each-box'>
-              <img src='/he1.jpeg'/>
-              <div className='blog-desc'>
-                <h6>Georgia</h6>
-                <h1>3 Days In Georgia</h1>
-                <p>By Katy</p>
-              </div>
-            </div>
-            <div className='each-box'>
-              <img src='/he2.jpeg'/>
-              <div className='blog-desc'>
-                <h6>Armenia</h6>
-                <h1>3 Days In Armenia</h1>
-                <p>By Katy</p>
-              </div>
-            </div>
-            <div className='each-box'>
-              <img src='/he3.jpeg'/>
-              <div className='blog-desc'>
-                <h6>Turkey</h6>
-                <h1>Place Must Visit In Turkey</h1>
-                <p>By Katy</p>
-              </div>
-            </div>
-        </div>
-      </main> */}
-      
     </div>
-    {/* <Footer/> */}``
     </>
   );
 }
