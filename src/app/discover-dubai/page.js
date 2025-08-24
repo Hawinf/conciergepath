@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 import Head from "next/head";
 import dubaiBlogs from "../data/dubaiBlogs";
@@ -6,7 +7,15 @@ import Footer from "../components/footer/footer";
 import Image from 'next/image';
 import './discoverdubai.css';
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function DiscoverDubai() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <>
     <Navbar/>
@@ -16,14 +25,14 @@ export default function DiscoverDubai() {
         <meta name="description" content="Explore food, beaches, and attractions in Dubai." />
       </Head>
       
-      <nav className="discoverdubai-navbar">
+      <nav className="discoverdubai-navbar" data-aos="fade-up">
         <h1 className="discoverdubai-tittle">DISCOVER DUBAI</h1>
         <p className="discoverdubai-desc">
         Planning your Dubai trip? Uncover the best local restaurants, free public beaches, and unforgettable experiences in Dubai. From iconic destinations like Palm Jumeirah to hidden gems in JLT, this guide is your go-to resource for discovering what to see, eat, and do in Dubai.
         </p>
       </nav>
 
-      <main className="discoverdubai-cardsection">
+      <main className="discoverdubai-cardsection" data-aos="fade-down`">
         {dubaiBlogs.map((post, index) => (
           <Link
             key={index}

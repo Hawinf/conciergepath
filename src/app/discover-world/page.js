@@ -1,5 +1,6 @@
+  'use client'
 
-import './discover.css';
+  import './discover.css';
   import Head from 'next/head';
   import Link from 'next/link';
   import Image from 'next/image';
@@ -7,6 +8,10 @@ import './discover.css';
   import { countryData } from '@/app/data/countryData.js';
   import Navbar from '../components/navbar/navbar';
   import Footer from '../components/footer/footer';
+
+  import { useEffect } from "react";
+  import AOS from "aos";
+  import "aos/dist/aos.css";
 
   export default function DiscoverWorld() {
     const baseUrl = 'https://yourdomain.com'; // ✅ Update this to your actual domain
@@ -25,6 +30,10 @@ import './discover.css';
       })),
     };
 
+    useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
+
     return (
       
       <>
@@ -40,8 +49,8 @@ import './discover.css';
   <Navbar />
 
   <main className='main-discovery-world'>
-    <nav className='discover-world-wrapper'>
-      <h1 className='dg-tittle'>DISCOVER WORLD</h1>
+    <nav className='discover-world-wrapper' data-aos="fade-up">
+      <h1 className='dg-tittle' >DISCOVER WORLD</h1>
       <h5 className='dg-desc'>
       Looking for a detailed travel <Link href='/plan'><span className='dg-internal'>guide</span></Link> to plan your next adventure? You're in the right place! On this page, you'll find comprehensive travel guides, backpacking itineraries, and destination tips—all organized by continent, country, and city. Whether you're dreaming of a trip to Europe, Asia, the Middle East, or beyond, we've grouped all our guides to help you easily discover where to go, what to do, and how to plan the perfect journey. From local food spots to must-see attractions and budget-friendly itineraries, your next trip starts here.
       </h5>
@@ -56,7 +65,7 @@ import './discover.css';
       </ul>
     </nav>
 
-    <section className='dg-country-section'>
+    <section className='dg-country-section' data-aos="fade-down">
       <ul className='country-list'>
         {Object.entries(countryData).map(([continentKey, countries]) =>
           countries.map((country) => (

@@ -105,29 +105,29 @@ export default function Plan() {
 
             <Navbar />
             <main className='shop-wrapper'>
-                <nav className='shop-nav'>
+                <nav className='shop-nav' data-aos="slide-left">
                     <h1>"Let Us Plan Your Perfect Trip – From Itinerary to Reservation                    "</h1>
                     <Link href='/web-guide.pdf' download="" target='blank' className='nav-orderbtn'>Details</Link>
                 </nav>
                 <main className='shop-section'>
-                    <nav className='shop-branch'>
+                    <nav className='shop-branch' data-aos="slide-right">
                         <h1>From daily itineraries to bookings, so you can just enjoy the journey.</h1>
                         <Link href='https://wa.me/971506841998?text=Hi%20I%20am%20interested%20in%20your%20services' target='blank' className='shop-btn'>Shop</Link>
                     </nav>
                     <nav className='shop-branch2'>
-                        <main className='section-branch-top'>
+                        <main className='section-branch-top' data-aos="fade-down">
                             <h1>Tailored to your style and budget.</h1>
                         </main>
-                        <main className='section-branch-down'>
+                        <main className='section-branch-down' data-aos="fade-up">
                             <h1>we organize it all for a hassle-free adventure.</h1>
                         </main>
                     </nav>
                 </main>
-                <main className='shop-desc'>
+                <main className='shop-desc' data-aos="fade-up">
                     <h1>Complete Travel Planning Service – Itinerary & Reservation Experts</h1>
                     <h6>Discover a seamless way to travel. Our expert travel planning service covers everything from crafting personalized itineraries to securing your reservations. Whether you're visiting Dubai or exploring other global destinations we've experienced, we handle the details so you can focus on enjoying the journey. Ideal for travelers who value time, convenience, and unique experiences.</h6>
                 </main>
-                <main className='shop-content'>
+                <main className='shop-content' data-aos="fade-up">
                     <nav className='content-left'>
                         <h5>We craft personalized, hassle-free travel experiences designed around your needs :</h5>
                         <ul>
@@ -145,7 +145,7 @@ export default function Plan() {
                         </ul>
                     </nav>
                 </main>
-                <nav className='faq-question'>
+                <nav className='faq-question' data-aos="fade-up">
                     <h1>Frequently Asked Questions</h1>
                         {faqs.map((faq, index) => (
                     <nav key={index} style={{ marginBottom: '1rem' }}>

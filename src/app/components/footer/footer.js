@@ -1,18 +1,26 @@
+'use client'
 import './footer.css';
 import Link from 'next/link';
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Footer() {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+      }, []);
 
     return (
         
         <footer className="wrapper-footer">
             
             <div className='above-footer'>
-                <img className='footer-img' src='/followingbg4.png' alt='travel package'/>
-                <div className='footer-follow'>
-                    <h1>JOIN MY CHANNEL</h1>
+                <img className='footer-img' src='/followingbg4.png' alt='travel package' data-aos="fade-up"/>
+                <div className='footer-follow' data-aos="fade-up">
+                    <h1 data-aos="slide-left"> JOIN MY CHANNEL</h1>
                     
-                    <div className='footer-social'>
+                    <div className='footer-social' data-aos="fade-up">
                         <Link href='https://t.me/qatsiaryna' target='blank'>
                             <div className='footer-socialbtn'>
                                 <img src='/telegram.png' alt='kate telegram channel' />
@@ -30,7 +38,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className='below-footer'>
-                <div className='section-one'>
+                <div className='section-one' data-aos="slide-left">
                     <h6>Popular Itineraries</h6>
                     <div>
                         <a>3 Days In Turkey</a>
@@ -39,7 +47,7 @@ export default function Footer() {
                         <a>3 Days In Georgia</a>
                     </div>
                 </div>
-                <div className='section-one'>
+                <div className='section-one' data-aos="slide-left">
                     <h6>Top Destinations</h6>
                     <div>
                         <a>Turkey</a>
@@ -48,7 +56,7 @@ export default function Footer() {
                         <a>Georgia</a>
                     </div>
                 </div>
-                <div className='section-one'>
+                <div className='section-one' data-aos="slide-right">
                     <h6>About</h6>
                     <div>
                         <a>About Me</a>
@@ -70,7 +78,7 @@ export default function Footer() {
                     </div>
                 </div>
                 
-                <div className='section-one'>
+                <div className='section-one' data-aos="slide-right">
                     <h6>Stay Update</h6>
                     <div>
                         <Link href='https://t.me/qatsiaryna' target='blank'><img src='/telegram.png' alt='kate telegram channel' /></Link>

@@ -1,3 +1,4 @@
+
 import './continent.css';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -6,6 +7,7 @@ import { continents } from '@/app/data/continents';
 import Navbar from '@/app/components/navbar/navbar';
 import Footer from '@/app/components/footer/footer';
 import Image from 'next/image';
+
 
 export default function ContinentPage({ params }) {
   const { continentId } = params;
@@ -33,6 +35,7 @@ export default function ContinentPage({ params }) {
     })),
   };
 
+
   return (
     <>
       <Head>
@@ -53,9 +56,10 @@ export default function ContinentPage({ params }) {
             src={currentContinent.image}
             alt={currentContinent.name}
             width={100} height={100}
+            data-aos="slide-right"
           />
-          <main className='continentpage-nav'>
-            <h1 className='continentpage-tittle'>{currentContinent.name}</h1>
+          <main className='continentpage-nav' data-aos="fade-up">
+            <h1 className='continentpage-tittle' >{currentContinent.name}</h1>
             <p className='continentpage-desc'>{currentContinent.description}</p>
             <h4>Choose a country</h4>
             {countries.length === 0 ? (
@@ -74,7 +78,7 @@ export default function ContinentPage({ params }) {
               </ul>
             )}
           </main>
-          <nav className='continentpage-aff'>
+          <nav className='continentpage-aff' data-aos="fade-down">
             <h1 className='cp-afftittle'>ITINERARIES</h1>
             <main className='affiliate-section'>
                 <nav className='cp-affbox'>
@@ -128,7 +132,7 @@ export default function ContinentPage({ params }) {
             </main>
           </nav>
           
-              <main className='countrycard-section'>
+              <main className='countrycard-section' data-aos="slide-left">
                 {countries.map((country) => (
                   <main key={country.id} className='countrycard-lists'>
                     <Link
