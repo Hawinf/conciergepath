@@ -383,7 +383,7 @@ export default function CountryPage({ params }) {
             </ul>
           </section>
         )}
-        
+        ``
 
         {/* === Itinerary Section === */}
         {currentCountry?.itinerary && (
