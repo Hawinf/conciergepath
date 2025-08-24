@@ -4,6 +4,8 @@ import Link from 'next/link';
 // import { motion } from "motion/react"
 import './header.css';
 import Footer from '../footer/footer';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 export default function Header() {
@@ -27,6 +29,11 @@ export default function Header() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
+
   
 
 
@@ -48,39 +55,39 @@ export default function Header() {
           </header>
           
       </div>
-      <div className='main-header'>
+      <div className='main-header' >
         <div className='continents-map'>
-          <div className='box-map'>
+          <div className='box-map' data-aos="slide-right">
             <Link href='/continent/africa'>
               <img className='each-map' src='/africa.png' alt='africa' />
               <p>Africa</p>
             </Link>
           </div>
-          <div className='box-map'>
-            <Link href='/continent/asia'>``
+          <div className='box-map' data-aos="fade-up">
+            <Link href='/continent/asia' >
               <img className='each-map' src='/asia.png' alt='asia' />
               <p>Asia</p>
             </Link>
           </div>
-          <div className='box-map'>
+          <div className='box-map' data-aos="fade-up">
             <Link href='/continent/europe'>
               <img className='each-map' src='/europe.png' alt='europe' />
               <p>Europe</p>
             </Link>
           </div>
-          <div className='box-map'>
+          <div className='box-map' data-aos="fade-up">
             <Link href='/continent/northamerica'>
               <img className='each-map' src='/north-america.png' alt='north-america' />
               <p>North America</p>
             </Link>
           </div>
-          <div className='box-map'>
+          <div className='box-map' data-aos="fade-up">
             <Link href='/continent/southamerica'>
               <img className='each-map' src='/south-america.png' alt='south-america' />
               <p>South America</p>
             </Link>
           </div>
-          <div className='box-map'>
+          <div className='box-map' data-aos="slide-left">
             <Link href='/continent/oceania'>
               <img className='each-map' src='/oceania.png' alt='oceania' />
               <p>Oceania</p>
@@ -104,33 +111,33 @@ export default function Header() {
           </Link>
         </div>
       </main>
-      <main className='about-section'>
+      <main className='about-section' >
         <div className='container-about'>
           {/* <h1>MY</h1> */}
           <h3>{displayedText}<span className="blinking-cursor">|</span></h3>
-          <div className='main-about'>
-            <div className="holographic-card">
+          <div className='main-about' >
+            <div className="holographic-card" data-aos="slide-right">
               <Link href=''>
                 <img src='/restaurants.jpg' alt='KATE' />
                 <h6>Restaurants And Bars In Palm Jumeirah</h6>
                 <p>By Katy</p>
               </Link>
             </div>
-            <div className="holographic-card">
+            <div className="holographic-card" data-aos="fade-down">
               <Link href=''>
                 <img src='/beaches.jpg' alt='KATE' />
                 <h6>Beach Club In Dubai</h6>
                 <p>By Katy</p>
               </Link>
             </div>
-            <div className="holographic-card">
+            <div className="holographic-card" data-aos="slide-left">
               <Link href=''>
                 <img src='/jlt.jpg' alt='KATE' />
                 <h6>Places To Eat In JLT</h6>
                 <p>By Katy</p>
               </Link>
             </div>
-            <div className="holographic-card">
+            <div className="holographic-card" data-aos="fade-up">
               <Link href=''>
                 <img src='/public-beach.jpg' alt='KATE' />
                 <h6>Public Beaches In Dubai</h6>
