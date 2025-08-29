@@ -86,7 +86,7 @@ export default function Header() {
               <div className='box-map'>
                 <Link href='/continent/europe'>
                   <img className='each-map' src='/europe.png' alt='europe' />
-                  <p>Europe</p>
+                  <p>Europe</p>``
                 </Link>
               </div>
               <div className='box-map'>
