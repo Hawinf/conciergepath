@@ -25,6 +25,32 @@
     line-height: 26px;
     text-align: center;
 }
+.continentpage-aff {
+    padding: 40px;   
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+.cp-afftittle {
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+}
+.affiliate-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cp-affbox {
+    background-color: rgba(64, 54, 54, 0.586);
+    margin: 10px;
+    border-radius: 7px;
+    padding: 15px 20px;
+    text-align: center;
+}
+.cp-affbox h6 {
+    margin-top: 5px;
+}
 @media (max-width:768px) {
     .citypage-tittle {
         font-size: 20px;

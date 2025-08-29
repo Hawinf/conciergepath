@@ -18,17 +18,17 @@ export const countryData = {
         slug: "kyrgyzstan",
         itinerary: {
             title: 'Kyrgyzstan – How to Spend Time in Bishkek and What to See Around',
-            subtitle: 'Bishkek and the natural beauty surrounding it are perfect for both city explorers and adventure seekers.',
+            subtitle: 'In the heart of Central Asia, surrounded by stunning mountains, life a small country that will steal your heart with its breathtaking nature, delicious food, and some of the kindest people youll ever meet',
             days: {
               day1: {
                 title: 'Day 1–2: Exploring Bishkek',
                 intro: 'Spend your first couple of days soaking in the charm of Bishkek.',
                 whatToSee: [
-                  'Ala-Too Square – Central square with national monuments.',
-                  'Oak Park & Erkindik Boulevard – Green spaces perfect for walking.',
-                  'Osh Bazaar – A chaotic and colorful local market.',
-                  'Victory Square – Striking architecture, especially beautiful when lit at night.',
-                  'Panfilov Park – Quiet area for a relaxing stroll.'
+                  'Ala-Too Square – The heart of city. Its a spacious central square where you will find a huge national flag, impresive monuments, and often local events or performances.',
+                  'Oak Park - is perfect for a relaxing walk under shady trees, and Erkindik Boulevard feels like the citys calm spine. Long, leafy, and peacefull. I loved grabbing a coffee and just strolling here.',
+                  'Osh Bazaar – A chaotic, colorful, and full of life. This market is where the locals shop for everything from fresh fruits to traditional clothes. Grab some dried apricots, nuts, or kurut (salty yogurt balls ) as snacks for your next trip.',
+                  'Victory Square – A solemn but beautiful monument dedicated to WWII. The architecture is striking and worth a stop, especially in the evening when its all lit up',
+                  'Panfilov Park – A quiet green space ideal for a realxxing stroll.'
                 ],
                 tip: 'Grab coffee and just stroll along Erkindik Boulevard for a peaceful start to your trip.',
               },
@@ -151,6 +151,7 @@ export const countryData = {
             ]
           }
         }
+              
 ,        
       {
         id: 'uae',

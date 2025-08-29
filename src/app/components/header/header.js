@@ -46,7 +46,8 @@ export default function Header() {
               <div className='melting-text-container'>
                 <h5 className='melting-text' data-aos="slide-right">PUTSILOUSKAYA</h5>
               </div>
-              <img src='/header-cp5.png' alt='kate' data-aos="fade-up"/>
+              {/* <img src='/header-cp5.png' alt='kate' data-aos="fade-up"/> */}
+              <img className='webheader' src='/webheader.png' alt='kate' data-aos="fade-up"/>
               <div className='head-desc'>
                   <Link href='/discover-world' className='link-blog' data-aos="slide-right">DISCOVER WORLD</Link>
                   <a href='/discover-dubai' className='link-video' data-aos="slide-left">DUBAI</a>
