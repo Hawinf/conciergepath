@@ -69,39 +69,39 @@ export default function Header() {
       </div>
       <div className='main-header' >
         <div className='continents-map'>
-        <div className="slider-container">
+        <div className="slider-container" data-aos="slide-right">
           <Slider {...settings}>
-            <div className='box-map' data-aos="slide-right">
+            <div className='box-map' >
                 <Link href='/continent/africa'>
                   <img className='each-map' src='/africa.png' alt='africa' />
                   <p>Africa</p>
                 </Link>
             </div>
-            <div className='box-map' data-aos="fade-up">
+            <div className='box-map'>
                 <Link href='/continent/asia' >
                   <img className='each-map' src='/asia.png' alt='asia' />
                   <p>Asia</p>
                 </Link>
               </div>
-              <div className='box-map' data-aos="fade-up">
+              <div className='box-map'>
                 <Link href='/continent/europe'>
                   <img className='each-map' src='/europe.png' alt='europe' />
                   <p>Europe</p>
                 </Link>
               </div>
-              <div className='box-map' data-aos="fade-up">
+              <div className='box-map'>
                 <Link href='/continent/northamerica'>
                   <img className='each-map' src='/north-america.png' alt='north-america' />
                   <p>North America</p>
                 </Link>
               </div>
-              <div className='box-map' data-aos="fade-up">
+              <div className='box-map'>
                 <Link href='/continent/southamerica'>
                   <img className='each-map' src='/south-america.png' alt='south-america' />
                   <p>South America</p>
                 </Link>
               </div>
-              <div className='box-map' data-aos="slide-left`">
+              <div className='box-map'>
                 <Link href='/continent/oceania'>
                   <img className='each-map' src='/oceania.png' alt='oceania' />
                   <p>Oceania</p>
