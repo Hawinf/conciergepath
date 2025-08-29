@@ -6,6 +6,9 @@ import './header.css';
 import Footer from '../footer/footer';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 
 export default function Header() {
@@ -27,13 +30,21 @@ export default function Header() {
     }, typingSpeed);
 
     return () => clearInterval(interval);
-  }, []);
+  }, []);``
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
-
+  var settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true
+  };
   
 
 
@@ -58,13 +69,16 @@ export default function Header() {
       </div>
       <div className='main-header' >
         <div className='continents-map'>
-          <div className='box-map' data-aos="slide-right">
+        <div className="slider-container" style={{ maxWidth: "800px", margin: "0 auto" }}>
+      <Slider {...settings}>
+        
+        <div className='box-map' data-aos="slide-right">
             <Link href='/continent/africa'>
               <img className='each-map' src='/africa.png' alt='africa' />
               <p>Africa</p>
             </Link>
-          </div>
-          <div className='box-map' data-aos="fade-up">
+        </div>
+        <div className='box-map' data-aos="fade-up">
             <Link href='/continent/asia' >
               <img className='each-map' src='/asia.png' alt='asia' />
               <p>Asia</p>
@@ -94,8 +108,13 @@ export default function Header() {
               <p>Oceania</p>
             </Link>
           </div>
+      </Slider>
+    </div>
         </div>
       </div>
+    {/* test */}
+    
+{/* test */}
       <main className='container-discover'>
         <div className='dc-left' data-aos="slide-right">
           <img src='/world-map.png' alt='discover the world' />

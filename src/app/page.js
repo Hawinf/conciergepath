@@ -2,6 +2,8 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import HomePage from "./homepage";
 import Head from 'next/head';
+import "./globals.css"; // your own global styles
+
 
 
 export default function Home() {
