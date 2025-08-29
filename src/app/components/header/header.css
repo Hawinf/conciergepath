@@ -120,12 +120,13 @@
 }
 .main-header {
     padding: 20px 0;
-    margin: 20px 0;
+    /* margin: 20px 0; */
+    margin-bottom: 30px;
 }
 .continents-map {
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     width: 80%;
     margin: auto;
     padding-bottom: 15px;
@@ -451,7 +452,7 @@ transform: rotate(-45deg) translateY(100%);
         margin: 0 0 30px 0
     }
     .box-map .each-map {
-        width: 30px;
+        width: 70px;
     }
     .box-map p {
         font-size: 9px;
