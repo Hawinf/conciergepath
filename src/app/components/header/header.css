@@ -132,6 +132,7 @@
     padding-bottom: 15px;
     border-bottom: 1px solid rgb(51, 54, 44);
 }
+
 .box-map:hover {
     background-color: rgba(73, 56, 56, 0.61);
     padding: 7px;
@@ -452,7 +453,7 @@ transform: rotate(-45deg) translateY(100%);
         margin: 0 0 30px 0
     }
     .box-map .each-map {
-        width: 70px;
+        width: 60px;
     }
     .box-map p {
         font-size: 9px;
