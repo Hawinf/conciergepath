@@ -7,7 +7,6 @@ import Footer from '@/app/components/footer/footer';
 
 import { cityData } from '@/app/data/cityData';
 import { countryData } from '@/app/data/countryData';
-
 import './country.css';
 
 export default function CountryPage({ params }) {
@@ -113,40 +112,40 @@ export default function CountryPage({ params }) {
         {/* === Qatar Detailed Guide Section === */}
         {countryId.toLowerCase() === 'qatar' && currentCountry?.guide && (
           <section className="qatar-guide-section">
-            <h2>{currentCountry.guide.title}</h2>
-            <p>{currentCountry.guide.intro}</p>
+            <h2 className='qatar-tittle'>{currentCountry.guide.title}</h2>
+            <p className='qatarguide-intro'>{currentCountry.guide.intro}</p>
 
-            <h3>Dress Code in Qatar</h3>
-            <p>{currentCountry.guide.dressCode}</p>
+            <h3 className='qatar-detail-tittle'>Dress Code in Qatar</h3>
+            <p className='dress-desc'>{currentCountry.guide.dressCode}</p>
 
-            <h3>Must-See Attractions in Doha</h3>
+            <h3 className='qatar-detail-tittle'>Must-See Attractions in Doha</h3>
             <ul>
               {currentCountry.guide.mustSeeAttractions.map((attraction, idx) => (
-                <li key={idx}>
+                <li key={idx} className='attractions-list'>
                   <strong>{attraction.name}</strong>: {attraction.description}
                 </li>
               ))}
             </ul>
 
-            <h3>Where to Try Local Food in Doha</h3>
-            <p>{currentCountry.guide.localFood.description}</p>
+            <h3 className='qatar-detail-tittle'>Where to Try Local Food in Doha</h3>
+            <p className='qatarfood-tittle'>{currentCountry.guide.localFood.description}</p>
             <ul>
               {currentCountry.guide.localFood.recommendations.map((foodPlace, idx) => (
                 <li key={idx}>{foodPlace}</li>
               ))}
             </ul>
 
-            <h3>Best Shopping Malls in Qatar</h3>
+            <h3 className='qatar-detail-tittle'>Best Shopping Malls in Qatar</h3>
             <ul>
               {currentCountry.guide.shoppingMalls.map((mall, idx) => (
-                <li key={idx}>
+                <li key={idx} className='mall-list'>
                   <strong>{mall.name}</strong>: {mall.description}
                 </li>
               ))}
             </ul>
           </section>
         )}
-        ``
+        
 
         {/* === Itinerary Section === */}
         {currentCountry?.itinerary && (
