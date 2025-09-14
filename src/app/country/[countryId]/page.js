@@ -1,4 +1,3 @@
-
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -91,8 +90,6 @@ export default function CountryPage({ params }) {
           </div>
         </section>
 
-        
-
         {/* === Affiliate / Itineraries Section === */}
         <nav className='continentpage-aff'>
           <h1 className='cp-afftittle' data-aos="fade-up">ITINERARIES</h1>
@@ -124,7 +121,7 @@ export default function CountryPage({ params }) {
                 <li key={idx} className='attractions-list'>
                   <strong>{attraction.name}</strong>: {attraction.description}
                 </li>
-              ))}
+              ))}``
             </ul>
 
             <h3 className='qatar-detail-tittle'>Where to Try Local Food in Doha</h3>
@@ -183,9 +180,9 @@ export default function CountryPage({ params }) {
                   </nav>
 
                   {section.highlights && (
-                    <ul>
+                    <ul >
                       {section.highlights.map((item, idx) => (
-                        <li key={idx}>{item}</li>
+                        <li key={idx} className='itinerary-list'>{item}</li>
                       ))}
                     </ul>
                   )}
@@ -196,7 +193,7 @@ export default function CountryPage({ params }) {
                       <p>{section.thingsToDo.description}</p>
                       <ul>
                         {section.thingsToDo.list.map((item, idx) => (
-                          <li key={idx}>{item}</li>
+                          <li key={idx} className='itinerary-list'>{item}</li>
                         ))}
                       </ul>
                     </>
@@ -205,7 +202,7 @@ export default function CountryPage({ params }) {
                   {section.whatToSee && (
                     <ul>
                       {section.whatToSee.map((item, idx) => (
-                        <li key={idx}>{item}</li>
+                        <li key={idx} className='itinerary-list'>{item}</li>
                       ))}
                     </ul>
                   )}
@@ -222,13 +219,13 @@ export default function CountryPage({ params }) {
 
             {currentCountry.itinerary.accommodation && (
               <div className="itinerary-accommodation">
-                <h3>Accommodation</h3>
-                <p>{currentCountry.itinerary.accommodation.general}</p>
+                <h3 className='accommodation-tittle'>Accommodation</h3>
+                <p className='accommodation-desc'>{currentCountry.itinerary.accommodation.general}</p>
                 <ul>
                   {currentCountry.itinerary.accommodation.recommendations?.map((rec, idx) => (
-                    <li key={idx}>
+                    <li key={idx} className='itinerary-list'>
                       <strong>{rec.city}</strong>: {rec.hotel}
-                      {rec.food && <p><strong>Food:</strong> {rec.food}</p>}
+                      {rec.food && <p className='food-tittle'><strong>Food:</strong> {rec.food}</p>}
                     </li>
                   ))}
                 </ul>
