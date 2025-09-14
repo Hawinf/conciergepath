@@ -22,9 +22,49 @@
     color: whitesmoke;
     text-align: center;
 }
-
+/* afiliate css */
+.continentpage-aff {
+    padding: 40px;   
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+.cp-afftittle {
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+}
+.affiliate-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cp-affbox {
+    background-color: rgba(64, 54, 54, 0.586);
+    margin: 10px;
+    border-radius: 7px;
+    padding: 15px 20px;
+    text-align: center;
+    width: 200px;
+}
+.cp-affbox h6 {
+    margin-top: 5px;
+}
+/* affiliate css */
 @media (max-width:768px) {
     .blog-headertittle {
         font-size: 50px;
+    }
+}
+@media (max-width: 576px) {
+    .continentpage-aff {
+        width: 100%;
+    }
+    .cp-afftittle {
+        font-size: 40px;
+    }.cp-affbox {
+        margin: 5px;
+        padding: 9px 10px;
+        width: 120px;
     }
 }

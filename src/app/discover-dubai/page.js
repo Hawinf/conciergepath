@@ -32,7 +32,7 @@ export default function DiscoverDubai() {
         </p>
       </nav>
 
-      <main className="discoverdubai-cardsection" data-aos="fade-down`">
+      <main className="discoverdubai-cardsection" data-aos="fade-down">
         {dubaiBlogs.map((post, index) => (
           <Link
             key={index}

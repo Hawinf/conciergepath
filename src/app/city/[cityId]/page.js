@@ -66,25 +66,25 @@ export default function CityPage({ params }) {
           )}
         </nav>
         <nav className='continentpage-aff'>
-  <h1 className='cp-afftittle' data-aos="fade-up">ITINERARIES</h1>
-  <main className='affiliate-section'>
-    {['flight', 'bus', 'car-rent', 'jogging', 'ticket', 'guide', 'food', 'simcard'].map((type) => (
-      <nav key={type} className='cp-affbox' data-aos="slide-left">
-        <Link href=''>
-          <Image 
-            src={`/${type}.png`} 
-            width={30} 
-            height={30} 
-            alt={`Find cheap ${type} for ${city?.name}`} 
-          />
-          <h6>
-            Find cheap {type} to {city?.name?.charAt(0).toUpperCase() + city?.name?.slice(1).toLowerCase()}
-          </h6>
-        </Link>
-      </nav>
-    ))}
-  </main>
-</nav>
+          <h1 className='cp-afftittle' data-aos="fade-up">ITINERARIES</h1>
+            <main className='affiliate-section'>
+            {['flight', 'bus', 'car-rent', 'jogging', 'ticket', 'guide', 'food', 'simcard'].map((type) => (
+            <nav key={type} className='cp-affbox' data-aos="slide-left">
+              <Link href=''>
+                <Image 
+                  src={`/${type}.png`} 
+                  width={30} 
+                  height={30} 
+                  alt={`Find cheap ${type} for ${city?.name}`} 
+                />
+                <h6>
+                  Find cheap {type} to {city?.name?.charAt(0).toUpperCase() + city?.name?.slice(1).toLowerCase()}
+                </h6>
+            </Link>
+          </nav>
+            ))}
+            </main>
+        </nav>
 
         
       </main>
