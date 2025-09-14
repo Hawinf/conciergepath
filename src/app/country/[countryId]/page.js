@@ -94,7 +94,6 @@ export default function CountryPage({ params }) {
         <nav className='continentpage-aff'>
           <h1 className='cp-afftittle' data-aos="fade-up">ITINERARIES</h1>
           <main className='affiliate-section'>
-            {/* Example affiliate boxes, replace href as needed */}
             {['flight', 'bus', 'car-rent', 'jogging', 'ticket', 'guide', 'food', 'simcard'].map((type) => (
               <nav key={type} className='cp-affbox' data-aos="slide-left">
                 <Link href=''>

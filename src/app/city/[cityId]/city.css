@@ -47,10 +47,12 @@
     border-radius: 7px;
     padding: 15px 20px;
     text-align: center;
+    /* width: 50px; */
 }
 .cp-affbox h6 {
     margin-top: 5px;
 }
+
 @media (max-width:768px) {
     .citypage-tittle {
         font-size: 20px;
@@ -58,6 +60,9 @@
     .citypage-desc {
         font-size: 11px;
         line-height: 20px;
+    }
+    .cp-afftittle {
+        font-size: 40px;
     }
 }
 @media (max-width:576px) {
@@ -72,5 +77,15 @@
     }
     .citypage-desc {
         width: 95%;
+    }
+    .continentpage-aff {
+        width: 100%;
+    }
+    .cp-afftittle {
+        font-size: 40px;
+    }.cp-affbox {
+        margin: 5px;
+        padding: 9px 10px;
+        width: 120px;
     }
 }
