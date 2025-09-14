@@ -57,6 +57,9 @@
     }
 }
 @media (max-width: 576px) {
+    .blog-headertittle {
+        font-size: 30px;
+    }
     .continentpage-aff {
         width: 100%;
     }
