@@ -39,21 +39,27 @@ export default function Footer() {
             </div>
             <div className='below-footer'>
                 <div className='section-one' data-aos="slide-left">
-                    <h6>Popular Itineraries</h6>
+                    <h6>Explore Dubai</h6>
                     <div>
-                        <a>3 Days In Turkey</a>
+                        <a href='/discover-dubai'>Discover Dubai</a>
                     </div>
                     <div>
-                        <a>3 Days In Georgia</a>
+                        <a href='/blog/explore-dubai/dubai'>5 Days In Dubai</a>
                     </div>
                 </div>
                 <div className='section-one' data-aos="slide-left">
                     <h6>Top Destinations</h6>
                     <div>
-                        <a>Turkey</a>
+                        <a href='/country/turkey'>Turkey</a>
                     </div>
                     <div>
-                        <a>Georgia</a>
+                        <a href='/country/georgia'>Georgia</a>
+                    </div>
+                    <div>
+                        <a href='/country/qatar'>Qatar</a>
+                    </div>
+                    <div>
+                        <a href='/country/kyrgyzstan'>Kyrgyzstan</a>
                     </div>
                 </div>
                 <div className='section-one' data-aos="slide-right">
