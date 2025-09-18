@@ -85,10 +85,13 @@
     margin-bottom: 30px;
     text-align: center;
 }
+.itinerary-day {
+    margin-bottom: 30px;
+}
 .itinerary-day .day-tittle {
     font-size: 20px;
     font-weight: 700;
-    margin: 15px 0;
+    margin: 5px 0;
     color: wheat;
 }
 .itinerary-day .section-intro {
