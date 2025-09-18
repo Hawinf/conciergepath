@@ -120,7 +120,7 @@ export default function CountryPage({ params }) {
                 <li key={idx} className='attractions-list'>
                   <strong>{attraction.name}</strong>: {attraction.description}
                 </li>
-              ))}``
+              ))}
             </ul>
 
             <h3 className='qatar-detail-tittle'>Where to Try Local Food in Doha</h3>
