@@ -69,13 +69,14 @@ export default function BlogPost({ params }) {
       </nav>
 
         {/* Render Itinerary */}
+      <nav className='wrapper-blog'>
         {post.itinerary && (
           <section className="blog-itinerary">
-            <h2 className="blog-section-title">Itinerary</h2>
+            <h2 className="blog-section-title">ITINERARY</h2>
             {post.itinerary.map((day, index) => (
-              <div key={index} className="itinerary-day">
-                <h3>{day.day}: {day.title}</h3>
-                <p>{day.details}</p>
+              <div key={index} >
+                <h3 className='itinerary-days'>{day.day}: {day.title}</h3>
+                <p className="itinerary-day">{day.details}</p>
               </div>
             ))}
           </section>
@@ -84,18 +85,19 @@ export default function BlogPost({ params }) {
         {/* Best Time to Visit */}
         {post.bestTimeToVisit && (
           <section className="blog-besttime">
-            <h2 className="blog-section-title">Best Time to Visit</h2>
-            <p>{post.bestTimeToVisit}</p>
+            <h2 className="blog-section-title">BEST TIME TO VISIT</h2>
+            <p className="itinerary-day">{post.bestTimeToVisit}</p>
           </section>
         )}
 
         {/* Extra Notes */}
         {post.note && (
           <section className="blog-note">
-            <h2 className="blog-section-title">Travel Notes</h2>
-            <p>{post.note}</p>
+            <h2 className="blog-section-title">TRAVEL NOTES</h2>
+            <p className="itinerary-day">{post.note}</p>
           </section>
         )}
+      </nav>
       </nav>
       <Footer/>
     </>

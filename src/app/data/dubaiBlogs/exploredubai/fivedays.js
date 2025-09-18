@@ -1,11 +1,11 @@
 const fivedays = {
   category: "explore-dubai",
   location: "dubai",
-  title: "5-Day Dubai Itinerary: Top Things to See, Do, and Explore",
+  title: "5 Days Dubai Itinerary",
   slug: "5-day-dubai-itinerary",
   description:
     "Dubai is one of the most famous tourist destinations in the Middle East and in the world. Airlines from almost every country fly to Dubai, and the largest airports are located in Dubai, Abu Dhabi, and Sharjah. Dubai is the largest city, even though it is not the capital. Here’s what you absolutely must visit in 5 days.",
-  image: "/restaurants.jpg",
+  image: "/5-daysindubai.jpg",
   keywords: [
     "Dubai itinerary",
     "5 days in Dubai",

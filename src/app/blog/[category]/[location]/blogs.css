@@ -51,9 +51,30 @@
     margin-top: 5px;
 }
 /* affiliate css */
+.wrapper-blog {
+    width: 80%;
+    margin: auto;
+}
+.blog-section-title {
+    font-size: 40px;
+    color: wheat;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.itinerary-day {
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+.itinerary-days {
+    color: wheat;
+    margin-bottom: 20px;
+}
 @media (max-width:768px) {
     .blog-headertittle {
         font-size: 50px;
+    }
+    .wrapper-blog {
+        width: 90%;
     }
 }
 @media (max-width: 576px) {
