@@ -173,7 +173,7 @@ export const countryData = {
         writter : 'By Katy',
         image: '/turkey.jpg',
         description:
-          'Türkiye is a land where East meets West, blending ancient history, stunning natural wonders, and vibrant modern cities. From the cultural depth of Istanbul to the fairy chimneys of Cappadocia, this 13-day journey covers the best of the country—filled with Roman ruins, Ottoman architecture, thermal springs, and breathtaking landscapes.',
+          'Türkiye is a land where East meets West, blending ancient history, stunning natural wonders, and vibrant modern cities. From the cultural depth of Istanbul to the fairy chimneys of Cappadocia, this 13-days journey covers the best of the country—filled with Roman ruins, Ottoman architecture, thermal springs, and breathtaking landscapes.',
 
         itinerary: {
           title: '13 Days in Türkiye',

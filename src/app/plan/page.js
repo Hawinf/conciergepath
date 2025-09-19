@@ -15,16 +15,12 @@ export default function Plan() {
           answer: 'We provide personalized travel itineraries based on your destination, budget, and preferences. This includes suggestions for flights, accommodations, attractions, and activities.',
         },
         {
-          question: 'Do you charge extra for making reservations?',
-          answer: 'Our service includes trip planning and reservation coordination as part of the package. Any third-party booking costs (like hotel or tour fees) are separate and paid directly to the provider.',
-        },
-        {
           question: 'How do I receive my travel itinerary?',
           answer: 'You will receive a detailed PDF itinerary by email, and optionally through WhatsApp, including booking links, maps, and personalized tips.',
         },
         {
             question: 'Is your trip planning service available worldwide?',
-            answer: 'Our plan`ning trip is currently available only in Dubai. However, our travel planning services extend to multiple countries we have personally explored, ensuring expert insights and tailored itineraries.',
+            answer: 'Our planning trip is currently available only in Dubai. However, our travel planning services extend to multiple countries we have personally explored, ensuring expert insights and tailored itineraries.',
           },
       ];
 

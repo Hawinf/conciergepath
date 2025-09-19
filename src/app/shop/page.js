@@ -14,12 +14,8 @@ export default function Shop() {
           answer: 'We build landing pages, company profiles, and ecommerce websites tailored to your needs.',
         },
         {
-          question: 'Do you offer monthly maintenance?',
-          answer: 'Yes, with our monthly subscription, we manage content updates, new articles, and website edits.',
-        },
-        {
           question: 'How long does it take to build a website?',
-          answer: 'Most websites are completed in 4`–7 days depending on complexity.',
+          answer: 'Most websites are completed in 4–7 days depending on complexity.',
         },
       ];
 

@@ -30,7 +30,7 @@ const fivedays = {
       day: "Day 3",
       title: "Desert Safari Adventure",
       details:
-        "Spend one more day on a desert safari. The best way to experience this is to book a tour. Check out the options here.",
+        "Spend one more day on a desert safari. The best way to experience this is to book a tour.",
     },
     {
       day: "Day 4",
