@@ -97,7 +97,7 @@ export default function Shop() {
             <main className='shop-wrapper'>
                 <nav className='shop-nav' data-aos="fade-up">
                     <h1>"Get a Stunning Website – Custom Design Services"</h1>
-                    <Link href='/web-guide.pdf' download="My-Guide.pdf" target='blank' className='nav-orderbtn'>Details</Link>
+                    <Link href='/web-services.pdf' download="Web Service - Wanderpath" target='blank' className='nav-orderbtn'>Details</Link>
                 </nav>
                 <main className='shop-section'>
                     <nav className='shop-branch' data-aos="slide-left">
@@ -109,7 +109,7 @@ export default function Shop() {
                             <h1>More Than a Website – It's Your Bridge to the World.</h1>
                         </main>
                         <main className='section-branch-down' data-aos="fade-up">
-                            <h1>Engage. Inspire. Convert. Websites `That Speak to Your Audience.</h1>
+                            <h1>Engage. Inspire. Convert. Websites That Speak to Your Audience.</h1>
                         </main>
                     </nav>
                 </main>

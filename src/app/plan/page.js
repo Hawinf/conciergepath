@@ -103,7 +103,7 @@ export default function Plan() {
             <main className='shop-wrapper'>
                 <nav className='shop-nav' data-aos="slide-left">
                     <h1>"Let Us Plan Your Perfect Trip – From Itinerary to Reservation                    "</h1>
-                    <Link href='/web-guide.pdf' download="" target='blank' className='nav-orderbtn'>Details</Link>
+                    <Link href='/Travelservice.pdf' download="Travel Service - Wanderpath" target='blank' className='nav-orderbtn'>Details</Link>
                 </nav>
                 <main className='shop-section'>
                     <nav className='shop-branch' data-aos="slide-right">
