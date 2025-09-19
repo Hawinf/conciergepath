@@ -167,7 +167,7 @@ export default function Navbar() {
                   </Link>
                 </nav>
             </nav>
-            <p>© 2025 Kate. All rights reserved.</p>
+            <p>© 2025 Wanderpath - All rights reserved.</p>
           </nav>
           )
         }
@@ -180,7 +180,7 @@ export default function Navbar() {
             <Link href='/plan' className='shop-btn'>Get your trip plan!</Link>
             <h1>Professional Website Creation – You Relax, We Build</h1>
             <Link href='/shop' className='shop-btn'>Get Your Website Today!</Link>
-            <p>© 2025 Kate. All rights reserved.</p>
+            <p>© 2025 Wanderpath - All rights reserved.</p>
           </nav>
           )
         }
@@ -195,7 +195,7 @@ export default function Navbar() {
                 <li><Link href='terms-of-service'>Terms Of Service</Link></li>
                 <li><Link href='privacy-policy'>Privacy and Policy</Link></li>
             </ul> 
-            <p>© 2025 Kate. All rights reserved.</p>
+            <p>© 2025 Wanderpath - All rights reserved.</p>
           </nav>
           )
         }
@@ -329,7 +329,7 @@ export default function Navbar() {
                     </a> */}
                 </div>
             </div>
-            <p className='destination-footer'>© 2025 Kate. All rights reserved.</p>
+            <p className='destination-footer'>© 2025 Wanderpath - All rights reserved.</p>
           </div>
           )
         }
