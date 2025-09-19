@@ -121,7 +121,7 @@ export default function Header() {
         <div className='dc-right'>
           <h1 className='right-tittle' data-aos="fade-up">DISCOVER</h1>
           <h1 className='right-tittle1'>THE WORLD &#8690;</h1>
-          <p data-aos="fade-up">We have written over 600+ travel guides and backpacking itineraries to provide all the information you need to help plan your dream trip around the world.</p>
+          <p data-aos="fade-up">We craft travel guides and itineraries that combine practical tips with authentic experiences, making it easier for you to explore new destinations.</p>
           <Link href='/discover-world' className='link-blog'>
             <button className="btn matrix" data-aos="fade-up">
               <span>EXPLORE DESTINATION &#8608;</span>

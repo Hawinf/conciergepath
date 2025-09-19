@@ -34,9 +34,9 @@ export default function Footer() {
                             </div>
                         </Link>
                     </div>
-                    <h6>Keep up with my newest content </h6>
+                    <h6>Check out my newest posts</h6>
                 </div>
-            </div>
+            </div>``
             <div className='below-footer'>
                 <div className='section-one' data-aos="slide-left">
                     <h6>Explore Dubai</h6>
