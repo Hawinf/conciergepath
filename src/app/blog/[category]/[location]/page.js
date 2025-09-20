@@ -46,27 +46,41 @@ export default function BlogPost({ params }) {
             <p className='blog-headerdescriptions'>{post.description}</p>
         </main>
 
-        <nav className='continentpage-aff'>
+      <nav className='continentpage-aff'>
         <h1 className='cp-afftittle' data-aos="fade-up">ITINERARIES</h1>
         <main className='affiliate-section'>
-          {['flight', 'bus', 'car-rent', 'jogging', 'ticket', 'guide', 'food', 'simcard'].map((type) => (
-            <nav key={type} className='cp-affbox' data-aos="slide-left">
-              <Link href=''>
-                <Image 
-                  src={`/${type}.png`} 
-                  width={30} 
-                  height={30} 
-                  alt={`Find cheap ${type} for ${post?.title}`} 
-                />
-                <h6>
-                  Find cheap {type} to{" "}
-                  {post?.title?.charAt(0).toUpperCase() + post?.title?.slice(1).toLowerCase()}
-                </h6>
-              </Link>
-            </nav>
-          ))}
+          {['flight', 'bus', 'car-rent', 'jogging', 'ticket', 'guide', 'food', 'simcard'].map((type) => {
+            const links = {
+              flight: "https://your-flight-link.com",
+              bus: "https://your-bus-link.com",
+              'car-rent': "https://your-car-rental-link.com",
+              jogging: "https://your-jogging-link.com",
+              ticket: "https://your-ticket-link.com",
+              guide: "https://your-guide-link.com",
+              food: "https://your-food-link.com",
+              simcard: "https://your-simcard-link.com"
+            };
+
+            return (
+              <nav key={type} className='cp-affbox' data-aos="slide-left">
+                <Link href={links[type]} target="_blank">
+                  <Image 
+                    src={`/${type}.png`} 
+                    width={30} 
+                    height={30} 
+                    alt={`Find cheap ${type} for ${post?.title}`} 
+                  />
+                  <h6>
+                    Find cheap {type} to{" "}
+                    {post?.title?.charAt(0).toUpperCase() + post?.title?.slice(1).toLowerCase()}
+                  </h6>
+                </Link>
+              </nav>
+            );
+          })}
         </main>
       </nav>
+
 
         {/* Render Itinerary */}
       <nav className='wrapper-blog'>
