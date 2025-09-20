@@ -107,7 +107,7 @@ export default function Header() {
                   <p>Oceania</p>
                 </Link>
               </div>
-      </Slider>
+      </Slider>``
     </div>
         </div>
       </div>
