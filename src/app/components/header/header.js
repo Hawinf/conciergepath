@@ -30,7 +30,7 @@ export default function Header() {
     }, typingSpeed);
 
     return () => clearInterval(interval);
-  }, []);``
+  }, []);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -107,7 +107,7 @@ export default function Header() {
                   <p>Oceania</p>
                 </Link>
               </div>
-      </Slider>``
+      </Slider>
     </div>
         </div>
       </div>

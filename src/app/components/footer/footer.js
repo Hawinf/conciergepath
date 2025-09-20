@@ -83,7 +83,6 @@ export default function Footer() {
                         <Link href='privacy-policy'>Privacy and Policy</Link>
                     </div>
                 </div>
-                
                 <div className='section-one' data-aos="slide-right">
                     <h6>Stay Update</h6>
                     <div>

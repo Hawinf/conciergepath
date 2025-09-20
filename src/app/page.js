@@ -11,7 +11,7 @@ export default function Home() {
     <>
        <Head>
         {/* Primary Meta Tags */}
-        <title>ConciergePath – Plan Your Trips with Ease</title>
+        <title>Wanderpath – Plan Your Trips with Ease</title>
         <meta name="description" content="Plan your travels and explore top destinations with ConciergePath. Your personal travel concierge." />
         <meta name="keywords" content="travel blog, trip planning, concierge service, destination guide, travel tips" />
         <meta name="author" content="ConciergePath Team" />
