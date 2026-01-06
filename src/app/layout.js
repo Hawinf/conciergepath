@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 // ✅ ONLY metadata that belongs in metadata
 export const metadata = {
-  title: 'ConciergePath – Plan Your Trips with Ease',
+  title: 'Your note to travel – Plan Your Trips with Ease',
   description:
     'Plan your travels and explore top destinations with ConciergePath. Your personal travel concierge.',
   keywords: [

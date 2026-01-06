@@ -17,12 +17,12 @@ export default function TermsOfService() {
         <meta property="og:title" content="Terms of Service | YourWebsiteName" />
         <meta property="og:description" content="Terms and conditions for using our web and travel planning services." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/terms-of-service" />
-        <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg" />
+        <meta property="og:url" content="https://notepaths.com/terms-of-service" />
+        <meta property="og:image" content="https://notepaths.com/images/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Terms of Service | YourWebsiteName" />
         <meta name="twitter:description" content="Terms and conditions for using our web and travel planning services." />
-        <meta name="twitter:image" content="https://yourdomain.com/images/og-image.jpg" />
+        <meta name="twitter:image" content="https://notepaths.com/images/og-image.jpg" />
 
         <script
           type="application/ld+json"
@@ -32,10 +32,10 @@ export default function TermsOfService() {
               "@type": "WebPage",
               "name": "Terms of Service",
               "description": "Read the Terms of Service for using our website, digital travel planning services, and custom website development.",
-              "url": "https://yourdomain.com/terms-of-service",
+              "url": "https://notepaths.com/terms-of-service",
               "author": {
                 "@type": "Organization",
-                "name": "YourWebsiteName"
+                "name": "notepaths"
               },
               "datePublished": "2025-05-23"
             }),
@@ -48,7 +48,7 @@ export default function TermsOfService() {
         <p><strong>Effective Date:</strong> May 23, 2025</p>
         <br></br>
         <p>
-          Welcome to YourWebsiteName. By accessing and using our services, you agree to the following terms. Please read them carefully.
+          Welcome to Notepaths By accessing and using our services, you agree to the following terms. Please read them carefully.
         </p>
         <br></br>
         <h2>1. Acceptance of Terms</h2><br></br>
@@ -90,7 +90,7 @@ export default function TermsOfService() {
         <br></br>
         <h2>8. Contact Us</h2><br></br>
         <p>
-          For questions about these Terms, contact us at: <a href="mailto:support@yourwebsitename.com">support@yourwebsitename.com</a>
+          For questions about these Terms, contact us at: <a href="mailto:hello@notepaths.com">hello@notepaths.com</a>
         </p>
       </main>
       <Footer/>

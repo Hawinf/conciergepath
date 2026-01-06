@@ -12,12 +12,12 @@ export default function CookiePolicy() {
         <meta property="og:title" content="Cookie Policy | Your Travel & Web Service" />
         <meta property="og:description" content="Understand how we use cookies for analytics and personalization on our site." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/cookie-policy" />
-        <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg" />
+        <meta property="og:url" content="https://notepaths.com/cookie-policy" />
+        <meta property="og:image" content="https://notepaths.com/images/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Cookie Policy | Your Travel & Web Service" />
         <meta name="twitter:description" content="Understand how we use cookies for analytics and personalization on our site." />
-        <meta name="twitter:image" content="https://yourdomain.com/images/og-image.jpg" />
+        <meta name="twitter:image" content="https://notepaths.com/images/og-image.jpg" />
 
         <script
           type="application/ld+json"
@@ -27,7 +27,7 @@ export default function CookiePolicy() {
               "@type": "WebPage",
               "name": "Cookie Policy",
               "description": "Our Cookie Policy explains how and why cookies are used on our travel blog and website services.",
-              "url": "https://yourdomain.com/cookie-policy"
+              "url": "https://notepaths.com/cookie-policy"
             }),
           }}
         />
@@ -76,7 +76,7 @@ export default function CookiePolicy() {
         <br></br>
         <h2>Contact Us</h2><br></br>
         <p>
-          If you have any questions about our cookie practices, please contact us at <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>.
+          If you have any questions about our cookie practices, please contact us at <a href="mailto:hello@notepaths.com">hello@notepaths.com</a>.
         </p>
       </main>
       <Footer />

@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 export default function ContinentPage({ params }) {
   const { continentId } = params;
-  const baseUrl = 'https://yourdomain.com';
+  const baseUrl = 'https://notepaths.com';
 
   const capitalizedContinent = continentId.charAt(0).toUpperCase() + continentId.slice(1);
 

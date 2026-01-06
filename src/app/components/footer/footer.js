@@ -89,7 +89,7 @@ export default function Footer() {
                         <Link href='https://t.me/qatsiaryna' target='blank'><img src='/telegram.png' alt='kate telegram channel' /></Link>
                         <Link href='https://www.tiktok.com/@katsia55?_t=ZS-8wGN9551DlA&_r=1' target='blank'><img src='/tiktok.png' alt='kate telegram channel' /></Link>
                     </div>
-                    <p>© 2025 Wanderpath - All rights reserved.</p>
+                    <p>© 2026 Notepaths - All rights reserved.</p>
                 </div>
                 
             </div>

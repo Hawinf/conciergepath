@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Privacy Policy",
-    "url": "https://yourdomain.com/privacy-policy",
+    "url": "https://notepaths.com//privacy-policy",
     "description": "Learn how we collect, use, and protect your information at TravelBlog.",
   };
 
@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
         />
         <meta property="og:title" content="Privacy Policy | TravelBlog" />
         <meta property="og:description" content="Our privacy practices and how we protect your data." />
-        <meta property="og:url" content="https://yourdomain.com/privacy-policy" />
+        <meta property="og:url" content="https://notepaths.com//privacy-policy" />
         <meta property="og:type" content="website" />
         <meta name="twitter:title" content="Privacy Policy | TravelBlog" />
         <meta name="twitter:description" content="How we collect, use, and protect your information." />
@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
         <p>Last updated: [Monday, 26 May 2025]</p>
         <br></br>
         <p>
-          At TravelBlog, your privacy is important to us. This Privacy Policy outlines the types of personal
+          At Notepaths, your privacy is important to us. This Privacy Policy outlines the types of personal
           information we collect and how we use, disclose, and protect that information.
         </p>
         <br></br>
@@ -86,7 +86,7 @@ export default function PrivacyPolicy() {
         <br></br>
         <h2>8. Contact Us</h2> 
         <br></br>
-        <p>If you have any questions about this policy, contact us at: [Contact@us.com]</p>
+        <p>If you have any questions about this policy, contact us at: hello@notepaths.com</p>
       </main>
       <Footer />
     </>
