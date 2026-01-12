@@ -119,49 +119,49 @@ export default function Navbar() {
             <h1>Plan Your Trip</h1>
               <nav className='wrapper-planning'>
                 <nav className='planning-icon'>
-                  <Link href='https://tp.media/r?marker=509395&trs=288881&p=4114&u=https%3A%2F%2Faviasales.com&campaign_id=100' >
+                  <Link href='https://aviasales.tpk.mx/umEE5mde' >
                     <Image alt='Flight Tickets – Affordable Air Travel Deals' className='planning-logo' src='/flight.png' width={30} height={30} />
                     <h6>Find Cheap Flight</h6>
                   </Link>
                 </nav>
                 <nav className='planning-icon'>
-                  <Link href=''>
+                  <Link href='https://intui.tpk.mx/xPrtSwQa'>
                     <Image alt='Reliable Intercity Bus Service' className='planning-logo' src='/bus.png'  width={30} height={30} />
                     <h6>Find Buses</h6>
                   </Link>
                 </nav>
                 <nav className='planning-icon'>
-                  <Link href=''>
+                  <Link href='https://getrentacar.tpk.mx/tB1Zg8MR'>
                     <Image alt='Affordable Car Rentals Worldwide' className='planning-logo' src='/car-rent.png'  width={30} height={30} />
-                    <h6>Find Car Rent</h6>
+                    <h6>Rent Car</h6>
                   </Link>
                 </nav>
                 <nav className='planning-icon'>
-                  <Link href=''>
+                  <Link href='https://tiqets.tpk.mx/YcoMGBaY'>
                     <Image alt='Top Things to Do – Book Tours and Experiences' className='planning-logo' src='/jogging.png'  width={30} height={30} />
                     <h6>Things To Do</h6>
                   </Link>
                 </nav>
                 <nav className='planning-icon'>
-                  <Link href=''>
+                  <Link href='https://tiqets.tpk.mx/YZWEFTg7'>
                     <Image alt='Entry Ticket for Top Attractions and Tours' className='planning-logo' src='/ticket.png'  width={30} height={30} />
                     <h6>Find Tickets</h6>
                   </Link>
                 </nav>
                 <nav className='planning-icon'>
-                  <Link href=''>
+                  <Link href='https://klook.tpk.mx/hqo8oNA9'>
                     <Image alt='Comprehensive Travel Guid' className='planning-logo' src='/guide.png'  width={30} height={30} />
                     <h6>Find Travel Guide</h6>
                   </Link>
                 </nav>
                 <nav className='planning-icon'>
-                  <Link href=''>
+                  <Link href='https://airalo.tpk.mx/9cmvfFaq'>
                     <Image alt='Best Travel SIM Card for Tourists' className='planning-logo' src='/simcard.png'  width={30} height={30} />
                     <h6>Find Esim Card</h6>
                   </Link>
                 </nav>
                 <nav className='planning-icon'>
-                  <Link href=''>
+                  <Link href='https://klook.tpk.mx/hqo8oNA9'>
                     <Image alt='Find the Best Local Restaurants Near You' className='planning-logo' src='/food.png'  width={30} height={30} />
                     <h6>Find Restaurant</h6>
                   </Link>
