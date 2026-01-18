@@ -10,7 +10,7 @@ import Footer from '@/app/components/footer/footer';
 
 export default function CityPage({ params }) {
   const { cityId } = params;
-  const baseUrl = 'https://yourdomain.com'; // Update to your domain
+  const baseUrl = 'https://notepaths.com'; // Update to your domain
 
   // Flatten all city entries
   const allCities = Object.values(cityData).flat();
@@ -90,7 +90,7 @@ export default function CityPage({ params }) {
                       alt={`Find cheap ${type} for ${city?.name}`} 
                     />
                     <h6>
-                      Find cheap {type} to{" "}
+                      Find {type} to{" "}
                       {city?.name?.charAt(0).toUpperCase() + city?.name?.slice(1).toLowerCase()}
                     </h6>
                   </Link>

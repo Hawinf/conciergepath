@@ -15,45 +15,46 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: 'Your note to travel – Plan Your Trips with Ease',
   description:
-    'Plan your travels and explore top destinations with ConciergePath. Your personal travel concierge.',
+    'Plan your travels and explore top destinations with Notepaths. Your personal travel note.',
   keywords: [
     'travel blog',
     'trip planning',
     'concierge service',
     'destination guide',
     'travel tips',
+    'website service',
   ],
-  authors: [{ name: 'ConciergePath Team' }],
+  authors: [{ name: 'Notepaths Team' }],
   robots: 'index, follow',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/kate-fav.png',
   },
   openGraph: {
     type: 'website',
-    title: 'ConciergePath – Your Travel Partner',
+    title: 'Notepaths – Your Travel Partner',
     description:
       'Discover and plan amazing trips across the globe with our expert travel concierge.',
-    url: 'https://yourdomain.com',
-    siteName: 'ConciergePath',
+    url: 'https://notepaths.com/',
+    siteName: 'Notepaths',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'ConciergePath Travel Blog',
+        alt: 'Notepaths Travel Blog',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ConciergePath – Your Travel Partner',
+    title: 'Notepaths – Your Travel Partner',
     description:
       'Plan your next travel adventure with ease and discover new destinations.',
     creator: '@yourTwitterHandle',
     images: ['/og-image.jpg'],
   },
   alternates: {
-    canonical: 'https://yourdomain.com',
+    canonical: 'https://notepaths.com/',
   },
 };
 

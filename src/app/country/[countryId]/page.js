@@ -10,7 +10,7 @@ import './country.css';
 
 export default function CountryPage({ params }) {
   const { countryId } = params;
-  const baseUrl = 'https://yourdomain.com'; // Replace with your actual domain
+  const baseUrl = 'https://notepaths.com'; // Replace with your actual domain
 
   // Find current country object in countryData by countryId
   let currentCountry = null;
@@ -104,14 +104,14 @@ export default function CountryPage({ params }) {
       'simcard'
     ].map((type) => {
       const links = {
-        flight: "https://your-flight-link.com",
-        bus: "https://your-bus-link.com",
-        'car-rent': "https://your-car-rental-link.com",
+        flight: "https://aviasales.tpk.mx/umEE5mde",
+        bus: "https://intui.tpk.mx/xPrtSwQa",
+        'car-rent': "https://getrentacar.tpk.mx/tB1Zg8MR",
         jogging: "https://your-jogging-link.com",
-        ticket: "https://your-ticket-link.com",
-        guide: "https://your-guide-link.com",
-        food: "https://your-food-link.com",
-        simcard: "https://your-simcard-link.com"
+        ticket: "https://tiqets.tpk.mx/YcoMGBaY",
+        guide: "https://klook.tpk.mx/hqo8oNA9",
+        food: "https://klook.tpk.mx/hqo8oNA9",
+        simcard: "https://airalo.tpk.mx/9cmvfFaq"
       };
 
       return (
@@ -124,7 +124,7 @@ export default function CountryPage({ params }) {
               alt={`Find cheap ${type} for ${currentCountry?.name}`} 
             />
             <h6>
-              Find cheap {type} to{" "}
+              Find {type} {" "}
               {currentCountry?.name?.charAt(0).toUpperCase() + 
                currentCountry?.name?.slice(1).toLowerCase()}
             </h6>

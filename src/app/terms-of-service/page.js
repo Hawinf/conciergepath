@@ -13,7 +13,7 @@ export default function TermsOfService() {
           content="Read the Terms of Service for using our website, digital travel planning services, and custom website development."
         />
         <meta name="keywords" content="terms of service, website usage terms, travel service terms, web design terms" />
-        <meta name="author" content="YourWebsiteName" />
+        <meta name="author" content="Notepaths" />
         <meta property="og:title" content="Terms of Service | YourWebsiteName" />
         <meta property="og:description" content="Terms and conditions for using our web and travel planning services." />
         <meta property="og:type" content="website" />
@@ -75,7 +75,7 @@ export default function TermsOfService() {
         <br></br>
         <h2>5. Intellectual Property</h2><br></br>
         <p>
-          All content on this site including text, images, and branding belongs to YourWebsiteName unless otherwise stated. You may not copy or reuse any materials without permission.
+          All content on this site including text, images, and branding belongs to Notepaths.com unless otherwise stated. You may not copy or reuse any materials without permission.
         </p>
         <br></br>
         <h2>6. Limitation of Liability</h2><br></br>

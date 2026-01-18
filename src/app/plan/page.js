@@ -61,13 +61,13 @@ export default function Plan() {
               <meta name="keywords" content="website design, landing page, ecommerce, company profile, monthly web maintenance" />
               <meta property="og:title" content="Website Design Services – Build Your Online Presence" />
               <meta property="og:description" content="Professional website design and monthly maintenance. Landing pages, company profiles, and ecommerce." />
-              <meta property="og:image" content="https://yourdomain.com/images/website-banner.jpg" />
-              <meta property="og:url" content="https://yourdomain.com/shop" />
+              <meta property="og:image" content="https://notepaths.com/images/website-banner.jpg" />
+              <meta property="og:url" content="https://notepaths.com/shop" />
               <meta property="og:type" content="website" />
               <meta name="twitter:card" content="summary_large_image" />
               <meta name="twitter:title" content="Website Design Services – Build Your Online Presence" />
               <meta name="twitter:description" content="Get a custom website designed for your business. Fast delivery, SEO-friendly, and monthly support." />
-              <meta name="twitter:image" content="https://yourdomain.com/images/website-banner.jpg" />
+              <meta name="twitter:image" content="https://notepaths.com/images/website-banner.jpg" />
               <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
@@ -75,23 +75,23 @@ export default function Plan() {
                     "@context": "https://schema.org",
                     "@type": "Product",
                     "name": "Website Design & Management Service",
-                    "image": "https://yourdomain.com/images/web-design.jpg", // Replace with your actual image
+                    "image": "https://notepaths.com/images/web-design.jpg", // Replace with your actual image
                     "description": "We build and manage professional websites including landing pages, company profiles, and ecommerce stores with SEO and mobile-first design.",
                     "brand": {
                       "@type": "Brand",
-                      "name": "Your Brand Name"
+                      "name": "Notepaths"
                     },
                     "offers": {
                       "@type": "Offer",
                       "priceCurrency": "USD",
                       "price": "199",  
                       "availability": "https://schema.org/InStock",
-                      "url": "https://yourdomain.com/shop"
+                      "url": "https://notepaths.com/shop"
                     },
                     "provider": {
                       "@type": "Organization",
-                      "name": "Your Brand Name",
-                      "url": "https://yourdomain.com"
+                      "name": "Notepaths",
+                      "url": "https://notepaths.com/"
                     }
                   }),
                 }}
@@ -102,8 +102,8 @@ export default function Plan() {
             <Navbar />
             <main className='shop-wrapper'>
                 <nav className='shop-nav' data-aos="slide-left">
-                    <h1>"Let Us Plan Your Perfect Trip – From Itinerary to Reservation                    "</h1>
-                    <Link href='/Travelservice.pdf' download="Travel Service - Wanderpath" target='blank' className='nav-orderbtn'>Details</Link>
+                    <h1>"Let Us Plan Your Perfect Trip – From Itinerary to Reservation"</h1>
+                    <Link href='/Travelservice.pdf' download="Travel Service - Notepaths" target='blank' className='nav-orderbtn'>Details</Link>
                 </nav>
                 <main className='shop-section'>
                     <nav className='shop-branch' data-aos="slide-right">

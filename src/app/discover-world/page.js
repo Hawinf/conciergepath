@@ -14,7 +14,7 @@
   import "aos/dist/aos.css";
 
   export default function DiscoverWorld() {
-    const baseUrl = 'https://yourdomain.com'; // ✅ Update this to your actual domain
+    const baseUrl = 'https://notepaths.com'; // ✅ Update this to your actual domain
 
     const jsonLd = {
       "@context": "https://schema.org",

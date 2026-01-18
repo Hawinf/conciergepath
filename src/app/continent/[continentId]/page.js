@@ -82,51 +82,51 @@ export default function ContinentPage({ params }) {
             <h1 className='cp-afftittle'>ITINERARIES</h1>
             <main className='affiliate-section'>
                 <nav className='cp-affbox'>
-                  <Link href=''>
+                  <Link href='https://aviasales.tpk.mx/umEE5mde'>
                     <Image src='/flight.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
-                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                    <h6>Flight to {capitalizedContinent}</h6>
                   </Link>
                 </nav>
                 <nav className='cp-affbox'>
-                  <Link href=''>
+                  <Link href='https://intui.tpk.mx/xPrtSwQa'>
                     <Image src='/bus.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
-                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                    <h6>Find bus in {capitalizedContinent}</h6>
                   </Link>
                 </nav>
                 <nav className='cp-affbox'>
-                  <Link href=''>
+                  <Link href='https://getrentacar.tpk.mx/tB1Zg8MR'>
                     <Image src='/car-rent.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
-                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                    <h6>Rent a Car in {capitalizedContinent}</h6>
                   </Link>
                 </nav>
                 <nav className='cp-affbox'>
-                  <Link href=''>
+                  <Link href='https://tiqets.tpk.mx/YcoMGBaY'>
                     <Image src='/jogging.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
-                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                    <h6>Things to do {capitalizedContinent}</h6>
                   </Link>
                 </nav>
                 <nav className='cp-affbox'>
-                  <Link href=''>
+                  <Link href='https://tiqets.tpk.mx/YcoMGBaY'>
                     <Image src='/ticket.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
-                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                    <h6>Find Ticket in{capitalizedContinent}</h6>
                   </Link>
                 </nav>
                 <nav className='cp-affbox'>
-                  <Link href=''>
+                  <Link href='https://klook.tpk.mx/hqo8oNA9'>
                     <Image src='/guide.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
-                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                    <h6>Guide in {capitalizedContinent}</h6>
                   </Link>
                 </nav>
                 <nav className='cp-affbox'>
-                  <Link href=''>
+                  <Link href='https://klook.tpk.mx/hqo8oNA9'>
                     <Image src='/food.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
-                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                    <h6>Find restaurant in {capitalizedContinent}</h6>
                   </Link>
                 </nav>
                 <nav className='cp-affbox'>
-                  <Link href=''>
+                  <Link href='https://airalo.tpk.mx/9cmvfFaq'>
                     <Image src='/simcard.png' width={30} height={30} alt='Find cheap flights with top airline partners - book now'/>
-                    <h6>Find cheap flight to {capitalizedContinent}</h6>
+                    <h6>Simcard in {capitalizedContinent}</h6>
                   </Link>
                 </nav>
             </main>
