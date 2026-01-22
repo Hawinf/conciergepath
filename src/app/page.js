@@ -3,6 +3,8 @@ import styles from "./page.module.css";
 import HomePage from "./homepage";
 import Head from 'next/head';
 import "./globals.css"; // your own global styles
+import Script from 'next/script';
+
 
 
 
@@ -39,8 +41,7 @@ export default function Home() {
         {/* Favicon & Theme */}
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#ffffff" />
-      </Head>
-    
+      </Head>    
     <main>
       <HomePage />
     </main>
