@@ -69,7 +69,7 @@
     margin-top: 5px;
 }
 .itinerary-section {
-    width: 90%;
+    width: 55%;
     margin: auto;
     color: white;
 }
@@ -89,16 +89,18 @@
     margin-bottom: 30px;
 }
 .itinerary-day .day-tittle {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
-    margin: 5px 0;
+    margin: 15px 0;
     color: wheat;
 }
 .itinerary-day .section-intro {
     margin-bottom: 10px;
+    font-size: 20px;
 }
 .itinerary-day .section-descriptionday {
     margin-bottom: 10px;
+    font-size: 18px;
 }
 .get-there-section {
     margin-bottom: 10px;
@@ -112,14 +114,16 @@
 }
 .section-tips .section-tip {
     font-weight: 700;
-    font-size: 14px;
-    color: whitesmoke;
+    font-size: 24px;
+    color: rgb(187, 173, 147);
 }
 .itinerary-list {
     margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 10px;
 }
 .accommodation-tittle {
-    font-size: 20px;
+    font-size: 30px;
     color: wheat;
     margin-bottom: 10px;
 }
@@ -133,7 +137,7 @@
 }
 /* QATAR SECTION */
 .qatar-guide-section {
-    width: 80%;
+    width: 55%;
     margin: auto;
     color: white;
 
@@ -150,22 +154,26 @@
     margin-bottom: 50px;
 }
 .qatar-detail-tittle {
-    font-size: 20px;
+    font-size: 30px;
     color: wheat;
     margin-top: 40px;
     margin-bottom: 10px;
 }
 .dress-desc {
     margin-bottom: 40px;
+    font-size: 20px;
 }
 .attractions-list {
     margin: 10px 0;
+    font-size: 20px;
 }
 .qatarfood-tittle {
     margin-bottom: 10px;
+    font-size: 20px;
 }
 .mall-list {
     margin: 10px 0;
+    font-size: 20px;
 }
 /* ABOVE QATAR SECTION  */
 @media (max-width:768px) {
@@ -191,6 +199,9 @@
     .qatarguide-intro {
         letter-spacing: 1px;
     }
+    .itinerary-section {
+        width: 90%;
+    }
 }
 @media (max-width:576px) {
     .countpage-img {
@@ -211,5 +222,8 @@
         margin: 5px;
         padding: 9px 10px;
         width: 120px;
+    }
+    .itinerary-section {
+        width: 85%;
     }
 }
