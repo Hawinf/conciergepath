@@ -10,9 +10,9 @@ import './country.css';
 
 export default function CountryPage({ params }) {
   const { countryId } = params;
-  const baseUrl = 'https://notepaths.com'; // Replace with your actual domain
+  const baseUrl = 'https://notepaths.com';
 
-  // Find current country object in countryData by countryId
+  // Find current country
   let currentCountry = null;
   for (const continent of Object.values(countryData)) {
     const match = continent.find((country) => country.id === countryId);
@@ -22,10 +22,8 @@ export default function CountryPage({ params }) {
     }
   }
 
-  // Get cities for this country (lowercase key)
   const cities = cityData?.[countryId.toLowerCase()] || [];
 
-  // JSON-LD structured data for cities list
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -44,7 +42,10 @@ export default function CountryPage({ params }) {
     <>
       <Head>
         <title>{`Explore ${currentCountry?.name || countryId}`}</title>
-        <meta name="description" content={`Browse cities and itineraries in ${countryId}.`} />
+        <meta
+          name="description"
+          content={`Browse cities and itineraries in ${countryId}.`}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -53,8 +54,8 @@ export default function CountryPage({ params }) {
 
       <Navbar />
 
-      <main className="countpage-wrapper" >
-        {/* Country Banner Image */}
+      <main className="countpage-wrapper">
+        {/* Country Banner */}
         {currentCountry?.image && (
           <Image
             className="countpage-img"
@@ -63,16 +64,17 @@ export default function CountryPage({ params }) {
             width={600}
             height={400}
             style={{ borderRadius: '12px', marginBottom: '20px' }}
-            data-aos="fade-up"
           />
         )}
 
-        {/* Country Basic Description */}
+        {/* Country Description */}
         <section className="countpage-descsection">
           <div className="countpage-tittlesection">
-            <h1 data-aos="slide-right">{currentCountry?.name || countryId.toUpperCase()}</h1>
+            <h1>{currentCountry?.name || countryId.toUpperCase()}</h1>
             {currentCountry?.description && (
-              <p className="countpage-headdesc" data-aos="slide-left">{currentCountry.description}</p>
+              <p className="countpage-headdesc">
+                {currentCountry.description}
+              </p>
             )}
 
             <h2 className="countpage-citymenu">Popular Cities:</h2>
@@ -90,98 +92,17 @@ export default function CountryPage({ params }) {
           </div>
         </section>
 
-        <nav className='continentpage-aff'>
-  <h1 className='cp-afftittle' data-aos="fade-up">ITINERARIES</h1>
-  <main className='affiliate-section'>
-    {[
-      'flight', 
-      'bus', 
-      'car-rent', 
-      'jogging', 
-      'ticket', 
-      'guide', 
-      'food', 
-      'simcard'
-    ].map((type) => {
-      const links = {
-        flight: "https://aviasales.tpk.mx/umEE5mde",
-        bus: "https://intui.tpk.mx/xPrtSwQa",
-        'car-rent': "https://getrentacar.tpk.mx/tB1Zg8MR",
-        jogging: "https://your-jogging-link.com",
-        ticket: "https://tiqets.tpk.mx/YcoMGBaY",
-        guide: "https://klook.tpk.mx/hqo8oNA9",
-        food: "https://klook.tpk.mx/hqo8oNA9",
-        simcard: "https://airalo.tpk.mx/9cmvfFaq"
-      };
-
-      return (
-        <nav key={type} className='cp-affbox' data-aos="slide-left">
-          <Link href={links[type]} target="_blank">
-            <Image 
-              src={`/${type}.png`} 
-              width={30} 
-              height={30} 
-              alt={`Find cheap ${type} for ${currentCountry?.name}`} 
-            />
-            <h6>
-              Find {type} {" "}
-              {currentCountry?.name?.charAt(0).toUpperCase() + 
-               currentCountry?.name?.slice(1).toLowerCase()}
-            </h6>
-          </Link>
-        </nav>
-      );
-    })}
-  </main>
-</nav>
-
-
-        {/* === Qatar Detailed Guide Section === */}
-        {countryId.toLowerCase() === 'qatar' && currentCountry?.guide && (
-          <section className="qatar-guide-section">
-            <h2 className='qatar-tittle'>{currentCountry.guide.title}</h2>
-            <p className='qatarguide-intro'>{currentCountry.guide.intro}</p>
-
-            <h3 className='qatar-detail-tittle'>Dress Code in Qatar</h3>
-            <p className='dress-desc'>{currentCountry.guide.dressCode}</p>
-
-            <h3 className='qatar-detail-tittle'>Must-See Attractions in Doha</h3>
-            <ul>
-              {currentCountry.guide.mustSeeAttractions.map((attraction, idx) => (
-                <li key={idx} className='attractions-list'>
-                  <strong>{attraction.name}</strong>: {attraction.description}
-                </li>
-              ))}
-            </ul>
-
-            <h3 className='qatar-detail-tittle'>Where to Try Local Food in Doha</h3>
-            <p className='qatarfood-tittle'>{currentCountry.guide.localFood.description}</p>
-            <ul>
-              {currentCountry.guide.localFood.recommendations.map((foodPlace, idx) => (
-                <li key={idx}>{foodPlace}</li>
-              ))}
-            </ul>
-
-            <h3 className='qatar-detail-tittle'>Best Shopping Malls in Qatar</h3>
-            <ul>
-              {currentCountry.guide.shoppingMalls.map((mall, idx) => (
-                <li key={idx} className='mall-list'>
-                  <strong>{mall.name}</strong>: {mall.description}
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-        
-
         {/* === Itinerary Section === */}
         {currentCountry?.itinerary && (
           <section className="itinerary-section">
-            <h2 className='itinerary-section-tittle'>{currentCountry.itinerary.title}</h2>
-            <p className='itinerary-sectiondesc'>{currentCountry.itinerary.subtitle}</p>  
+            <h2 className="itinerary-section-tittle">
+              {currentCountry.itinerary.title}
+            </h2>
+            <p className="itinerary-sectiondesc">
+              {currentCountry.itinerary.subtitle}
+            </p>
 
             {(() => {
-              // Extract days excluding metadata keys
               const days = currentCountry.itinerary.days
                 ? Object.entries(currentCountry.itinerary.days)
                 : Object.entries(currentCountry.itinerary).filter(
@@ -191,73 +112,132 @@ export default function CountryPage({ params }) {
                       key !== 'accommodation'
                   );
 
-              return days.map(([key, section]) => (
-                <div key={key} className="itinerary-day">
-                  <h3 className='day-tittle'>{section.title}</h3>
+              return days.map(([key, section]) => {
+                const thumbnail =
+                  typeof section.thumbnail === 'string' &&
+                  section.thumbnail.trim()
+                    ? section.thumbnail
+                    : null;
 
-                  {section.intro && <p className='section-intro'>{section.intro}</p>}
-                  {section.description && <p className='section-descriptionday'>{section.description}</p>}
-                  
-                  <nav className='get-there-section'>
-                    {section.gettingThere && <p className='getting-there'>Getting there: {section.gettingThere}</p>}
-                    {section.howToGetThere && <p className='getting-there'>How to get there: {section.howToGetThere}</p>}
-                  </nav>
+                return (
+                  <div key={key} className="itinerary-day">
+                    <h3 className="day-tittle">{section.title}</h3>
 
-                  <nav className='section-tips'>
-                    {section.culturalTip && <p className='section-tip'>Tip: {section.culturalTip}</p>}
-                    {section.tip && <p className='section-tip'>Tip: {section.tip}</p>}
-                    {section.transport && <p className='section-tip'>Transport: {section.transport}</p>}
-                  </nav>
+                    {thumbnail && (
+                      <Image
+                        className='thumbnail1'
+                        src={thumbnail}
+                        width={500}
+                        height={500}
+                        alt={section.title}
+                      />
+                    )}
 
-                  {section.highlights && (
-                    <ul >
-                      {section.highlights.map((item, idx) => (
-                        <li key={idx} className='itinerary-list'>{item}</li>
-                      ))}
-                    </ul>
-                  )}
+                    {section.intro && (
+                      <p className="section-intro">{section.intro}</p>
+                    )}
 
-                  {section.thingsToDo?.title && (
-                    <>
-                      <p><strong>{section.thingsToDo.title}</strong></p>
-                      <p>{section.thingsToDo.description}</p>
+                    {section.description && (
+                      <p className="section-descriptionday">
+                        {section.description}
+                      </p>
+                    )}
+
+                    <nav className="get-there-section">
+                      {section.gettingThere && (
+                        <p className="getting-there">
+                          Getting there: {section.gettingThere}
+                        </p>
+                      )}
+                      {section.howToGetThere && (
+                        <p className="getting-there">
+                          How to get there: {section.howToGetThere}
+                        </p>
+                      )}
+                    </nav>
+
+                    <nav className="section-tips">
+                      {section.culturalTip && (
+                        <p className="section-tip">
+                          Tip: {section.culturalTip}
+                        </p>
+                      )}
+                      {section.tip && (
+                        <p className="section-tip">Tip: {section.tip}</p>
+                      )}
+                      {section.transport && (
+                        <p className="section-tip">
+                          Transport: {section.transport}
+                        </p>
+                      )}
+                    </nav>
+
+                    {section.highlights && (
                       <ul>
-                        {section.thingsToDo.list.map((item, idx) => (
-                          <li key={idx} className='itinerary-list'>{item}</li>
+                        {section.highlights.map((item, idx) => (
+                          <li key={idx} className="itinerary-list">
+                            {item}
+                          </li>
                         ))}
                       </ul>
-                    </>
-                  )}
+                    )}
 
-                  {section.whatToSee && (
-                    <ul>
-                      {section.whatToSee.map((item, idx) => (
-                        <li key={idx} className='itinerary-list'>{item}</li>
-                      ))}
-                    </ul>
-                  )}
+                    {section.thingsToDo?.title && (
+                      <>
+                        <p>
+                          <strong>{section.thingsToDo.title}</strong>
+                        </p>
+                        <p>{section.thingsToDo.description}</p>
+                        <ul>
+                          {section.thingsToDo.list.map((item, idx) => (
+                            <li key={idx} className="itinerary-list">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
 
-                  {section.dayTrip?.title && (
-                    <>
-                      <h4>{section.dayTrip.title}</h4>
-                      <p>{section.dayTrip.description}</p>
-                    </>
-                  )}
-                </div>
-              ));
+                    {section.whatToSee && (
+                      <ul>
+                        {section.whatToSee.map((item, idx) => (
+                          <li key={idx} className="itinerary-list">
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+
+                    {section.dayTrip?.title && (
+                      <>
+                        <h4>{section.dayTrip.title}</h4>
+                        <p>{section.dayTrip.description}</p>
+                      </>
+                    )}
+                  </div>
+                );
+              });
             })()}
 
             {currentCountry.itinerary.accommodation && (
               <div className="itinerary-accommodation">
-                <h3 className='accommodation-tittle'>Accommodation</h3>
-                <p className='accommodation-desc'>{currentCountry.itinerary.accommodation.general}</p>
+                <h3 className="accommodation-tittle">Accommodation</h3>
+                <p className="accommodation-desc">
+                  {currentCountry.itinerary.accommodation.general}
+                </p>
                 <ul>
-                  {currentCountry.itinerary.accommodation.recommendations?.map((rec, idx) => (
-                    <li key={idx} className='itinerary-list'>
-                      <strong>{rec.city}</strong>: {rec.hotel}
-                      {rec.food && <p className='food-tittle'><strong>Food:</strong> {rec.food}</p>}
-                    </li>
-                  ))}
+                  {currentCountry.itinerary.accommodation.recommendations?.map(
+                    (rec, idx) => (
+                      <li key={idx} className="itinerary-list">
+                        <strong>{rec.city}</strong>: {rec.hotel}
+                        {rec.food && (
+                          <p className="food-tittle">
+                            <strong>Food:</strong> {rec.food}
+                          </p>
+                        )}
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
             )}

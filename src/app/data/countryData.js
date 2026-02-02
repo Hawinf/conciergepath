@@ -183,6 +183,7 @@ export const countryData = {
           days: {
             istanbul: {
               title: 'Day 1–3: Istanbul – The Crossroads of Empires',
+              thumbnail : '/hagia-sophia-istanbul.jpg',
               intro:
                 'Formerly Byzantium and Constantinople, Istanbul was the capital of Roman, Byzantine, and Ottoman Empires. It connects Europe and Asia through rich history and diverse neighborhoods.',
               gettingThere:
@@ -199,6 +200,7 @@ export const countryData = {
 
             izmir: {
               title: 'Day 4–6: Izmir – From Smyrna to a Modern Republic',
+              thumbnail : '/agora-of-smyrna-izmir.jpg',
               intro:
                 'Izmir, once ancient Smyrna, has evolved from Greek roots to a key Ottoman and now modern Turkish city. A hub of independence, it’s vibrant and full of charm.',
               transport: 'I took a flight from Istanbul to Izmir. Buses are also available.',
@@ -212,6 +214,7 @@ export const countryData = {
 
             pamukkale: {
               title: 'Day 7–8: Pamukkale/Denizli – Sacred Waters of Hierapolis',
+              thumbnail : '/denizli.jpg',
               transport:
                 'Train from Izmir to Denizli (a small friendly city), followed by a minibus or tour to Pamukkale.',
               highlights: [
@@ -224,6 +227,7 @@ export const countryData = {
 
             cappadocia: {
               title: 'Day 9–11: Cappadocia – The Land of Volcanic Faith',
+              thumbnail : '/orthodox-church-cappadocia.jpg',
               transport:
                 'I took an overnight bus to Göreme. Flights are available to Nevşehir Airport.',
               intro:
@@ -242,6 +246,7 @@ export const countryData = {
 
             ankara: {
               title: 'Day 12: Ankara – The Modern Heart of a New Nation',
+              thumbnail : '/ankara.jpg',
               transport:
                 'Easy to reach via train, bus, or flight from Cappadocia or other cities.',
               intro:
@@ -255,6 +260,7 @@ export const countryData = {
 
             trabzon: {
               title: 'Day 13: Trabzon – Byzantium in the Mist',
+              thumbnail : '/trabzon.jpg',
               transport:
                 'Reachable via bus or flight from Ankara. Border city near Georgia, with onward travel options.',
               intro:
