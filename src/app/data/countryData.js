@@ -22,6 +22,7 @@ export const countryData = {
             days: {
               day1: {
                 title: 'Day 1–2: Exploring Bishkek',
+                thumbnail : '/Bishkek.jpg',
                 intro: 'Spend your first couple of days soaking in the charm of Bishkek.',
                 whatToSee: [
                   'Ala-Too Square – The heart of city. Its a spacious central square where you will find a huge national flag, impresive monuments, and often local events or performances.',
@@ -34,18 +35,21 @@ export const countryData = {
               },
               day3: {
                 title: 'Day 3: Ala-Archa National Park',
+                thumbnail : '/Ala-Archa-National-Park.jpg',
                 intro: 'One of the best day trips from Bishkek.',
                 description: 'Just 40 minutes away by taxi or car, Ala-Archa offers glaciers, waterfalls, and pine forests with trails for all levels.',
                 transport: 'Hire a taxi or join a tour from Bishkek.'
               },
               day4: {
                 title: 'Day 4–5: Issyk-Kul Lake',
+                thumbnail : '/Issyk-Kul-Lake.jpg',
                 intro: 'The “Pearl of Kyrgyzstan,” a giant mountain lake that never freezes.',
                 description: 'Perfect for a 1–2 day escape. Infrastructure is minimal, so pack well or join a guided tour.',
                 tip: 'Pack a picnic and plenty of water if going solo. Buses run from the western bus station.'
               },
               day6: {
                 title: 'Optional Adventures',
+                thumbnail : '/Bishkek-mountain.jpg',
                 thingsToDo: {
                   title: 'Explore More:',
                   description: 'If you have time, consider adding these unforgettable experiences:',
@@ -333,8 +337,10 @@ export const countryData = {
 
           tbilisi: {
             title: 'Day 1–3: Tbilisi – The Cultural Capital',
+            thumbnail : '/Tbilisi-georgia.jpg',
             thingsToDo: {
               title: 'Things to Do in Tbilisi',
+              
               description: 'Tbilisi’s charm lies in its diverse architecture and walkable streets. Allocate at least 3 days to explore:',
               list: [
                 'Sameba Cathedral (Holy Trinity): A modern church with panoramic city views.',
@@ -349,6 +355,7 @@ export const countryData = {
 
           mtskheta: {
             title: 'Day Trip: Mtskheta – The Spiritual Heart of Georgia',
+            thumbnail : '/Mtskheta-georgia.jpg',
             howToGetThere: 'Take a minibus from Didube Bus Station (around 1 GEL).',
             whatToSee: [
               'Jvari Monastery: A 6th-century hilltop church with breathtaking views where two rivers meet.',
@@ -360,6 +367,7 @@ export const countryData = {
 
           kutaisi: {
             title: 'Day 4–5: Kutaisi – Nature, Monasteries & Waterfalls',
+            thumbnail : '/Kutaisi-georgia.jpg',
             gettingThere:
               'Train from Tbilisi to Kutaisi takes ~6 hours (8 GEL), or ~3 hours to Kutaisi Airport by express train.',
             thingsToDo: {
@@ -379,6 +387,7 @@ export const countryData = {
 
           batumi: {
             title: 'Day 6–8: Batumi – Coastal Charm by the Black Sea',
+            thumbnail : '/Batumi-georgia.jpg',
             gettingThere:
               'Train from Kutaisi to Batumi takes ~4 hours (2 GEL). Tickets are sold only an hour before departure. Take a local bus to the center (card payment accepted).',
             thingsToDo: {
