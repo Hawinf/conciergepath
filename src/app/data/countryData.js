@@ -22,7 +22,7 @@ export const countryData = {
             days: {
               day1: {
                 title: 'Day 1–2: Exploring Bishkek',
-                thumbnail : '/bishkek.JPG',
+                thumbnail : '/Bishkek.JPG',
                 intro: 'Spend your first couple of days soaking in the charm of Bishkek.',
                 whatToSee: [
                   'Ala-Too Square – The heart of city. Its a spacious central square where you will find a huge national flag, impresive monuments, and often local events or performances.',
@@ -80,83 +80,59 @@ export const countryData = {
         {
           id: 'qatar',
           name: 'QATAR',
-          writter: 'By Katy',
+          writter : 'By Katy',
           description: 'Explore Qatar, a captivating Middle Eastern destination where ancient traditions meet cutting-edge innovation. From the futuristic skyline of Doha to the serene beauty of the Inland Sea (Khor Al Adaid), Qatar offers a unique blend of experiences. Discover iconic attractions like the Museum of Islamic Art, the vibrant Souq Waqif, and the architectural wonder of The Pearl-Qatar. Whether youre interested in luxury travel, desert safaris, cultural tours, or 2022 FIFA World Cup landmarks, Qatar is a top travel destination for history lovers, adventurers, and modern explorers alike. Get practical Qatar travel tips, visa info, and must-see places to make the most of your journey through this rising Gulf gem.',
           image: '/qatar.jpg',
-          slug: 'qatar',
-        
-          guide: {
-            title: 'Qatar Travel Guide: What to Know, See & Do in Doha',
-            intro: `Qatar is an Arabic state on the eastern coast of the Arabian Peninsula. It’s mostly surrounded by the Persian Gulf, and its capital city is called Doha. Qatar is one of the richest countries in the world, thanks to its massive natural gas and oil reserves.
-        It’s important not to confuse the Emirate of Qatar with the UAE (United Arab Emirates). The UAE is a federation of 7 Emirates, while Qatar is an independent state. The country is quite small — you can cross it from one side to the other in about an hour drive. Most of the country is desert. The population is about 2 million, and the majority lives in Doha. Around 80% are expats. The official language is Arabic, but English is widely spoken — so you won’t have any problems communicating.`,
-            
-            dressCode: `There are no strict dress code restrictions, especially for tourists. I wore a T-shirt and modest-length shorts during summer and didn’t face any issues. Still, it’s recommended to keep your shoulders and knees covered — just out of respect for the local culture.`,
-            
-            mustSeeAttractions: [
-              {
-                name: 'Souq Waqif – Traditional Arabic Market',
-                description: 'One of the most authentic and vibrant places in Doha. Souq Waqif is a traditional Arabic market with beautifully designed buildings, small shops selling local goods, the smell of bukhur (incense) in the air, and tons of cafés, shisha places, and souvenir shops. You can try traditional Middle Eastern food like harees, basbousa, and crispy raqaq. Prices for food are pretty low — I literally tried almost everything.'
+          slug: "qatar",
+          itinerary: {
+              title: 'Qatar Travel Guide: What to Know, See & Do in Doha',
+              subtitle: `Qatar is an Arabic state on the eastern coast of the Arabian Peninsula. It’s mostly surrounded by the Persian Gulf, and its capital city is called Doha. Qatar is one of the richest countries in the world, thanks to its massive natural gas and oil reserves.        It’s important not to confuse the Emirate of Qatar with the UAE (United Arab Emirates). The UAE is a federation of 7 Emirates, while Qatar is an independent state. The country is quite small — you can cross it from one side to the other in about an hour drive. Most of the country is desert. The population is about 2 million, and the majority lives in Doha. Around 80% are expats. The official language is Arabic, but English is widely spoken — so you won’t have any problems communicating.`,
+              days: {
+                day1: {
+                  title: 'Day 1–2: Attraction Must See',
+                  thumbnail : '/doha.jpg',
+                  intro: 'Spend your first couple of days soaking in the charm of Doha.',
+                  whatToSee: [
+                    'Souq Waqif – Traditional Arabic Market, One of the most authentic and vibrant places in Doha. Souq Waqif is a traditional Arabic market with beautifully designed buildings, small shops selling local goods, the smell of bukhur (incense) in the air, and tons of cafés, shisha places, and souvenir shops. You can try traditional Middle Eastern food like harees, basbousa, and crispy raqaq. Prices for food are pretty low — I literally tried almost everything.',
+                    'Msheireb Downtown – Modern Meets Traditional. Right next to Souq Waqif, Msheireb Downtown is a brand-new district built in a modern Arabic architecture style. There are plenty of cozy cafés and nice restaurants here. It’s a great place for a sunset walk. You can also catch a tourist tram that goes around the district.',
+                    'West Bay – Skyscrapers & Beaches. Area with all the big skyscrapers along the coast. Most embassies, government offices, luxury hotels, and business centers are located here. Popular public beaches like West Bay Beach are here (entrance fee required). City Center Mall is nearby for snacks or a quick bite.',
+                    'Doha Corniche – Scenic Waterfront. A long promenade connecting Souq Waqif to West Bay. Perfect for long walks, with stunning views of the bay. You can rent a traditional dhow boat ride here. Iconic Sheraton Grand Hotel (1970s) is visible from here.',
+                    'Katara Cultural Village – Culture & Views. Beautiful mosques, amphitheatre, open beach, traditional-style architecture, and giant bird nests. Nearby Katara Hills park is perfect for a chill afternoon. Street food here is good!',
+                    'The Pearl – European Vibes on an Island. Luxurious artificial island with European-style buildings, waterfront restaurants, and lots of cute areas to walk around. Great food, beautiful views, and nice places for coffee or dinner.',
+                    'Old Doha Port & Box Park – Colorful & Artistic. Old Port has charming colorful buildings and is walkable. Box Park is made of upcycled metal cargo containers turned into cafés and shops. A fun, artsy place to hang out.',
+                    'Lusail – New and Still Growing. Developing city connected to Doha. Festivals, concerts, and events bring life to the area. Marina Promenade and Place Vendôme Mall are worth visiting.'
+                  ],
+                  tip: `There are no strict dress code restrictions, especially for tourists. I wore a T-shirt and modest-length shorts during summer and didn’t face any issues. Still, it’s recommended to keep your shoulders and knees covered — just out of respect for the local culture.`,
+                },
+                day3: {
+                  title: 'Day 3: Shopping Mall in Qatar',
+                  thumbnail : '/mallinqatar.JPG',
+                  intro: ' Discover Mall in Qatar',
+                  whatToSee: [
+                    'Mall of Qatar - A huge mall with tons of local and international brands. Great for a full day of shopping and entertainment.',
+                    'Doha Festival City - Massive shopping mall with all popular brands. Includes Snow Dunes, a small indoor winter park with real snow.',
+                    'Place Vendôme - Personal favorite. Like a palace with elegant interiors, dancing fountains, and a bright glass-domed food court. Super stylish.',
+                    'Villaggio Mall - Mall with an indoor canal for gondola rides and Doha’s only ice rink.'
+                  ],
+                  description: 'Qatar has few mall which you can visit and see around',
+                  transport: 'Hire a taxi or use tram'
+                },
+                day4: {
+                  title: 'Day 4 : Try Local Food',
+                  thumbnail : '/food-qatar.jpg',
+                  intro: 'Best place to try local food is at Souq Waqif with street food stands and benches where you can sit and watch market life.',
+                  description: 'Perfect for a 1–2 day escape. Infrastructure is minimal, so pack well or join a guided tour.',
+                  whatToSee: [
+                    'Karak Mqanes',
+                    'TeaTime – Best places for cheap, tasty local snacks',
+                  ],
+                  tip: 'Pack a picnic and plenty of water if going solo. Buses run from the western bus station.'
+                },
+                
               },
-              {
-                name: 'Msheireb Downtown – Modern Meets Traditional',
-                description: 'Right next to Souq Waqif, Msheireb Downtown is a brand-new district built in a modern Arabic architecture style. There are plenty of cozy cafés and nice restaurants here. It’s a great place for a sunset walk. You can also catch a tourist tram that goes around the district.'
-              },
-              {
-                name: 'West Bay – Skyscrapers & Beaches',
-                description: 'Area with all the big skyscrapers along the coast. Most embassies, government offices, luxury hotels, and business centers are located here. Popular public beaches like West Bay Beach are here (entrance fee required). City Center Mall is nearby for snacks or a quick bite.'
-              },
-              {
-                name: 'Doha Corniche – Scenic Waterfront',
-                description: 'A long promenade connecting Souq Waqif to West Bay. Perfect for long walks, with stunning views of the bay. You can rent a traditional dhow boat ride here. Iconic Sheraton Grand Hotel (1970s) is visible from here.'
-              },
-              {
-                name: 'Katara Cultural Village – Culture & Views',
-                description: 'Beautiful mosques, amphitheatre, open beach, traditional-style architecture, and giant bird nests. Nearby Katara Hills park is perfect for a chill afternoon. Street food here is good!'
-              },
-              {
-                name: 'The Pearl – European Vibes on an Island',
-                description: 'Luxurious artificial island with European-style buildings, waterfront restaurants, and lots of cute areas to walk around. Great food, beautiful views, and nice places for coffee or dinner.'
-              },
-              {
-                name: 'Old Doha Port & Box Park – Colorful & Artistic',
-                description: 'Old Port has charming colorful buildings and is walkable. Box Park is made of upcycled metal cargo containers turned into cafés and shops. A fun, artsy place to hang out.'
-              },
-              {
-                name: 'Lusail – New and Still Growing',
-                description: 'Developing city connected to Doha. Festivals, concerts, and events bring life to the area. Marina Promenade and Place Vendôme Mall are worth visiting.'
-              }
-            ],
-        
-            localFood: {
-              description: 'Best place to try local food is at Souq Waqif with street food stands and benches where you can sit and watch market life.',
-              recommendations: [
-                'Karak Mqanes',
-                'TeaTime – Best places for cheap, tasty local snacks'
-              ]
-            },
-        
-            shoppingMalls: [
-              {
-                name: 'Mall of Qatar',
-                description: 'A huge mall with tons of local and international brands. Great for a full day of shopping and entertainment.'
-              },
-              {
-                name: 'Doha Festival City',
-                description: 'Massive shopping mall with all popular brands. Includes Snow Dunes, a small indoor winter park with real snow.'
-              },
-              {
-                name: 'Place Vendôme',
-                description: 'Personal favorite. Like a palace with elegant interiors, dancing fountains, and a bright glass-domed food court. Super stylish.'
-              },
-              {
-                name: 'Villaggio Mall',
-                description: 'Mall with an indoor canal for gondola rides and Doha’s only ice rink.'
-              }
-            ]
-          }
-        }
               
-,        
+            }
+          },    
       {
         id: 'uae',
         name: 'UNITED ARAB EMIRATES',
@@ -167,6 +143,13 @@ export const countryData = {
       {
         id: 'kazakhstan',
         name: 'KAZAKHSTAN',
+        writter : 'By Katy',
+        description: 'Discover the beauty of Kazakhstan, a vast and diverse country in Central Asia known for its dramatic landscapes, nomadic culture, and modern cities like Almaty and Astana (Nur-Sultan). From the breathtaking Charyn Canyon and Altai Mountains to the mysterious Steppe and ancient Silk Road sites, Kazakhstan offers a unique blend of adventure, culture, and history. Whether youre interested in eco-tourism, backpacking, or experiencing the rich traditions of Kazakh hospitality, this guide helps you plan your journey through one of the most underrated travel destinations in the world.',
+        image: '/kazak.jpg',
+      },
+      {
+        id: 'tanzania',
+        name: 'TANZANIA',
         writter : 'By Katy',
         description: 'Discover the beauty of Kazakhstan, a vast and diverse country in Central Asia known for its dramatic landscapes, nomadic culture, and modern cities like Almaty and Astana (Nur-Sultan). From the breathtaking Charyn Canyon and Altai Mountains to the mysterious Steppe and ancient Silk Road sites, Kazakhstan offers a unique blend of adventure, culture, and history. Whether youre interested in eco-tourism, backpacking, or experiencing the rich traditions of Kazakh hospitality, this guide helps you plan your journey through one of the most underrated travel destinations in the world.',
         image: '/kazak.jpg',

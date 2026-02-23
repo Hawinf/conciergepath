@@ -14,6 +14,9 @@ export const cityData = {
     kazakhstan: [
       { id: 'astana', name: 'Astana', description: 'Explore Astana, Kazakhstan’s futuristic capital city, where cutting-edge architecture meets rich Central Asian culture. Discover iconic landmarks like the Baiterek Tower, Khan Shatyr Entertainment Center, and the Palace of Peace and Reconciliation. Astana is a vibrant hub for politics, innovation, and culture, offering visitors a unique glimpse into Kazakhstan’s modern identity. Stroll along the Ishim River, enjoy world-class cuisine, and explore local museums and monuments. Whether youre planning a cultural tour or a stop on your Silk Road adventure, Astana travel tips, guides, and must-see attractions will help you make the most of your journey. Visit Astana/Nur-Sultan for a truly unforgettable experience in the heart of Central Asia.', image: '/astana.jpg'}
     ],
+    tanzania: [
+      { id: 'zanzibar', name: 'Zanzibar', description: 'Explore Zanzibar.', image: '/astana.jpg'}
+    ],
     turkey: [
       { id: 'istanbul', name: 'Istanbul', description: 'Discover Istanbul, Turkey’s vibrant cultural capital, where East meets West across the Bosphorus. Rich in history and heritage, Istanbul is home to iconic landmarks like the Hagia Sophia, Blue Mosque, and Topkapi Palace. Wander through the bustling Grand Bazaar, cruise the scenic Bosphorus Strait, and enjoy authentic Turkish cuisine in every corner of the city. From ancient Byzantine and Ottoman sites to modern art galleries and lively street markets, Istanbul offers a perfect blend of tradition and modernity. Whether youre planning a city break or a longer stay, explore Istanbul travel guides, itineraries, local tips, and top attractions to make the most of your trip to this historic and dynamic city.', image: '/istanbul.jpg'}
     ],
