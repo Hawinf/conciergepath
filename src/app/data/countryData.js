@@ -22,7 +22,7 @@ export const countryData = {
             days: {
               day1: {
                 title: 'Day 1–2: Exploring Bishkek',
-                thumbnail : '/Bishkek.JPG',
+                thumbnail : '/Bishkek.JPG', 
                 intro: 'Spend your first couple of days soaking in the charm of Bishkek.',
                 whatToSee: [
                   'Ala-Too Square – The heart of city. Its a spacious central square where you will find a huge national flag, impresive monuments, and often local events or performances.',

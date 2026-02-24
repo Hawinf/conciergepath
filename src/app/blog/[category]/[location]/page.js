@@ -90,13 +90,20 @@ export default function BlogPost({ params }) {
             {post.itinerary.map((day, index) => (
               <div key={index} >
                 <h3 className='itinerary-days'>{day.day}: {day.title}</h3>
+                <Image
+                  className='thumbnail-section'
+                  src={day.image}
+                  width={300}
+                  height={300}
+                  alt={day.title}
+                />
                 <p className="itinerary-day">{day.details}</p>
               </div>
             ))}
           </section>
         )}
 
-        {/* Best Time to Visit */}
+          {/* Best Time to Visit */}
         {post.bestTimeToVisit && (
           <section className="blog-besttime">
             <h2 className="blog-section-title">BEST TIME TO VISIT</h2>
