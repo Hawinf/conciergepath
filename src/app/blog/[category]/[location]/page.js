@@ -87,27 +87,27 @@ export default function BlogPost({ params }) {
         {post.itinerary && (
           <section className="blog-itinerary">
             <h2 className="blog-section-title">ITINERARY</h2>
-            {post.itinerary.map((day, index) => (
+            {post.itinerary.map((subheading, index) => (
               <div key={index} >
-                <h3 className='itinerary-days'>{day.day}: {day.title}</h3>
+                <h3 className='itinerary-days'>{subheading.subheading} : {subheading.title}</h3>
                 <Image
                   className='thumbnail-section'
-                  src={day.image}
+                  src={subheading.image}
                   width={300}
                   height={300}
-                  alt={day.title}
+                  alt={subheading.title}
                 />
-                <p className="itinerary-day">{day.details}</p>
+                <p className="itinerary-day">{subheading.details}</p>
               </div>
             ))}
           </section>
         )}
 
           {/* Best Time to Visit */}
-        {post.bestTimeToVisit && (
+        {post.tips && (
           <section className="blog-besttime">
             <h2 className="blog-section-title">BEST TIME TO VISIT</h2>
-            <p className="itinerary-day">{post.bestTimeToVisit}</p>
+            <p className="itinerary-day">{post.tips}</p>
           </section>
         )}
 

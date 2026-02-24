@@ -135,9 +135,16 @@ export default function Header() {
           <h3>{displayedText}<span className="blinking-cursor">|</span></h3>
           <div className='main-about' >
             <div className="holographic-card" data-aos="slide-right">
-              <Link href=''>
+              <Link href='/blog/explore-dubai/dubai'>
                 <img src='/restaurants.jpg' alt='KATE' />
-                <h6>Restaurants And Bars In Palm Jumeirah</h6>
+                <h6>5 Days in Dubai</h6>
+                <p>By Katy</p>
+              </Link>
+            </div>
+            <div className="holographic-card" data-aos="slide-left">
+              <Link href='/blog/places-to-eat/jlt'>
+                <img src='/jlt.jpg' alt='KATE' />
+                <h6>Places To Eat In JLT</h6>
                 <p>By Katy</p>
               </Link>
             </div>
@@ -148,13 +155,7 @@ export default function Header() {
                 <p>By Katy</p>
               </Link>
             </div>
-            <div className="holographic-card" data-aos="slide-left">
-              <Link href=''>
-                <img src='/jlt.jpg' alt='KATE' />
-                <h6>Places To Eat In JLT</h6>
-                <p>By Katy</p>
-              </Link>
-            </div>
+            
             <div className="holographic-card" data-aos="fade-up">
               <Link href=''>
                 <img src='/public-beach.jpg' alt='KATE' />
