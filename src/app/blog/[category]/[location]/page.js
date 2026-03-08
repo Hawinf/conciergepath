@@ -87,17 +87,17 @@ export default function BlogPost({ params }) {
         {post.itinerary && (
           <section className="blog-itinerary">
             <h2 className="blog-section-title">ITINERARY</h2>
-            {post.itinerary.map((subheading, index) => (
+            {post.itinerary.map((post, index) => (
               <div key={index} >
-                <h3 className='itinerary-days'>{subheading.subheading} : {subheading.title}</h3>
+                <h3 className='itinerary-days'>{post.subheading} : {post.title}</h3>
                 <Image
                   className='thumbnail-section'
-                  src={subheading.image}
+                  src={post.image}
                   width={300}
                   height={300}
-                  alt={subheading.title}
+                  alt={post.title}
                 />
-                <p className="itinerary-day">{subheading.details}</p>
+                <p className="itinerary-day">{post.details}</p>
               </div>
             ))}
           </section>

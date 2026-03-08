@@ -69,10 +69,12 @@
 .itinerary-day {
     color: whitesmoke;
     margin-bottom: 50px;
+    font-size: 20px;
 }
 .itinerary-days {
     color: wheat;
     margin-bottom: 20px;
+    font-size: 30px;
 }
 @media (max-width:768px) {
     .blog-headertittle {

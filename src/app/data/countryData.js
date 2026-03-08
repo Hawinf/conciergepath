@@ -152,7 +152,7 @@ export const countryData = {
         name: 'TANZANIA',
         writter : 'By Katy',
         description: 'Discover the beauty of Kazakhstan, a vast and diverse country in Central Asia known for its dramatic landscapes, nomadic culture, and modern cities like Almaty and Astana (Nur-Sultan). From the breathtaking Charyn Canyon and Altai Mountains to the mysterious Steppe and ancient Silk Road sites, Kazakhstan offers a unique blend of adventure, culture, and history. Whether youre interested in eco-tourism, backpacking, or experiencing the rich traditions of Kazakh hospitality, this guide helps you plan your journey through one of the most underrated travel destinations in the world.',
-        image: '/kazak.jpg',
+        image: '/tanzania.jpg',
       },
       {
         id: 'turkey',

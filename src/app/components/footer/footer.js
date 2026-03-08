@@ -46,6 +46,9 @@ export default function Footer() {
                     <div>
                         <a href='/blog/explore-dubai/dubai'>5 Days In Dubai</a>
                     </div>
+                    <div>
+                        <a href='/blog/places-to-eat/jlt'>Places to eat in JLT</a>
+                    </div>
                 </div>
                 <div className='section-one' data-aos="slide-left">
                     <h6>Top Destinations</h6>

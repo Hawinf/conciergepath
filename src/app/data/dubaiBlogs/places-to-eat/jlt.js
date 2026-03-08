@@ -9,15 +9,16 @@ const jlt = {
     itinerary: [
       {
         subheading: "Betawi Restaurant",
+        link : 'https://www.google.com/search?q=betawi+jlt&rlz=1C5CHFA_enAE1160AE1160&oq=be&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMgYIAhBFGDkyBwgDEAAYgAQyBwgEEAAYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGD3SAQgxMzcyajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8',
         title: "Authentic Indonesian Food in Jumeirah Lakes Towers, Dubai",
-        image: '/palm-jumeirah.jg',
+        image: '/betawi.JPG',
         details:
           "Located in Jumeirah Lakes Towers (JLT), Dubai, Betawi Restaurant is one of our favorite spots for authentic Indonesian food in Dubai. If you’re searching for the best Indonesian restaurant in JLT or craving traditional flavors from Indonesia, this place should be on your list. Their beef rendang is a must-try — slow-cooked, rich in spices, and incredibly tender. The flavors are deep, aromatic, and true to traditional Indonesian recipes. Every bite delivers that authentic homemade taste that Indonesians know and love. From classic Indonesian dishes to comforting street-food favorites, Betawi Restaurant offers a genuine culinary experience right in the heart of Dubai. Whether you're an Indonesian living in the UAE or a foodie looking to explore Southeast Asian cuisine, this restaurant brings the true taste of Indonesia to Dubai.",
       },
       {
         subheading: "Asian Street by Thai",
         title: "Authentic Thai Food in Jumeirah Lakes Towers, Dubai",
-        image: '/palm-jumeirah.jg',
+        image: '/asianbythai.JPG',
         details:
           "If you're looking for authentic Thai food in Dubai, Asian Street by Thai in Jumeirah Lakes Towers (JLT) is definitely worth trying. This cozy spot is known for serving some of the best Tom Yum in Dubai, packed with bold, aromatic flavors and the perfect balance of spicy, sour, and savory. One of the things that makes this restaurant stand out is that they make their noodles fresh in-house. The texture is soft yet perfectly chewy, and every dish tastes incredibly fresh and flavorful. You can truly feel the authenticity in every bite. Whether youre craving a comforting bowl of Tom Yum soup, freshly made Thai noodles, or classic street-style Thai dishes, Asian Street by Thai delivers a genuine Thai street food experience right in the heart of JLT.",
       },
@@ -31,7 +32,7 @@ const jlt = {
       {
         subheading: "San Wan Hand-Pulled Noodles",
         title: "Authentic Chinese Restaurant in JLT, Dubai",
-        image: '/palm-jumeirah.jg',
+        image: '/sanwan.JPG',
         details:
           "San Wan Hand-Pulled Noodles in Jumeirah Lakes Towers (JLT), Dubai is one of our favorite Chinese restaurants in JLT. Whenever we’re craving authentic Chinese flavors and freshly made noodles, this is our go-to spot. What makes this restaurant special is their traditional hand-pulled noodle technique. The noodles are made fresh in-house, giving them the perfect chewy texture and rich taste that you can only get from authentic Chinese cooking. Every bowl is served hot, flavorful, and incredibly satisfying. From comforting beef noodle soup to spicy stir-fried noodles and classic Chinese dumplings, San Wan offers a genuine taste of China right in the heart of Dubai. The portions are generous, the ingredients are fresh, and the flavors are bold and authentic.",
       },
