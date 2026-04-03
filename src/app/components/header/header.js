@@ -149,12 +149,13 @@ export default function Header() {
               </Link>
             </div>
             <div className="holographic-card" data-aos="fade-down">
-              <Link href=''>
-                <img src='/beaches.jpg' alt='KATE' />
-                <h6>Beach Club In Dubai</h6>
+              <Link href='/blog/places-to-eat/barbeque-hotpot-in-dubai'>
+                <img src='/bbq.jpg' alt='KATE' />
+                <h6>Barbeque and Hot Pot in Dubai</h6>
                 <p>By Katy</p>
               </Link>
             </div>
+            
             
             <div className="holographic-card" data-aos="fade-up">
               <Link href=''>

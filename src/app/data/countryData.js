@@ -421,6 +421,102 @@ export const countryData = {
           },
       },
       {
+        id: 'poland',
+        name: 'POLAND',
+        writter : 'By Katy',
+        image: '/poland.jpg',
+        description:
+          'Poland is a captivating country in Central Europe known for its rich history, vibrant culture, and breathtaking landscapes. From the medieval charm of Kraków to the modern energy of Warsaw, Poland offers a unique blend of old-world heritage and contemporary life that attracts travelers from around the globe. Visitors can explore iconic landmarks such as Wawel Castle and the historic Auschwitz-Birkenau, gaining deep insight into Europe’s past. Nature lovers will be amazed by the beauty of the Tatra Mountains and the peaceful lakes of Masurian Lake District, perfect for outdoor adventures. Poland is also famous for its delicious traditional cuisine, including Pierogi and Bigos, offering a true taste of Eastern European flavors. Whether youre interested in history, culture, food, or nature, Poland is a must-visit destination that delivers unforgettable experiences.',
+
+        itinerary: {
+          title: 'Poland Travel Itinerary: 7–10 Days of History, Culture & Nature',
+          subtitle:
+            'Explore the best places to visit in Poland, including medieval cities, World War II landmarks, mountain destinations, and the Baltic coast.',
+
+          days: {
+            krakow: {
+              title: 'Day 1–3: Kraków – The Cultural Heart of Poland',
+              thumbnail : '/Krakow.JPG',
+              intro:
+                'Kraków is one of Poland’s oldest and most beautiful cities, known for its preserved medieval core and vibrant atmosphere.',
+              gettingThere:
+                'Fly into John Paul II International Airport or take a train from Warsaw.',
+              highlights: [
+                'Wawel Castle – Historic royal residence overlooking the Vistula River.',
+                'Main Market Square – One of Europe’s largest medieval squares.',
+                'Auschwitz-Birkenau – Important historical memorial and UNESCO site.',
+              ],
+            },
+
+            warsaw: {
+              title: 'Day 4–5: Warsaw – The Resilient Capital',
+              thumbnail : '/Warsaw.jpg',
+              intro:
+                'Warsaw blends modern architecture with reconstructed historical sites after WWII destruction.',
+              transport: 'High-speed trains connect Kraków to Warsaw in about 2.5 hours.',
+              highlights: [
+                "Old Town – Beautifully restored UNESCO World Heritage Site.",
+                "Royal Castle – Former residence of Polish monarchs.",
+                "Warsaw Uprising Museum – Insight into WWII resistance.",
+                "Łazienki Park – Scenic park with palaces and peacocks."
+              ],
+            },
+
+            zakopane: {
+              title: 'Day 6–7: Zakopane – Gateway to the Tatra Mountains',
+              thumbnail : '/Zakopane.jpg',
+              intro : 'Zakopane is a mountain resort town famous for outdoor adventures and traditional wooden architecture.',
+              transport:
+                'Bus or train from Kraków (approx. 2 hours).',
+              highlights: [
+                "Tatra Mountains – Hiking and stunning alpine scenery.",
+                "Gubałówka Hill – Panoramic views of the mountains.",
+                "Krupówki Street – Lively street with shops and local food.",
+                "Thermal Baths – Relaxing hot springs experience.",
+              ],
+            },
+          
+            gdansk: {
+              title: 'Day 8–10: Gdańsk – Baltic Coast Beauty',
+              thumbnail : '/Gdansk.jpg',
+              transport:
+                'Take a domestic flight or train from Warsaw.',
+              intro:
+                'Gdańsk is a colorful port city with rich maritime history and stunning architecture.',
+              highlights: [
+                "Long Market – Iconic street with colorful merchant houses.",
+                "Neptune Fountain – Symbol of the city.",
+                "European Solidarity Centre – Learn about Poland’s modern history.",
+                "Sopot Beach – Relax by the Baltic Sea."
+              ],
+            },
+          },
+          accommodation: {
+            general: 'UUse Booking.com to find the best hotels across Poland.',
+            recommendations: [
+              {
+                city: 'Kraków',
+                hotel: 'Hotel Wielopole – Central location with great reviews.',
+              },
+              {
+                city: 'Warsaw',
+                hotel:
+                  'Novotel Warsaw Centrum – Modern stay in the city center.',
+              },
+              {
+                city: 'Zakopane',
+                hotel: 'Aries Hotel & SPA – Perfect for mountain relaxation.',
+              },
+              {
+                city: 'Gdańsk',
+                hotel: 'Hotel Gdańsk Boutique – Stylish stay near the old town.',
+              },
+            ],
+          },
+        },
+      
+    },
+      {
         id: 'russia',
         name: 'RUSSIA',
         writter : 'By Katy',
